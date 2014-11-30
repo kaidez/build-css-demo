@@ -49,10 +49,23 @@ module.exports = function(grunt) {
         files: {
           'jquery.min.js': 'jquery/dist/jquery.min.js'
         }
-      }, // end "bowercopy:bs" task
-    } // end "bowercopy" task
+      } // end "bowercopy:bs" task
+    }, // end "bowercopy" task
+
+    coffee: {
+      compile: {
+        options: {
+          bare: true
+        },
+        files: {
+          'build/js/main.js': ['coffee/*.coffee'] // compile and concat into single file
+        }
+      }
+    }
+
   });
 
+  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-bowercopy');
 
 };
