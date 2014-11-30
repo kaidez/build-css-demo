@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
+  // Project config
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         files: {
           'jquery.min.js': 'jquery/dist/jquery.min.js'
         }
-      } // end "bowercopy:bs" task
+      } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
     coffee: {
