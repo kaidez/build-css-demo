@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kaidez/build-css-tute/issues"
   },
-  "homepage": "https://github.com/kaidez/build-css-tute"
+  "homepage": "https://github.com/kaidez/build-css-tute",
+  "devDependencies": {
+    "jade": "^1.8.0"
+  }
 }
