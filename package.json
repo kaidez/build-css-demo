@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/kaidez/build-css-tute",
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "gulp": "^3.8.10",
     "jade": "^1.8.0"
   }
 }
