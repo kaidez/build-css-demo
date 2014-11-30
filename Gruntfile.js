@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 
     // start "bowercopy" task
     bowercopy: {
+
       // don't send messages to saying that Bower components aren't
       // configured...ignore them instead. Also, don't run any bower
       // tasks when grunt runs this task.
@@ -25,6 +26,18 @@ module.exports = function(grunt) {
           'bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
         }
       }, // end "bowercopy:bs" task
+
+      // Copy scrollNav over
+      scrollnav: {
+
+        // copy to the "css-build" directory
+        options: {
+          destPrefix: 'build/js/libs/'
+        },
+        files: {
+          'jquery.scrollNav.min.js': 'scrollNav/dist/jquery.scrollNav.min.js'
+        }
+      }, // end "bowercopy:scrollnav" task
 
       // Copy jQuery over
       jq: {
