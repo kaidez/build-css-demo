@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-   // start "bowercopy" task
+    // start "bowercopy" task
     bowercopy: {
       // don't send messages to saying that Bower components aren't
       // configured...ignore them instead. Also, don't run any bower
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
 
       // Copy Bootstrap CCS over
-      bscss: {
+      bs: {
 
         // copy to the "css-build" directory
         options: {
@@ -24,7 +24,19 @@ module.exports = function(grunt) {
         files: {
           'bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
         }
-      }
+      }, // end "bowercopy:bs" task
+
+      // Copy jQuery over
+      jq: {
+
+        // copy to the "css-build" directory
+        options: {
+          destPrefix: 'build/js/libs/'
+        },
+        files: {
+          'jquery.min.js': 'jquery/dist/jquery.min.js'
+        }
+      }, // end "bowercopy:bs" task
     } // end "bowercopy" task
   });
 
