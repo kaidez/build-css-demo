@@ -1,0 +1,19 @@
+{
+  "name": "build-css-tute",
+  "version": "1.0.0",
+  "description": "Source files for a CSS build tutorial",
+  "main": "build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaidez/build-css-tute"
+  },
+  "author": "kaidez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaidez/build-css-tute/issues"
+  },
+  "homepage": "https://github.com/kaidez/build-css-tute"
+}
