@@ -2,10 +2,6 @@
 /*
 Scroll nav code starts
  */
-var scroll;
-
-scroll = (function() {})();
-
 $(".container").scrollNav({
   showTopLink: false,
   sectionElem: "div",
@@ -13,8 +9,6 @@ $(".container").scrollNav({
   insertTarget: this.headerElements,
   insertLocation: "prependTo"
 });
-
-return;
 
 
 /*
