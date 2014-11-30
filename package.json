@@ -19,6 +19,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "gulp": "^3.8.10",
+    "gulp-jade": "^0.10.0",
     "jade": "^1.8.0"
   }
 }
