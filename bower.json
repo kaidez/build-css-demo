@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "scrollNav": "latest"
   }
 }
