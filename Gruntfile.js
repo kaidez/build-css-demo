@@ -53,10 +53,8 @@ module.exports = function(grunt) {
     }, // end "bowercopy" task
 
     less: {
-      development: {
-        files: {
-          "build/css/styles.css": "css-build/styles.less"
-        }
+      files: {
+        "build/css/styles.css": "css-build/styles.less"
       }
     },
 
@@ -66,7 +64,7 @@ module.exports = function(grunt) {
           bare: true
         },
         files: {
-          'build/js/main.js': ['coffee/*.coffee'] // compile and concat into single file
+          'build/js/main.js': 'coffee/*.coffee' // compile and concat into single file
         }
       }
     }
