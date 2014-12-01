@@ -53,8 +53,10 @@ module.exports = function(grunt) {
     }, // end "bowercopy" task
 
     less: {
-      files: {
-        "build/css/styles.css": "css-build/styles.less"
+      development: {
+        files: {
+          "build/css/styles.css": ["css-build/styles.less"]
+        }
       }
     },
 

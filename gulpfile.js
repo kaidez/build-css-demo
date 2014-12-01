@@ -5,6 +5,9 @@ var gulp = require('gulp'), // Define gulp
     path = require('path'), // Needed for LESS
     concat = require('gulp-concat'); //For concatenating stuff
 
+    // For running grunt tasks through gulp
+    require('gulp-grunt')(gulp);
+
 /*
  *  ===================================================================
  *  | JADE TASK |
@@ -19,4 +22,19 @@ gulp.task('jade', function () {
     pretty: true
   }))
   .pipe(gulp.dest('build'));
+});
+
+/*
+*  ===================================================================
+*  | 'gulp-grunt' TASKS...RUN GRUNT TASKS VIA GULP |
+*  ===================================================================
+*/
+// Run the "grunt coffee" task
+gulp.task('coffee', function () {
+  gulp.run('grunt-coffee');
+});
+
+// Run the "grunt less" task
+gulp.task('less', function () {
+  gulp.run('grunt-less');
 });
