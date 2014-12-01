@@ -28,7 +28,6 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade files
  *  | JADE TASK |
  *  ===================================================================
  */
-
 // Output Jade Files to build "index.html" & send it to "build/"
 gulp.task('jade', function () {
   return gulp.src('jade/index.jade')
@@ -66,7 +65,7 @@ gulp.task('watch', function () {
 
   /*
    * If preprocesser files change, run the site build, then refresh it
-   * in the browser via live reload
+   * in the browser via livereload
    */
   var server = livereload();
   gulp.watch(jadeFiles, ['jade']);
