@@ -4,7 +4,7 @@ var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
     less = require('gulp-less'), // LESS task
     path = require('path'), // Needed for LESS
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'); //For concatenating stuff
 
 /*
  *  ===================================================================
