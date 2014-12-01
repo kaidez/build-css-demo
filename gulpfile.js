@@ -4,7 +4,8 @@ var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
     path = require('path'), // Needed for LESS
     concat = require('gulp-concat'), //For concatenating stuff
-
+    watch = require('gulp-watch'),
+    
     // Live Reload stuff
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
