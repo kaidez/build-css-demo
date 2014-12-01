@@ -4,7 +4,6 @@ var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
     less = require('gulp-less'), // LESS task
     path = require('path'), // Needed for LESS
-    gutil = require('gulp-util'), // Needed for Coffeescript
     concat = require('gulp-concat');
 
 /*
@@ -24,10 +23,10 @@ gulp.task('jade', function () {
 });
 
 /*
-*  ===================================================================
-*  | LESS TASK |
-*  ===================================================================
-*/
+ *  ===================================================================
+ *  | LESS TASK |
+ *  ===================================================================
+ */
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
   .pipe(less({
