@@ -52,6 +52,14 @@ module.exports = function(grunt) {
       } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
+    less: {
+      development: {
+        files: {
+          "build/css/styles.css": "css-build/styles.less"
+        }
+      }
+    },
+
     coffee: {
       compile: {
         options: {
@@ -66,6 +74,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-bowercopy');
 
 };

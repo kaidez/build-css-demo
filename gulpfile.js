@@ -2,7 +2,6 @@
 
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
-    less = require('gulp-less'), // LESS task
     path = require('path'), // Needed for LESS
     concat = require('gulp-concat'); //For concatenating stuff
 
@@ -28,9 +27,9 @@ gulp.task('jade', function () {
  *  ===================================================================
  */
 gulp.task('less', function () {
-  gulp.src('./less/**/*.less')
+  gulp.src(['./css-build/*.less','./css-build/**/*.less'])
   .pipe(less({
     paths: [ path.join(__dirname, 'less', 'includes') ]
   }))
-  .pipe(gulp.dest('./public/css'));
+  .pipe(gulp.dest('./build/css/'));
 });
