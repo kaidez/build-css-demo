@@ -3,9 +3,9 @@
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
     path = require('path'), // Needed for LESS
-    concat = require('gulp-concat'), //For concatenating stuff
-    watch = require('gulp-watch'),
-    
+    concat = require('gulp-concat'), // For concatenating stuff
+    watch = require('gulp-watch'), // For watching files changes
+
     // Live Reload stuff
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
@@ -53,7 +53,6 @@ gulp.task('less', function () {
   gulp.run('grunt-less');
 });
 
-
 /*
 *  ===================================================================
 *  | START WATCH TASK |
@@ -65,14 +64,16 @@ gulp.task('less', function () {
 
 gulp.task('watch', function () {
 
-  // If preprocesser files change, run the site build, then refresh it
-  // in the browser via live reload
+  /*
+   * If preprocesser files change, run the site build, then refresh it
+   * in the browser via live reload
+   */
   var server = livereload();
   gulp.watch(jadeFiles, ['jade']);
   gulp.watch(lessFiles, ['buildcss']);
   gulp.watch(coffeeFiles, ['coffee']);
   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"],
   function (e) {
-      server.changed(e.path);
+    server.changed(e.path);
   });
 });
