@@ -20,16 +20,3 @@ gulp.task('jade', function () {
   }))
   .pipe(gulp.dest('build'));
 });
-
-/*
- *  ===================================================================
- *  | LESS TASK |
- *  ===================================================================
- */
-gulp.task('less', function () {
-  gulp.src(['./css-build/*.less','./css-build/**/*.less'])
-  .pipe(less({
-    paths: [ path.join(__dirname, 'less', 'includes') ]
-  }))
-  .pipe(gulp.dest('./build/css/'));
-});
