@@ -3,10 +3,15 @@
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
     path = require('path'), // Needed for LESS
-    concat = require('gulp-concat'); //For concatenating stuff
+    concat = require('gulp-concat'), //For concatenating stuff
 
-    // For running grunt tasks through gulp
-    require('gulp-grunt')(gulp);
+    // Live Reload stuff
+    livereload = require('gulp-livereload'),
+    lr = require('tiny-lr'),
+    server = lr();
+
+// For running grunt tasks through gulp
+require('gulp-grunt')(gulp);
 
 /*
  *  ===================================================================
