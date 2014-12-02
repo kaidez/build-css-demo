@@ -38,9 +38,7 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
      * 2. IDs second
      * 3. Classes third
      */
-    ignoreArray = [
-                    "nav"
-                  ];
+    ignoreArray = [];
 
 /*
  *  ===================================================================
@@ -118,11 +116,6 @@ gulp.task("bowerbscss", function () {
 // Copy over jQuery v.1.11.1 only
 gulp.task("bowerjq", function () {
   gulp.run("grunt-bowercopy:jq");
-});
-
-// Copy over scrollNav library only
-gulp.task("bowerscroll", function () {
-  gulp.run("grunt-bowercopy:scrollnav");
 });
 
 /*

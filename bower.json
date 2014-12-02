@@ -16,8 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "latest",
-    "scrollNav": "latest"
+    "bootstrap": "latest"
   },
   "resolutions": {
     "jquery": ">= 1.9.1"

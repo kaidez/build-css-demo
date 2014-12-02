@@ -39,19 +39,7 @@ module.exports = function(grunt) {
         files: {
           'jquery.min.js': 'jquery/dist/jquery.min.js'
         }
-      }, // end "bowercopy:jq" task
-
-      // Copy scrollNav over
-      scrollnav: {
-
-        // copy to the "css-build" directory
-        options: {
-          destPrefix: 'build/js/libs/'
-        },
-        files: {
-          'jquery.scrollNav.min.js': 'scrollNav/dist/jquery.scrollNav.min.js'
-        }
-      }, // end "bowercopy:scrollnav" task
+      } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
     less: {
