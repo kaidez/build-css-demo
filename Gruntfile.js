@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     less: {
       core_build: {
         files: {
-          "build/css/styles.css": "css-build/styles.less"
+          "css-build/styles.css": "css-build/styles.less"
         }
       }
     },

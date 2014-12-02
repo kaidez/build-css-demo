@@ -2,7 +2,10 @@
 
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
-    path = require('path'), // Needed for LESS
+    uncss = require('gulp-uncss'),
+    minifyCSS = require('gulp-minify-css'),
+    concatCss = require('gulp-concat-css'),
+    csslint = require('gulp-csslint'),
     concat = require('gulp-concat'), // For concatenating stuff
     watch = require('gulp-watch'), // For watching files changes
 
@@ -19,9 +22,10 @@ require('gulp-grunt')(gulp);
  *  | STORE PRE-COMPILE FILES IN THEIR OWN VARIABLES |
  *  ===================================================================
  */
-var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade files
-    lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS files
-    coffeeFiles = ["coffee/*.coffee"]; // Coffescript files
+var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
+    lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
+    coffeeFiles = ["coffee/*.coffee"], // Coffescript
+    ignoreArray = [];
 
 /*
  *  ===================================================================
@@ -52,6 +56,23 @@ gulp.task('less', function () {
   gulp.run('grunt-less');
 });
 
+gulp.task('css_build', ['less'], function () {
+  gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
+  .pipe(concatCss("styles.min.css"))
+  .pipe(uncss({
+    html: ['build/index.html'],
+    ignore: ignoreArray
+  })).pipe(minifyCSS({
+    keepBreaks: true
+  })).pipe(gulp.dest('build/css/'))
+  .pipe(csslint({
+    "important": false,
+    "duplicate-background-images": false,
+    "ids": false,
+    "text-indent": false
+  })).pipe(csslint.reporter());
+
+});
 /*
 *  ===================================================================
 *  | START WATCH TASK |
