@@ -6,19 +6,19 @@
  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
-article,footer,header,main,section{display:block}
+footer,header,main{display:block}
 h1{margin:.67em 0}
+img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
-h2{orphans:3;widows:3;page-break-after:avoid}}
+img{page-break-inside:avoid;max-width:100%!important}}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:10px;-webkit-tap-highlight-color:transparent}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
-h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
-h1{font-size:36px}
-h2{font-size:30px}
+img{vertical-align:middle}
+h1{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px;font-size:36px}
 .container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
 @media (min-width:992px){.container{width:970px}}
@@ -35,15 +35,9 @@ to{background-position:0 0}}
 .container:after,.container:before{display:table;content:" "}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
-.headerClass{text-align:center}
-.page{min-height:700px;padding:5px}
-.chelseaHeader{color:#fff}
-.chelsea{background-color:#0a4594}
-.headerClass{font-size:24px}
-@media (min-width:768px){.chelsea{background-color:#fff}
-.headerClass{font-size:36px}}
+.headerClass{text-align:center;font-size:24px}
+@media (min-width:768px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.headerClass{font-size:36px}}
-@media (max-device-width:480px) and (orientation:landscape){.chelsea{background-color:#0a4594}
-.headerClass{font-size:24px}}
+@media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
 @media (max-width:767px){.headerClass{font-size:24px}}
 .container{padding:0}

@@ -28,6 +28,9 @@ require("gulp-grunt")(gulp);
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
     coffeeFiles = ["coffee/*.coffee"], // Coffeescript
+    ignoreArray = [
+                    ".cycle-slide"
+                  ];
 
     /*
      * IGNORE ARRAY
@@ -39,7 +42,9 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
      * 2. IDs second
      * 3. Classes third
      */
-    ignoreArray = [];
+     ignoreArray = [
+     "img.cycle-slide"
+     ];
 
 /*
  *  ===================================================================
