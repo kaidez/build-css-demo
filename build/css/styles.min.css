@@ -28,7 +28,7 @@ to{background-position:0 0}}
 .container:after,.container:before{display:table;content:" "}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
-.page{min-height:700px}
+.page{min-height:700px;padding:5px}
 .chelsea{background-color:#0a4594}
 @media (min-width:768px){.chelsea{background-color:#fff}}
 @media (max-device-width:480px) and (orientation:landscape){.chelsea{background-color:#0a4594}}
