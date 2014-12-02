@@ -92,7 +92,7 @@ gulp.task("buildcss", ["less"], function () {
 *  ===================================================================
 *  | IMAGE MINIFICATION TASK |
 *
-*  Take all images in "imagemin/" & minify them out to "build/img/" 
+*  Take all images in "imagemin/" & minify them out to "build/img/"
 *  ===================================================================
 */
 gulp.task('images', function () {
@@ -128,6 +128,11 @@ gulp.task("bowercopy", function () {
 // Copy over Bootstrap core .css only
 gulp.task("bowerbscss", function () {
   gulp.run("grunt-bowercopy:bscss");
+});
+
+// Copy over jQuery Cycle2 plugin only
+gulp.task("bowercycle", function () {
+  gulp.run("grunt-bowercopy:cycle2");
 });
 
 // Copy over jQuery v.1.11.1 only

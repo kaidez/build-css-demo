@@ -30,6 +30,18 @@ module.exports = function(grunt) {
       }, // end "bowercopy:bscss" task
 
       // Copy jQuery over
+      cycle2: {
+
+        // copy to the "css-build" directory
+        options: {
+          destPrefix: 'build/js/libs/'
+        },
+        files: {
+          'jquery.cycle2.min.js': 'jquery-cycle2/build/jquery.cycle2.min.js'
+        }
+      }, // end "bowercopy:jq" task
+
+      // Copy jQuery over
       jq: {
 
         // copy to the "css-build" directory

@@ -5,8 +5,6 @@ html(lang="en")
     #containerElement.container
       include includes/header.jade
       main
-        section
-          include includes/pageOne.jade
-          include includes/pageTwo.jade
+        div(class="cycle-slideshow" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next")
       include includes/footer.jade
       include includes/scripts.jade

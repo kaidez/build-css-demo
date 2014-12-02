@@ -16,7 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "jquery-cycle2": "~2.1.6"
   },
   "resolutions": {
     "jquery": ">= 1.9.1"
