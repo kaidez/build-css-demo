@@ -7,7 +7,7 @@ h2{orphans:3;widows:3;page-break-after:avoid}}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px;font-size:30px}
-.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
 @media (min-width:992px){.container{width:970px}}
 @media (min-width:1200px){.container{width:1170px}}
@@ -29,3 +29,7 @@ to{background-position:0 0}}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
 .page{min-height:700px}
+.chelsea{background-color:#0a4594}
+@media (min-width:768px){.chelsea{background-color:#fff}}
+@media (max-device-width:480px) and (orientation:landscape){.chelsea{background-color:#0a4594}}
+.container{padding:0}
