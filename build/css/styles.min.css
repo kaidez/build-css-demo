@@ -6,7 +6,7 @@
  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
-article,footer,header,main,section{display:block}
+article,footer,header,main,nav,section{display:block}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
