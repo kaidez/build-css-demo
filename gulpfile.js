@@ -1,6 +1,6 @@
-// Single var pattern in full effect!!!
+// Single var pattern of gulp (require) stuff in full effect!!!
 
-var gulp = require("gulp"), // Define gulp
+var gulp = require("gulp"), // "require" gulp
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css task
     minifyCSS = require("gulp-minify-css"), // Minify CSS
@@ -26,8 +26,21 @@ require("gulp-grunt")(gulp);
  */
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
-    coffeeFiles = ["coffee/*.coffee"], // Coffescript
-    ignoreArray = ["nav"];
+    coffeeFiles = ["coffee/*.coffee"], // Coffeescript
+
+    /*
+     * IGNORE ARRAY
+     * ============
+     * Selectors NOT to be removed when "gulp uncss" task runs.
+     * Try to list them alphabetically and in the following order:
+     *
+     * 1. Page elements first (<nav>, <aside>, etc.)
+     * 2. IDs second
+     * 3. Classes third
+     */
+    ignoreArray = [
+                    "nav"
+                  ];
 
 /*
  *  ===================================================================
