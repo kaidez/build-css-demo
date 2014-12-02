@@ -1,4 +1,4 @@
-// Single var pattern in full effect
+// Single var pattern in full effect!!!
 
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
@@ -14,12 +14,14 @@ var gulp = require('gulp'), // Define gulp
     lr = require('tiny-lr'),
     server = lr();
 
-// For running grunt tasks through gulp
+// End single var pattern
+
+// Needed to run grunt tasks through gulp
 require('gulp-grunt')(gulp);
 
 /*
  *  ===================================================================
- *  | STORE PRE-COMPILE FILES IN THEIR OWN VARIABLES |
+ *  | STORE PREPROCESSOR FILE REFERENCES IN VARIABLES |
  *  ===================================================================
  */
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
@@ -118,7 +120,6 @@ gulp.task('bowerscroll', function () {
  *  computer memory...at least, it does in Grunt.
  *  ===================================================================
  */
-
 gulp.task('watch', function () {
 
   /*

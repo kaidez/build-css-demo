@@ -7,9 +7,11 @@ module.exports = function(grunt) {
     // start "bowercopy" task
     bowercopy: {
 
-      // don't send messages to saying that Bower components aren't
-      // configured...ignore them instead. Also, don't run any bower
-      // tasks when grunt runs this task.
+      /*
+       * don't send messages to saying that Bower components aren't
+       * configured...ignore them instead. Also, don't run any bower
+       * tasks when grunt runs this task.
+       */
       options: {
         ignore: ['gulp', 'jquery'],
         runBower: false
@@ -58,7 +60,7 @@ module.exports = function(grunt) {
           "css-build/styles.css": "css-build/styles.less"
         }
       }
-    },
+    }, // end "less" task
 
     coffee: {
       compile: {
@@ -66,11 +68,11 @@ module.exports = function(grunt) {
           bare: true
         },
         files: {
-          'build/js/main.js': 'coffee/*.coffee' // compile and concat into single file
+          // compile and concat .coffee files to single file
+          'build/js/main.js': 'coffee/*.coffee'
         }
       }
-    }
-
+    } // end "coffee" task
   });
 
   grunt.loadNpmTasks('grunt-contrib-coffee');
