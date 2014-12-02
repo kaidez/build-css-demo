@@ -2,11 +2,11 @@
 
 var gulp = require('gulp'), // Define gulp
     jade = require('gulp-jade'), // Jade task
-    uncss = require('gulp-uncss'),
-    minifyCSS = require('gulp-minify-css'),
-    concatCss = require('gulp-concat-css'),
-    csslint = require('gulp-csslint'),
-    concat = require('gulp-concat'), // For concatenating stuff
+    uncss = require('gulp-uncss'), // Remove unused css task
+    minifyCSS = require('gulp-minify-css'), // Minify CSS
+    concatCss = require('gulp-concat-css'), // Concatenate CSS
+    csslint = require('gulp-csslint'), // Lint CSS
+    concat = require('gulp-concat'), // For concatenating stuff(?)
     watch = require('gulp-watch'), // For watching files changes
 
     // Live Reload stuff
@@ -42,22 +42,22 @@ gulp.task('jade', function () {
 });
 
 /*
-*  ===================================================================
-*  | 'gulp-grunt' TASKS...RUN GRUNT TASKS VIA GULP |
-*  ===================================================================
-*/
-// Run the "grunt coffee" task
-gulp.task('coffee', function () {
-  gulp.run('grunt-coffee');
-});
-
-// Run the "grunt less" task
-gulp.task('less', function () {
-  gulp.run('grunt-less');
-});
-
+ *  ===================================================================
+ *  | CSS BUILD TASK |
+ *
+ * Running "gulp buildcss" performs the following sequence of tasks...
+ *
+ * 1. Runs the "gulp less" task that's passed as a "hint"(*)
+ * 2. Concatenate selected .css files listed in "gulp.src"
+ * 3. Remove unused CSS
+ * 4. Minify CSS
+ * 5. Lint CSS
+ *
+ * (*) gulp "hints" are cool...read more about them at:
+ * https://github.com/gulpjs/gulp/blob/master/docs/API.md
+ *  ===================================================================
+ */
 gulp.task('buildcss', ['less'], function () {
-
   gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
   .pipe(concatCss("styles.min.css"))
   .pipe(uncss({
@@ -72,22 +72,59 @@ gulp.task('buildcss', ['less'], function () {
     "ids": false,
     "text-indent": false
   })).pipe(csslint.reporter());
-
 });
+
 /*
-*  ===================================================================
-*  | START WATCH TASK |
-*
-*  be careful of watching too much because it may eat up computer
-*  memory...at least, it does in Grunt
-*  ===================================================================
-*/
+ *  ===================================================================
+ *  | 'gulp-grunt' TASKS...RUN GRUNT TASKS VIA GULP!!!! |
+ *  ===================================================================
+ */
+// Run the "grunt coffee" task
+gulp.task('coffee', function () {
+  gulp.run('grunt-coffee');
+});
+
+// Run the "grunt less" task
+gulp.task('less', function () {
+  gulp.run('grunt-less');
+});
+
+// BOWERCOPY TASKS
+// Copy over ALL the Bower Components!!!
+gulp.task('bowercopy', function () {
+  gulp.run('grunt-bowercopy');
+});
+
+// Copy over Bootstrap core .css only
+gulp.task('bowerbscss', function () {
+  gulp.run('grunt-bowercopy:bscss');
+});
+
+// Copy over jQuery v.1.11.1 only
+gulp.task('bowerjq', function () {
+  gulp.run('grunt-bowercopy:jq');
+});
+
+// Copy over scrollNav library only
+gulp.task('bowerscroll', function () {
+  gulp.run('grunt-bowercopy:scrollnav');
+});
+
+/*
+ *  ===================================================================
+ *  | START WATCH TASK |
+ *
+ *  Be careful of watching a lot of files because that may eat up
+ *  computer memory...at least, it does in Grunt.
+ *  ===================================================================
+ */
 
 gulp.task('watch', function () {
 
   /*
-   * If preprocesser files change, run the site build, then refresh it
-   * in the browser via livereload
+   * If either preprocesser files or "build/" files change and the site
+   * is currently running in the browser, refresh it in the browser via
+   * livereload.
    */
   var server = livereload();
   gulp.watch(jadeFiles, ['jade']);

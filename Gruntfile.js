@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       },
 
       // Copy Bootstrap CCS over
-      bs: {
+      bscss: {
 
         // copy to the "css-build" directory
         options: {
@@ -25,7 +25,19 @@ module.exports = function(grunt) {
         files: {
           'bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
         }
-      }, // end "bowercopy:bs" task
+      }, // end "bowercopy:bscss" task
+
+      // Copy jQuery over
+      jq: {
+
+        // copy to the "css-build" directory
+        options: {
+          destPrefix: 'build/js/libs/'
+        },
+        files: {
+          'jquery.min.js': 'jquery/dist/jquery.min.js'
+        }
+      }, // end "bowercopy:jq" task
 
       // Copy scrollNav over
       scrollnav: {
@@ -38,18 +50,6 @@ module.exports = function(grunt) {
           'jquery.scrollNav.min.js': 'scrollNav/dist/jquery.scrollNav.min.js'
         }
       }, // end "bowercopy:scrollnav" task
-
-      // Copy jQuery over
-      jq: {
-
-        // copy to the "css-build" directory
-        options: {
-          destPrefix: 'build/js/libs/'
-        },
-        files: {
-          'jquery.min.js': 'jquery/dist/jquery.min.js'
-        }
-      } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
     less: {
