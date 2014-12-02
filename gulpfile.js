@@ -56,7 +56,8 @@ gulp.task('less', function () {
   gulp.run('grunt-less');
 });
 
-gulp.task('css_build', ['less'], function () {
+gulp.task('buildcss', ['less'], function () {
+
   gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
   .pipe(concatCss("styles.min.css"))
   .pipe(uncss({
