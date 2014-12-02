@@ -8,6 +8,7 @@ var gulp = require("gulp"), // "require" gulp
     csslint = require("gulp-csslint"), // Lint CSS
     concat = require("gulp-concat"), // For concatenating stuff(?)
     watch = require("gulp-watch"), // For watching files changes
+    imagemin = require('gulp-imagemin'),
 
     // Live Reload stuff
     livereload = require("gulp-livereload"),
@@ -85,6 +86,22 @@ gulp.task("buildcss", ["less"], function () {
     "ids": false,
     "text-indent": false
   })).pipe(csslint.reporter());
+});
+
+/*
+*  ===================================================================
+*  | IMAGE MINIFICATION TASK |
+*
+*  Take all images in "imagemin/" & minify them out to "build/img/" 
+*  ===================================================================
+*/
+gulp.task('images', function () {
+  return gulp.src('imagemin/*')
+  .pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}]
+  }))
+  .pipe(gulp.dest('build/img'));
 });
 
 /*
