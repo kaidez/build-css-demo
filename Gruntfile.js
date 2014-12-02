@@ -37,7 +37,8 @@ module.exports = function(grunt) {
           destPrefix: 'build/js/libs/'
         },
         files: {
-          'jquery.cycle2.min.js': 'jquery-cycle2/build/jquery.cycle2.min.js'
+          'jquery.cycle2.min.js': 'jquery-cycle2/build/jquery.cycle2.min.js',
+          'jquery.cycle2.swipe.js': 'jquery-cycle2/src/jquery.cycle2.swipe.js'
         }
       }, // end "bowercopy:jq" task
 

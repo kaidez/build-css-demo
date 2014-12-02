@@ -4,7 +4,13 @@ html(lang="en")
   body
     #containerElement.container
       include includes/header.jade
-      main
-        div(class="cycle-slideshow" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next")
+      main.
+          <div class="cycle-slideshow" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next">
+            <div class="cycle-caption"></div>
+            <img src="img/cesc-fabregas.png">
+            <img src="img/cesc-fabregas.png">
+            <img src="img/cesc-fabregas.png">
+            <img src="img/cesc-fabregas.png">
+          </div>
       include includes/footer.jade
       include includes/scripts.jade
