@@ -14,12 +14,13 @@
         <h1 class="well headerClass">Chelsea Player Gallery</h1>
       </header>
       <main>
-        <div class="cycle-slideshow" data-cycle-swipe=true data-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next">
-          <img src="img/cesc-fabregas.png" alt="Cesc">
-          <img src="img/cesc-fabregas.png" alt="Cesc">
-          <img src="img/cesc-fabregas.png" alt="Cesc">
-          <img src="img/cesc-fabregas.png" alt="Cesc">
+        <div class="cycle-slideshow" data-cycle-swipe=true data-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}">
+          <img src="img/cesc-fabregas.png" alt="Cesc Fabregas">
+          <img src="img/didier-drogba.png" alt="Didier Drogba">
+          <img src="img/john-terry.png" alt="John Terry">
+          <img src="img/thibault-courtois.png" alt="Thibault Courtois">
         </div>
+        <div id="alt-caption" class="center"></div>
       </main>
       <footer></footer>
       <script src="js/libs/jquery.min.js"></script>
