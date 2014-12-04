@@ -4,9 +4,15 @@
     "position": "Attacking Midfielder"
   },
   "dDrogba": {
-    "name":"Didier Drogb",
+    "name":"Didier Drogba",
     "position": "Center Forward"
     },
-  "jTerry": "John Terrydfdsafasd",
-  "tCourtois": "Thibault Courtois"
+  "jTerry": {
+    "name":"John Terry",
+    "position": "Center Fullback"
+    },
+  "tCourtois": {
+    "name":"Thibault Courtois",
+    "position": "Goalkeeper"
+  }
 }
