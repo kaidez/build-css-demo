@@ -1,6 +1,12 @@
 {
-  "cFabregas": "Cesc Fabregas",
-  "dDrogba": "Didier Drogba",
+  "cFabregas": {
+    "name":"Cesc Fabregas",
+    "position": "Attacking Midfielder"
+  },
+  "dDrogba": {
+    "name":"Didier Drogb",
+    "position": "Center Forward"
+    },
   "jTerry": "John Terrydfdsafasd",
   "tCourtois": "Thibault Courtois"
 }
