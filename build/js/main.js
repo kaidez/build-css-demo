@@ -10,6 +10,10 @@ $('#chelseaPlayers').on('cycle-before', function(event, optionHash, outgoingSlid
   return console.log($targetEl);
 });
 
-playersInfo = $.getJSON("js/playersInfo.json", function() {
-  return console.log("yup");
+playersInfo = $.getJSON("js/playersInfo.json", function(data) {
+  var items;
+  items = [];
+  return $.each(data, function(key, val) {
+    return console.log(key, val);
+  });
 });
