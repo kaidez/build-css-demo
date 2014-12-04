@@ -55,6 +55,7 @@ module.exports = function(grunt) {
       } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
+    // end "less" task
     less: {
       core_build: {
         files: {
@@ -64,6 +65,7 @@ module.exports = function(grunt) {
       }
     }, // end "less" task
 
+    // start "coffee" task
     coffee: {
       compile: {
         options: {
@@ -74,11 +76,19 @@ module.exports = function(grunt) {
           'build/js/main.js': 'coffee/*.coffee'
         }
       }
-    } // end "coffee" task
+    }, // end "coffee" task
+
+    // start "jsonlint" task
+    jsonlint: {
+      production_build: {
+        src: [ 'build/js/playersInfo.json' ]
+      }
+    } // end "jsonlint" task
   });
 
+  grunt.loadNpmTasks('grunt-bowercopy');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-bowercopy');
+  grunt.loadNpmTasks('grunt-jsonlint');
 
 };
