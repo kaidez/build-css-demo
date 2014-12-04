@@ -8,11 +8,11 @@ Stop those pain-in-the-ass console statements that Cycle2 fires off
  */
 var playersInfo;
 
-$('.cycle-slideshow').cycle({
+$(".cycle-slideshow").cycle({
   log: false
 });
 
-$('#chelseaPlayers').on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+$("#chelseaPlayers").on("cycle-before", function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
   var $targetEl;
   $targetEl = $(incomingSlideEl).attr("id");
   return console.log($targetEl);
