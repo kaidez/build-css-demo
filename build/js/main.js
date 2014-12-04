@@ -7,8 +7,8 @@ $( '#chelseaPlayers' ).on( 'cycle-before', function(event, optionHash, outgoingS
   console.log($targetEl)
 });
 ;
-var jqxhr;
+var playersInfo;
 
-jqxhr = $.getJSON("js/playersInfo.json", function() {
+playersInfo = $.getJSON("js/playersInfo.json", function() {
   return console.log("yup");
 });
