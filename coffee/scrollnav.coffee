@@ -10,7 +10,7 @@ $( ".cycle-slideshow" ).cycle
 
 
 $( "#chelseaPlayers" ).on "cycle-before", ( event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) ->
-  $targetEl = $(incomingSlideEl).attr "id"
+  $targetEl = $( incomingSlideEl ).attr "id"
   console.log $targetEl
 
 
