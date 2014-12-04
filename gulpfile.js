@@ -114,14 +114,19 @@ gulp.task('images', function () {
  *  | "gulp-grunt" TASKS...RUN GRUNT TASKS VIA GULP!!!! |
  *  ===================================================================
  */
-// Run the "grunt coffee" task
-gulp.task("coffee", function () {
-  gulp.run("grunt-coffee");
-});
-
 // Run the "grunt less" task
 gulp.task("less", function () {
   gulp.run("grunt-less");
+});
+
+// Run the "grunt jsonlint" task
+gulp.task("jsonlint", function () {
+  gulp.run("grunt-jsonlint");
+});
+
+// Run the "grunt coffee" task
+gulp.task("coffee", function () {
+  gulp.run("grunt-coffee");
 });
 
 // BOWERCOPY TASKS
