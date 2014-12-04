@@ -6,3 +6,5 @@ http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-fir
   console.log($targetEl)
 });
 `
+jqxhr = $.getJSON "js/playersInfo.json", ()->
+  console.log "yup"
