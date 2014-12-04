@@ -2,14 +2,6 @@
 /*
 http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-firing
  */
-
-/*
-Stop those pain-in-the-ass console statements that Cycle2 fires off
- */
-$(".cycle-slideshow").cycle({
-  log: false
-});
-
 var playerData = {
     "tCourtois": {
       "name":"Thibault Courtois",
@@ -58,3 +50,10 @@ var setInfo = function() {
     });
   });
 };;
+
+/*
+Stop those pain-in-the-ass console statements that Cycle2 fires off
+ */
+$(".cycle-slideshow").cycle({
+  log: false
+});
