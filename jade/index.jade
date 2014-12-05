@@ -5,11 +5,19 @@ html(lang="en")
     #containerElement.container
       include includes/header.jade
       main.
-          <div id="chelseaPlayers" class="cycle-slideshow" data-cycle-swipe=true data-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}" data-log=false>
-            <img id="cFabregas" src="img/cesc-fabregas.png" alt="Cesc Fabregas" class="first">
-            <img id="dDrogba" src="img/didier-drogba.png" alt="Didier Drogba">
-            <img id="jTerry" src="img/john-terry.png" alt="John Terry">
-            <img id="tCourtois" src="img/thibault-courtois.png" alt="Thibault Courtois">
+          <div id="chelseaPlayers" class="cycle-slideshow" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-timeout=0 data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> div">
+            <div>
+              <img id="cFabregas" src="img/cesc-fabregas.png" alt="Cesc Fabregas" class="first playerImage"></div>
+            <div>
+              <img id="dDrogba" class="playerImage" src="img/didier-drogba.png" alt="Didier Drogba"></div>
+            <div>
+              <img id="jTerry" class="playerImage" src="img/john-terry.png" alt="John Terry"></div>
+            <div>
+              <img id="tCourtois" class="playerImage" src="img/thibault-courtois.png" alt="Thibault Courtois"></div>
+          </div>
+          <div class="center">
+            <a href=# id="prev">Prev</a>
+            <a href=# id="next">Next</a>
           </div>
           <div id="alt-caption" class="center"></div>
       include includes/footer.jade

@@ -77,8 +77,8 @@ gulp.task("jade", function () {
  * https://github.com/gulpjs/gulp/blob/master/docs/API.md
  *  ===================================================================
  */
-gulp.task("buildcss", ["less"], function () {
-  gulp.src(lessFiles)
+gulp.task("buildcss", ['less'],function () {
+  gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
   .pipe(concatCss("styles.min.css"))
   .pipe(uncss({
     html: ["build/index.html"],
@@ -91,7 +91,8 @@ gulp.task("buildcss", ["less"], function () {
     "duplicate-background-images": false,
     "ids": false,
     "text-indent": false
-  })).pipe(csslint.reporter());
+  }))
+  .pipe(csslint.reporter());
 });
 
 /*
@@ -117,7 +118,7 @@ gulp.task('images', function () {
  */
 // Run the "grunt less" task
 gulp.task("less", function () {
-  gulp.run("grunt-less");
+  gulp.run("grunt-shell");
 });
 
 // Run the "grunt jsonlint" task

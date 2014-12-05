@@ -5,6 +5,10 @@
   min-height: 700px;
   padding: 5px;
 }
+.playerImage {
+  position: relative;
+  right: 63px;
+}
 .chelsea {
   background-color: #0a4594;
 }
