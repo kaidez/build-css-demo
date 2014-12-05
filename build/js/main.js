@@ -2,7 +2,10 @@
 /*
 http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-firing
  */
-var playerData = {
+(function(){
+
+
+  var playerData = {
     "tCourtois": {
       "name":"Thibault Courtois",
       "position": "Goalkeeper"
@@ -18,16 +21,9 @@ var playerData = {
   "jTerry": {
     "name":"John Terry",
     "position": "Center Fullback"
-    },
-}
+    }
+  }
 
-
-$("#chelseaPlayers").on("cycle-before", function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
-
-  var $targetEl = $(incomingSlideEl).attr("id");
-  console.log(playerData);
-  console.log($targetEl);
-});
 
 
 
@@ -49,7 +45,8 @@ var setInfo = function() {
       return this;
     });
   });
-};;
+};
+  })();;
 
 /*
 Stop those pain-in-the-ass console statements that Cycle2 fires off
