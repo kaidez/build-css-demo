@@ -12,12 +12,36 @@
 .headerClass {
   font-size: 24px;
 }
+.player-container-image-courtois {
+  width: 196px;
+  height: 196px;
+  margin: 0;
+  float: left;
+  background: url('../img/courtois_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
+.player-container-image-drogba {
+  width: 196px;
+  height: 196px;
+  margin: 0;
+  float: left;
+  background: url('../img/drogba_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
 .player-container-image-fabregas {
   width: 196px;
   height: 196px;
   margin: 0;
   float: left;
   background: url('../img/fabregas_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
+.player-container-image-terry {
+  width: 196px;
+  height: 196px;
+  margin: 0;
+  float: left;
+  background: url('../img/terry_tn.png') no-repeat 0 0;
   background-size: 196px 196px;
 }
 @media (min-width: 768px) {
