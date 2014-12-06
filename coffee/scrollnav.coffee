@@ -28,6 +28,7 @@ setPlayer = do ->
     playerName = document.createElement "h3"
     playerPosition = document.createElement "div"
     playerName.innerText = playerData[key].name
+    playerName.setAttribute "class", "player-name"
     playerPosition.innerText = playerData[key].position
     frag.appendChild playerName
     frag.appendChild playerPosition

@@ -24,7 +24,7 @@ a{color:#337ab7;text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
 a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
 h1{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px;font-size:36px}
-.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
 @media (min-width:992px){.container{width:970px}}
 @media (min-width:1200px){.container{width:1170px}}
@@ -40,3 +40,9 @@ to{background-position:0 0}}
 .container:after,.container:before{display:table;content:" "}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
+.headerClass{text-align:center;font-size:24px}
+@media (min-width:768px){.headerClass{font-size:36px}}
+@media (min-width:1200px){.headerClass{font-size:36px}}
+@media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
+@media (max-width:767px){.headerClass{font-size:24px}}
+.container{padding:0}
