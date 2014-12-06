@@ -1,8 +1,17 @@
 
 /*
-http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-firing
+Stop those pain-in-the-ass console statements that Cycle2 fires off
  */
 var setPlayer;
+
+$(".cycle-slideshow").cycle({
+  log: false
+});
+
+
+/*
+Function for building out player pages
+ */
 
 setPlayer = (function() {
   var frag, key, playerData, playerName, playerPosition, targetEl, targetID;
@@ -38,12 +47,3 @@ setPlayer = (function() {
     $(frag).appendTo(targetEl);
   }
 })();
-
-
-/*
-Stop those pain-in-the-ass console statements that Cycle2 fires off
- */
-
-$(".cycle-slideshow").cycle({
-  log: false
-});
