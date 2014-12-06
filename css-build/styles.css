@@ -1,3 +1,7 @@
+.player-width-mobile {
+  width: 196px;
+  height: 196px;
+}
 .headerClass {
   text-align: center;
 }
@@ -8,14 +12,13 @@
 .headerClass {
   font-size: 24px;
 }
-.player-container-image-drogba {
-  height: 60px;
-  width: 176px;
+.player-container-image-fabregas {
+  width: 196px;
+  height: 196px;
   margin: 0;
   float: left;
-  background: url('../img/cesc-fabregas_tn.png') no-repeat 0 -107px;
-  background-size: 227px 334px;
-  text-indent: -999px;
+  background: url('../img/cesc-fabregas_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
 }
 @media (min-width: 768px) {
   .chelsea {
