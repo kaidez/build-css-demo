@@ -14,7 +14,7 @@ Function for building out player pages
  */
 
 setPlayer = (function() {
-  var frag, key, playerData, playerName, playerPosition, targetEl, targetID;
+  var frag, key, playerData, playerName, playerNumber, playerPosition, targetEl, targetID;
   frag = document.createDocumentFragment();
   playerData = {
     "courtois": {
@@ -42,12 +42,15 @@ setPlayer = (function() {
     targetID = "#" + key;
     targetEl = $(targetID);
     playerName = document.createElement("h3");
-    playerPosition = document.createElement("div");
+    playerPosition = document.createElement("p");
+    playerNumber = document.createElement("p");
     playerName.innerText = playerData[key].name;
     playerName.setAttribute("class", "player-name");
     playerPosition.innerText = playerData[key].position;
+    playerNumber.innerText = playerData[key].number;
     frag.appendChild(playerName);
     frag.appendChild(playerPosition);
+    frag.appendChild(playerNumber);
     $(frag).appendTo(targetEl);
   }
 })();

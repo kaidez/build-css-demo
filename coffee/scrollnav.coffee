@@ -36,11 +36,14 @@ setPlayer = do ->
     targetID = "#" + key
     targetEl = $(targetID)
     playerName = document.createElement "h3"
-    playerPosition = document.createElement "div"
+    playerPosition = document.createElement "p"
+    playerNumber = document.createElement "p"
     playerName.innerText = playerData[key].name
     playerName.setAttribute "class", "player-name"
     playerPosition.innerText = playerData[key].position
+    playerNumber.innerText = playerData[key].number
     frag.appendChild playerName
     frag.appendChild playerPosition
+    frag.appendChild playerNumber
     $(frag).appendTo targetEl
   return
