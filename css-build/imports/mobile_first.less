@@ -3,11 +3,17 @@
 }
 
 // Cesc styles
-.player-container-image-fabregas {
-  .player-width-mobile;
-  margin: 0;
-  float: left;
+@players: @courtois, @drogba, @fabregas, @terry;
+.player-container-image {
+  .for(@players); .-each(@player) {
+    @name: e(@player);
+    &-@{name} {
+      .player-width-mobile;
+      margin: 0;
+      float: left;
 
-  background: url('../img/@{fabregas}_tn.png') no-repeat 0 0;
-  background-size: 196px 196px;
+      background: url('../img/@{name}_tn.png') no-repeat 0 0;
+      background-size: 196px 196px;
+    }
+  }
 }
