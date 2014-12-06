@@ -15,34 +15,6 @@
 .player-container {
   padding-top: 170px;
 }
-/*
- * Dynamically build player image thumbnail css classes
- * Learn more at: http://bit.ly/12tpr20
- */
-.player-container-bgimage-courtois {
-  width: 196px;
-  height: 196px;
-  background: url('../img/courtois_tn.png') no-repeat 0 0;
-  background-size: 196px 196px;
-}
-.player-container-bgimage-drogba {
-  width: 196px;
-  height: 196px;
-  background: url('../img/drogba_tn.png') no-repeat 0 0;
-  background-size: 196px 196px;
-}
-.player-container-bgimage-fabregas {
-  width: 196px;
-  height: 196px;
-  background: url('../img/fabregas_tn.png') no-repeat 0 0;
-  background-size: 196px 196px;
-}
-.player-container-bgimage-terry {
-  width: 196px;
-  height: 196px;
-  background: url('../img/terry_tn.png') no-repeat 0 0;
-  background-size: 196px 196px;
-}
 @media (min-width: 768px) {
   .chelsea {
     background-color: #fff;

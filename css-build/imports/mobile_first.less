@@ -5,20 +5,3 @@
 .player-container {
   padding-top: 170px;
 }
-
-/*
- * Dynamically build player image thumbnail css classes
- * Learn more at: http://bit.ly/12tpr20
- */
-@players: @courtois, @drogba, @fabregas, @terry;
-.player-container-bgimage {
-  .for(@players); .-each(@player) {
-    @name: e(@player);
-    &-@{name} {
-      .player-width-mobile;
-
-      background: url('../img/@{name}_tn.png') no-repeat 0 0;
-      background-size: 196px 196px;
-    }
-  }
-}
