@@ -1,57 +1,58 @@
 ###
 http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-firing
 ###
-`(function(){
-
-
-  var playerData = {
+setPlayer = do ->
+  frag = document.createDocumentFragment()
+  playerData = {
     "tCourtois": {
-      "name":"Thibault Courtois",
+      "name":"Thibault Courtois"
       "position": "Goalkeeper"
     },
     "cFabregas": {
-    "name":"Cesc Fabregas",
-    "position": "Attacking Midfielder"
-  },
-  "dDrogba": {
-    "name":"Didier Drogba",
-    "position": "Center Forward"
+      "name":"Cesc Fabregas"
+      "position": "Attacking Midfielder"
     },
-  "jTerry": {
-    "name":"John Terry",
-    "position": "Center Fullback"
+    "dDrogba": {
+      "name":"Didier Drogba"
+      "position": "Center Forward"
+    },
+   "jTerry": {
+      "name":"John Terry"
+      "position": "Center Fullback"
     }
   }
 
-
-
-
-var setInfo = function() {
-  var playersInfo = $.getJSON("js/playersInfo.json", function(data) {
-    $.each(data, function(key, val) {
-      var allInfo, allInfoName, allInfoPosition, frag;
-      frag = document.createDocumentFragment();
-      allInfo = document.createElement("article");
-      allInfoName = document.createElement("h3");
-      allInfoPosition = document.createElement("div");
-      allInfo.setAttribute("id", key);
-      allInfoName.innerHTML = this.name;
-      allInfoPosition.innerHTML = this.position;
-      allInfo.appendChild(allInfoName);
-      allInfo.appendChild(allInfoPosition);
-      frag.appendChild(allInfo);
-      frag;
-      return this;
-    });
-  });
-};
-  })();`
-
+  for key of playerData
+    playerName = document.createElement "h3"
+  return
 ###
 Stop those pain-in-the-ass console statements that Cycle2 fires off
 ###
 $( ".cycle-slideshow" ).cycle
   log: false
+
+# var setInfo = function() {
+#   var playersInfo = $.getJSON("js/playersInfo.json", function(data) {
+#     $.each(data, function(key, val) {
+#       var allInfo, allInfoName, allInfoPosition, frag;
+#       frag = document.createDocumentFragment();
+#       allInfo = document.createElement("article");
+#       allInfoName = document.createElement("h3");
+#       allInfoPosition = document.createElement("div");
+#       allInfo.setAttribute("id", key);
+#       allInfoName.innerHTML = this.name;
+#       allInfoPosition.innerHTML = this.position;
+#       allInfo.appendChild(allInfoName);
+#       allInfo.appendChild(allInfoPosition);
+#       frag.appendChild(allInfo);
+#       frag;
+#       return this;
+#     });
+#   });
+# };
+#   })();
+
+
 
 # setInfo = () ->
 #   playersInfo = $.getJSON "js/playersInfo.json", ( data ) ->
