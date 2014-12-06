@@ -41,6 +41,7 @@ to{background-position:0 0}}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
 .headerClass{text-align:center;font-size:24px}
+.player-container{padding-top:170px}
 .player-container-bgimage-courtois{width:196px;height:196px;background:url(../img/courtois_tn.png) 0 0/196px 196px no-repeat}
 .player-container-bgimage-drogba{width:196px;height:196px;background:url(../img/drogba_tn.png) 0 0/196px 196px no-repeat}
 .player-container-bgimage-fabregas{width:196px;height:196px;background:url(../img/fabregas_tn.png) 0 0/196px 196px no-repeat}
