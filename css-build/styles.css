@@ -1,6 +1,11 @@
 .player-width-mobile {
   width: 196px;
-  height: 196px;
+}
+.hideElement {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 .headerClass {
   text-align: center;
