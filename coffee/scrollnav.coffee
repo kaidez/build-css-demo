@@ -13,18 +13,22 @@ setPlayer = do ->
     "courtois": {
       "name":"Thibault Courtois"
       "position": "Goalkeeper"
+      "number": "1"
     },
     "fabregas": {
       "name":"Cesc Fabregas"
       "position": "Attacking Midfielder"
+      "number": "4"
     },
     "drogba": {
       "name":"Didier Drogba"
       "position": "Center Forward"
+      "number": "11"
     },
    "terry": {
       "name":"John Terry"
       "position": "Center Fullback"
+      "number": "26"
     }
   }
 

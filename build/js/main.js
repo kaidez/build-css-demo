@@ -19,19 +19,23 @@ setPlayer = (function() {
   playerData = {
     "courtois": {
       "name": "Thibault Courtois",
-      "position": "Goalkeeper"
+      "position": "Goalkeeper",
+      "number": "1"
     },
     "fabregas": {
       "name": "Cesc Fabregas",
-      "position": "Attacking Midfielder"
+      "position": "Attacking Midfielder",
+      "number": "4"
     },
     "drogba": {
       "name": "Didier Drogba",
-      "position": "Center Forward"
+      "position": "Center Forward",
+      "number": "11"
     },
     "terry": {
       "name": "John Terry",
-      "position": "Center Fullback"
+      "position": "Center Fullback",
+      "number": "26"
     }
   };
   for (key in playerData) {
