@@ -9,10 +9,11 @@
 .player-container {
   padding-top: 165px;
   min-height: 267px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 22px;
   text-align: center;
 }
 .player-name {
-  font-family: 'Francois One', sans-serif;
   font-size: 22px;
   text-transform: uppercase;
 }

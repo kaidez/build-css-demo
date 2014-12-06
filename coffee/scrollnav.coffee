@@ -41,7 +41,7 @@ setPlayer = do ->
     playerName.innerText = playerData[key].name
     playerName.setAttribute "class", "player-name"
     playerPosition.innerText = playerData[key].position
-    playerNumber.innerText = playerData[key].number
+    playerNumber.innerText = "#" + playerData[key].number
     frag.appendChild playerName
     frag.appendChild playerPosition
     frag.appendChild playerNumber
