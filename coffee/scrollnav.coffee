@@ -3,7 +3,6 @@ http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-fir
 ###
 setPlayer = do ->
   frag = document.createDocumentFragment()
-  target = document.getElementById "cFabregas"
   playerData = {
     "courtois": {
       "name":"Thibault Courtois"
@@ -24,11 +23,15 @@ setPlayer = do ->
   }
 
   for key of playerData
+    targetID = "#" + key
+    targetEl = $(targetID)
     playerName = document.createElement "h3"
     playerPosition = document.createElement "div"
+    playerName.innerText = playerData[key].name
+    playerPosition.innerText = playerData[key].position
     frag.appendChild playerName
     frag.appendChild playerPosition
-    target.appendChild frag
+    $(frag).appendTo targetEl
   return
 ###
 Stop those pain-in-the-ass console statements that Cycle2 fires off

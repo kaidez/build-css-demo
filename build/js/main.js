@@ -5,9 +5,8 @@ http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-fir
 var setPlayer;
 
 setPlayer = (function() {
-  var frag, key, playerData, playerName, playerPosition, target;
+  var frag, key, playerData, playerName, playerPosition, targetEl, targetID;
   frag = document.createDocumentFragment();
-  target = document.getElementById("cFabregas");
   playerData = {
     "courtois": {
       "name": "Thibault Courtois",
@@ -27,11 +26,15 @@ setPlayer = (function() {
     }
   };
   for (key in playerData) {
+    targetID = "#" + key;
+    targetEl = $(targetID);
     playerName = document.createElement("h3");
     playerPosition = document.createElement("div");
+    playerName.innerText = playerData[key].name;
+    playerPosition.innerText = playerData[key].position;
     frag.appendChild(playerName);
     frag.appendChild(playerPosition);
-    target.appendChild(frag);
+    $(frag).appendTo(targetEl);
   }
 })();
 
