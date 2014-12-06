@@ -6,7 +6,7 @@
  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
-footer,header,main{display:block}
+article,footer,header,main,section{display:block}
 a{background-color:transparent}
 a:active,a:hover{outline:0}
 h1{margin:.67em 0}
@@ -43,9 +43,7 @@ to{background-position:0 0}}
 .container:after,.container:before{display:table;content:" "}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
-.headerClass{text-align:center}
-.playerImage{position:relative;right:63px}
-.headerClass{font-size:24px}
+.headerClass{text-align:center;font-size:24px}
 @media (min-width:768px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.headerClass{font-size:36px}}
 @media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}

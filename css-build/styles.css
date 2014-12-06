@@ -5,15 +5,17 @@
   min-height: 700px;
   padding: 5px;
 }
-.playerImage {
-  position: relative;
-  right: 63px;
-}
-.chelsea {
-  background-color: #0a4594;
-}
 .headerClass {
   font-size: 24px;
+}
+.player-container-image-drogba {
+  height: 60px;
+  width: 176px;
+  margin: 0;
+  float: left;
+  background: url('../img/cesc-fabregas_tn.png') no-repeat 0 -107px;
+  background-size: 227px 334px;
+  text-indent: -999px;
 }
 @media (min-width: 768px) {
   .chelsea {
@@ -29,9 +31,6 @@
   }
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
-  .chelsea {
-    background-color: #0a4594;
-  }
   .headerClass {
     font-size: 24px;
   }
