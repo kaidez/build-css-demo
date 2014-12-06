@@ -41,7 +41,7 @@ to{background-position:0 0}}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
 .headerClass{text-align:center;font-size:24px}
-.player-container-image-fabregas{width:196px;height:196px;margin:0;float:left;background:url(../img/cesc-fabregas_tn.png) 0 0/196px 196px no-repeat}
+.player-container-image-fabregas{width:196px;height:196px;margin:0;float:left;background:url(../img/fabregas_tn.png) 0 0/196px 196px no-repeat}
 @media (min-width:768px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.headerClass{font-size:36px}}
 @media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
