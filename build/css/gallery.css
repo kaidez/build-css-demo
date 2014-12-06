@@ -6,6 +6,9 @@
   max-width: 196px;
   margin: 0 auto;
 }
+.player-container {
+  padding-top: 170px;
+}
 /*
 * Dynamically build player image thumbnail css classes
 * Learn more at: http://bit.ly/12tpr20
