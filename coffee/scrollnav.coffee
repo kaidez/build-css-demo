@@ -4,19 +4,19 @@ http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-fir
 setPlayer = do ->
   frag = document.createDocumentFragment()
   playerData = {
-    "tCourtois": {
+    "courtois": {
       "name":"Thibault Courtois"
       "position": "Goalkeeper"
     },
-    "cFabregas": {
+    "fabregas": {
       "name":"Cesc Fabregas"
       "position": "Attacking Midfielder"
     },
-    "dDrogba": {
+    "drogba": {
       "name":"Didier Drogba"
       "position": "Center Forward"
     },
-   "jTerry": {
+   "terry": {
       "name":"John Terry"
       "position": "Center Fullback"
     }
@@ -24,6 +24,7 @@ setPlayer = do ->
 
   for key of playerData
     playerName = document.createElement "h3"
+    playerPosition = document.createElement "div"
   return
 ###
 Stop those pain-in-the-ass console statements that Cycle2 fires off
