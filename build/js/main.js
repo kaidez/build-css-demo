@@ -5,28 +5,29 @@ http://stackoverflow.com/questions/16734068/cycle2-initialization-events-not-fir
 var setPlayer;
 
 setPlayer = (function() {
-  var frag, key, playerData, playerName;
+  var frag, key, playerData, playerName, playerPosition;
   frag = document.createDocumentFragment();
   playerData = {
-    "tCourtois": {
+    "courtois": {
       "name": "Thibault Courtois",
       "position": "Goalkeeper"
     },
-    "cFabregas": {
+    "fabregas": {
       "name": "Cesc Fabregas",
       "position": "Attacking Midfielder"
     },
-    "dDrogba": {
+    "drogba": {
       "name": "Didier Drogba",
       "position": "Center Forward"
     },
-    "jTerry": {
+    "terry": {
       "name": "John Terry",
       "position": "Center Fullback"
     }
   };
   for (key in playerData) {
     playerName = document.createElement("h3");
+    playerPosition = document.createElement("div");
   }
 })();
 
