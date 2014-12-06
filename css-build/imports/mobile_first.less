@@ -2,7 +2,10 @@
   font-size:24px;
 }
 
-// Cesc styles
+/*
+ * Dynamically build player image thumbnail css classes
+ * Learn more at: http://bit.ly/12tpr20
+ */
 @players: @courtois, @drogba, @fabregas, @terry;
 .player-container-image {
   .for(@players); .-each(@player) {

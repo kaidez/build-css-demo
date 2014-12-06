@@ -12,6 +12,10 @@
 .headerClass {
   font-size: 24px;
 }
+/*
+ * Dynamically build player image thumbnail css classes
+ * Learn more at: http://bit.ly/12tpr20
+ */
 .player-container-image-courtois {
   width: 196px;
   height: 196px;
