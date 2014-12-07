@@ -2,55 +2,49 @@
 /*
 Stop those pain-in-the-ass console statements that Cycle2 fires off
  */
-var setPlayer;
-
 $(".cycle-slideshow").cycle({
   log: false
 });
 
-
-/*
-Function for building out player pages
- */
-
-setPlayer = (function() {
-  var frag, key, playerData, playerName, playerNumber, playerPosition, targetEl, targetID;
-  frag = document.createDocumentFragment();
-  playerData = {
-    "courtois": {
-      "name": "Thibault Courtois",
-      "position": "Goalkeeper",
-      "number": "1"
-    },
-    "fabregas": {
-      "name": "Cesc Fabregas",
-      "position": "Attacking Midfielder",
-      "number": "4"
-    },
-    "drogba": {
-      "name": "Didier Drogba",
-      "position": "Center Forward",
-      "number": "11"
-    },
-    "terry": {
-      "name": "John Terry",
-      "position": "Center Fullback",
-      "number": "26"
-    }
-  };
-  for (key in playerData) {
-    targetID = "#" + key;
-    targetEl = $(targetID);
-    playerName = document.createElement("h3");
-    playerPosition = document.createElement("p");
-    playerNumber = document.createElement("p");
-    playerName.innerText = playerData[key].name;
-    playerName.setAttribute("class", "player-name");
-    playerPosition.innerText = playerData[key].position;
-    playerNumber.innerText = "#" + playerData[key].number;
-    frag.appendChild(playerName);
-    frag.appendChild(playerPosition);
-    frag.appendChild(playerNumber);
-    $(frag).appendTo(targetEl);
+var teams = {
+  "chelsea": [
+  {
+    "name": "Didier Droga",
+    "position": "Center Forward"
+  },
+  {
+    "name": "Thibault Courtois",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Cesc Fabregas",
+    "position": "Attacking Midfielder"
   }
-})();
+  ],
+  "real_madrid": [
+  {
+    "name": "Cristiano Ronaldo",
+    "position": "Center Forward"
+  },
+  {
+    "name": "Sergios Ramos",
+    "position": "Center Fullback"
+  },
+  {
+    "name": "Iker Casisillas",
+    "position": "Stuff about Brownies"
+  }
+  ]
+};
+;
+
+(function(){
+for(var category in teams) {
+  if(teams.hasOwnProperty(category)) {
+    console.log(category)
+      for (var i = 0, j = teams[category].length; i < j; i++) {
+      console.log( teams[category][i].name );
+    }
+  }
+}
+})();;
