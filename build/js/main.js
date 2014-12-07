@@ -21,7 +21,7 @@ var teams = {
     "position": "Attacking Midfielder"
   }
   ],
-  "real_madrid": [
+  "real-madrid": [
   {
     "name": "Cristiano Ronaldo",
     "position": "Center Forward"
