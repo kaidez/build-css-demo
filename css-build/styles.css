@@ -13,6 +13,7 @@
 .page {
   min-height: 700px;
   padding: 5px;
+  font-family: 'Francois One', sans-serif;
 }
 .headerClass {
   font-size: 24px;
