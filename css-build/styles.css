@@ -21,6 +21,9 @@ body,
 .gl-container {
   height: 100%;
 }
+.g-cycle-link {
+  text-align: center;
+}
 .gl-headerClass,
 .gl-team-header {
   text-align: center;
