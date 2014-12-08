@@ -40,6 +40,10 @@ body,
   .headerClass {
     font-size: 36px;
   }
+  .center {
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
+  }
 }
 @media (min-width: 992px) {
   .headerClass {
@@ -59,9 +63,25 @@ body,
     box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(212, 210, 210, 0.8), -12px 0 15px -4px rgba(212, 210, 210, 0.8);
   }
 }
+@media screen and (max-width: 767px) {
+  .center {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
 @media (max-device-width: 480px) and (orientation: landscape) {
   .headerClass {
     font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
