@@ -29,7 +29,6 @@ require("gulp-grunt")(gulp);
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
     coffeeFiles = ["coffee/*.coffee"], // Coffeescript
-    jsonFile = "build/js/playersInfo.json", // JSON files
     ignoreArray = [
                     ".cycle-slide"
                   ];
@@ -177,7 +176,7 @@ gulp.task("watch", function () {
   gulp.watch(lessFiles, ["buildcss"]);
   gulp.watch(coffeeFiles, ["coffee"]);
   gulp.watch(jsonFile, ["jsonlint"]);
-  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js", "build/js/*.json"],
+  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"],
   function (e) {
     server.changed(e.path);
   });

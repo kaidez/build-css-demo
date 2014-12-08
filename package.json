@@ -21,7 +21,6 @@
     "grunt-bowercopy": "^1.2.0",
     "grunt-contrib-coffee": "^0.12.0",
     "grunt-contrib-less": "^0.12.0",
-    "grunt-jsonlint": "^1.0.4",
     "grunt-shell": "^1.1.1",
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^2.0.0",

@@ -82,14 +82,6 @@ module.exports = function(grunt) {
       }
     }, // end "coffee" task
 
-    // start "jsonlint" task
-    jsonlint: {
-      production_build: {
-        src: [ 'build/js/playersInfo.json' ]
-      }
-    }, // end "jsonlint" task
-
-
     shell: {
       lessCoreBuild: {
         command: 'lessc css-build/styles.less > css-build/styles.css'
@@ -103,7 +95,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bowercopy');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-jsonlint');
   grunt.loadNpmTasks('grunt-shell');
 
 };
