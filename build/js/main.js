@@ -1,17 +1,10 @@
 
-/*
-Stop those pain-in-the-ass console statements that Cycle2 fires off
- */
-var setPlayer;
-
-$(".cycle-slideshow").cycle({
-  log: false
-});
 
 
 /*
 Function for building out player pages
  */
+var setPlayer;
 
 setPlayer = (function() {
   var frag, key, playerData, playerName, playerNumber, playerPosition, targetEl, targetID;

@@ -73,7 +73,11 @@ module.exports = function(grunt) {
         },
         files: {
           // compile and concat .coffee files to single file
-          'build/js/main.js': 'coffee/*.coffee'
+          'build/js/main.js': [
+                                'coffee/common.coffee',
+                                'coffee/scrollNav.coffee',
+                                'coffee/players.coffee'
+                              ]
         }
       }
     }, // end "coffee" task
