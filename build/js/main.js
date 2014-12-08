@@ -36,6 +36,26 @@ setPlayer = (function() {
       "name": "John Terry",
       "position": "Center Fullback",
       "number": "26"
+    },
+    "casillas": {
+      "name": "Iker Casillas",
+      "position": "Goalkeeper",
+      "number": "1"
+    },
+    "ramos": {
+      "name": "Sergio Ramos",
+      "position": "Center Fullback",
+      "number": "4"
+    },
+    "bale": {
+      "name": "Gareth Bale",
+      "position": "Winger",
+      "number": "4"
+    },
+    "ronaldo": {
+      "name": "Cristiano Ronaldo",
+      "position": "Center Forward",
+      "number": "7"
     }
   };
   for (key in playerData) {
