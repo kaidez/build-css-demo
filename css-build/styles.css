@@ -10,6 +10,11 @@
 .container {
   padding: 0;
 }
+html,
+body,
+.gl-container {
+  height: 100%;
+}
 .gl-headerClass,
 .gl-team-header {
   text-align: center;
