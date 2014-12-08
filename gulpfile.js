@@ -2,13 +2,14 @@
 
 var gulp = require("gulp"), // "require" gulp
     jade = require("gulp-jade"), // Jade task
-    uncss = require("gulp-uncss"), // Remove unused css task
+    uncss = require("gulp-uncss"), // Remove unused css selectors
     minifyCSS = require("gulp-minify-css"), // Minify CSS
-    concatCss = require("gulp-concat-css"), // Concatenate CSS
+    concatCss = require("gulp-concat-css"), // Concatenate CSS only
     csslint = require("gulp-csslint"), // Lint CSS
-    concat = require("gulp-concat"), // For concatenating stuff(?)
-    watch = require("gulp-watch"), // For watching files changes
-    imagemin = require('gulp-imagemin'),
+    concat = require("gulp-concat"), // Concatenating stuff(?)
+    watch = require("gulp-watch"), // Watch files changes
+    imagemin = require('gulp-imagemin'), // Minifying images
+    autoprefixer = require('gulp-autoprefixer'); // Add vendor prefixes
 
     // Live Reload stuff
     livereload = require("gulp-livereload"),
