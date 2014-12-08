@@ -54,6 +54,11 @@ setPlayer = do ->
       "position": "Center Fullback"
       "number": "33"
     }
+    "essien": {
+      "name":"Michale Essien"
+      "position": "Midfielder"
+      "number": "15"
+    }
   }
 
   for key of playerData
