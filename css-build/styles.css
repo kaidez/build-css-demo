@@ -7,10 +7,10 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-.headerClass {
+.gl-headerClass {
   text-align: center;
 }
-.page {
+.gl-page {
   min-height: 700px;
   padding: 5px;
   font-family: 'Francois One', sans-serif;

@@ -40,12 +40,7 @@ to{background-position:0 0}}
 .container:after,.container:before{display:table;content:" "}
 .container:after{clear:both}
 @-ms-viewport{width:device-width}
-.headerClass{text-align:center}
-.page{min-height:700px;padding:5px;font-family:'Francois One',sans-serif}
-.headerClass{font-size:24px}
-@media (min-width:768px){.chelsea{background-color:#fff}
-.headerClass{font-size:36px}}
-@media (min-width:1200px){.headerClass{font-size:36px}}
-@media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
-@media (max-width:767px){.headerClass{font-size:24px}}
+.gl-headerClass{text-align:center}
+.gl-page{min-height:700px;padding:5px;font-family:'Francois One',sans-serif}
+@media (min-width:768px){.chelsea{background-color:#fff}}
 .container{padding:0}
