@@ -10,6 +10,9 @@
 .container {
   padding: 0;
 }
+.row {
+  margin: 0 auto;
+}
 html,
 body,
 .gl-container {
