@@ -17,9 +17,10 @@
   ],
   "dependencies": {
     "bootstrap": "latest",
-    "jquery-cycle2": "~2.1.6"
+    "jquery": "1.11.1",
+    "jquery-cycle2": "latest"
   },
   "resolutions": {
-    "jquery": ">= 1.9.1"
+    "jquery": "~1.11.1"
   }
 }
