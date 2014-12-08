@@ -34,9 +34,6 @@ body,
   font-size: 24px;
 }
 @media (min-width: 768px) {
-  .chelsea {
-    background-color: #fff;
-  }
   .headerClass {
     font-size: 36px;
   }
