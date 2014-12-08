@@ -54,7 +54,7 @@ to{background-position:0 0}}
 @media (min-width:992px){.headerClass{font-size:36px}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.headerClass{font-size:36px}
-.container{box-shadow:10px 0 7px -6px #858181;-webkit-box-shadow:10px 0 7px -6px #858181;-moz-box-shadow:10px 0 7px -6px #858181}}
+.container{-webkit-box-shadow:10px 0 7px -6px #858181;-moz-box-shadow:10px 0 7px -6px #858181;box-shadow:10px 0 7px -6px #858181}}
 @media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
 @media (min-width:768px) and (max-width:991px){.headerClass{font-size:36px}}
 .container{padding:0}

@@ -42,9 +42,9 @@
     font-size: 36px;
   }
   .container {
-    box-shadow: 10px 0px 7px -6px #858181;
     -webkit-box-shadow: 10px 0px 7px -6px #858181;
     -moz-box-shadow: 10px 0px 7px -6px #858181;
+    box-shadow: 10px 0px 7px -6px #858181;
   }
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
