@@ -1,4 +1,12 @@
 
+/*
+Stop those pain-in-the-ass console statements that Cycle2 fires off
+ */
+$(".cycle-slideshow").cycle({
+  log: false
+});
+
+
 
 
 /*
@@ -49,6 +57,16 @@ setPlayer = (function() {
       "name": "Cristiano Ronaldo",
       "position": "Center Forward",
       "number": "7"
+    },
+    "abbiati": {
+      "name": "Christian Abbiati",
+      "position": "Goalkeeper",
+      "number": "1"
+    },
+    "alex": {
+      "name": "Alex",
+      "position": "Center Fullback",
+      "number": "33"
     }
   };
   for (key in playerData) {

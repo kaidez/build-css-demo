@@ -43,6 +43,16 @@ setPlayer = do ->
       "name":"Cristiano Ronaldo"
       "position": "Center Forward"
       "number": "7"
+    },
+    "abbiati": {
+      "name":"Christian Abbiati"
+      "position": "Goalkeeper"
+      "number": "1"
+    },
+    "alex": {
+      "name":"Alex"
+      "position": "Center Fullback"
+      "number": "33"
     }
   }
 

@@ -70,6 +70,11 @@
   background: url('../img/abbiati_tn.png') no-repeat 0 0;
   background-size: 196px 196px;
 }
+.player-container-bgimage-alex {
+  width: 196px;
+  background: url('../img/alex_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
 .center {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
