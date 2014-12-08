@@ -13,6 +13,9 @@
 .row {
   margin: 0 auto;
 }
+.well {
+  margin: 10px 42px;
+}
 html,
 body,
 .gl-container {
