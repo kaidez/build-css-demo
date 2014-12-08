@@ -45,6 +45,26 @@
   background: url('../img/terry_tn.png') no-repeat 0 0;
   background-size: 196px 196px;
 }
+.player-container-bgimage-casillas {
+  width: 196px;
+  background: url('../img/casillas_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
+.player-container-bgimage-ramos {
+  width: 196px;
+  background: url('../img/ramos_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
+.player-container-bgimage-bale {
+  width: 196px;
+  background: url('../img/bale_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
+.player-container-bgimage-ronaldo {
+  width: 196px;
+  background: url('../img/ronaldo_tn.png') no-repeat 0 0;
+  background-size: 196px 196px;
+}
 .center {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
