@@ -175,7 +175,6 @@ gulp.task("watch", function () {
   gulp.watch(jadeFiles, ["jade"]);
   gulp.watch(lessFiles, ["buildcss"]);
   gulp.watch(coffeeFiles, ["coffee"]);
-  gulp.watch(jsonFile, ["jsonlint"]);
   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"],
   function (e) {
     server.changed(e.path);
