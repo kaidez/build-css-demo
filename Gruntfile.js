@@ -2,18 +2,18 @@ module.exports = function(grunt) {
 
   // Project config
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     // start "bowercopy" task
     bowercopy: {
 
       /*
-       * don't send messages to saying that Bower components aren't
-       * configured...ignore them instead. Also, don't run any bower
+       * don"t send messages to saying that Bower components aren"t
+       * configured...ignore them instead. Also, don"t run any bower
        * tasks when grunt runs this task.
        */
       options: {
-        ignore: ['gulp', 'jquery'],
+        ignore: ["gulp", "jquery"],
         runBower: false
       },
 
@@ -22,10 +22,10 @@ module.exports = function(grunt) {
 
         // copy to the "css-build" directory
         options: {
-          destPrefix: 'css-build/'
+          destPrefix: "css-build/"
         },
         files: {
-          'bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
+          "bootstrap.css": "bootstrap/dist/css/bootstrap.css"
         }
       }, // end "bowercopy:bscss" task
 
@@ -34,11 +34,11 @@ module.exports = function(grunt) {
 
         // copy to the "css-build" directory
         options: {
-          destPrefix: 'build/js/libs/'
+          destPrefix: "build/js/libs/"
         },
         files: {
-          'jquery.cycle2.min.js': 'jquery-cycle2/build/jquery.cycle2.min.js',
-          'jquery.cycle2.swipe.js': 'jquery-cycle2/src/jquery.cycle2.swipe.js'
+          "jquery.cycle2.min.js": "jquery-cycle2/build/jquery.cycle2.min.js",
+          "jquery.cycle2.swipe.js": "jquery-cycle2/src/jquery.cycle2.swipe.js"
         }
       }, // end "bowercopy:jq" task
 
@@ -47,10 +47,10 @@ module.exports = function(grunt) {
 
         // copy to the "css-build" directory
         options: {
-          destPrefix: 'build/js/libs/'
+          destPrefix: "build/js/libs/"
         },
         files: {
-          'jquery.min.js': 'jquery/dist/jquery.min.js'
+          "jquery.min.js": "jquery/dist/jquery.min.js"
         }
       } // end "bowercopy:jq" task
     }, // end "bowercopy" task
@@ -72,11 +72,12 @@ module.exports = function(grunt) {
           bare: true
         },
         files: {
-          // compile and concat .coffee files to single file
-          'build/js/main.js': [
-                                'coffee/common.coffee',
-                                'coffee/scrollNav.coffee',
-                                'coffee/players.coffee'
+          // compile & concat .coffee files to a single file called
+          // "build/js/main.js"
+          "build/js/main.js": [
+                                "coffee/common.coffee",
+                                "coffee/scrollNav.coffee",
+                                "coffee/players.coffee"
                               ]
         }
       }
@@ -84,17 +85,17 @@ module.exports = function(grunt) {
 
     shell: {
       lessCoreBuild: {
-        command: 'lessc css-build/styles.less > css-build/styles.css'
+        command: "lessc css-build/styles.less > css-build/styles.css"
       },
       lessGalleryBuild: {
-        command: 'lessc css-build/gallery.less > build/css/gallery.css'
+        command: "lessc css-build/gallery.less > build/css/gallery.css"
       },
     }
   });
 
-  grunt.loadNpmTasks('grunt-bowercopy');
-  grunt.loadNpmTasks('grunt-contrib-coffee');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks("grunt-bowercopy");
+  grunt.loadNpmTasks("grunt-contrib-coffee");
+  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks("grunt-shell");
 
 };
