@@ -9,7 +9,7 @@ var gulp = require("gulp"), // "require" gulp
     concat = require("gulp-concat"), // Concatenating stuff(?)
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
-    autoprefixer = require('gulp-autoprefixer'); // Add vendor prefixes
+    autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes (?)
 
     // Live Reload stuff
     livereload = require("gulp-livereload"),
@@ -80,16 +80,13 @@ gulp.task("jade", function () {
 gulp.task("buildcss", ['less'],function () {
   gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
   .pipe(concatCss("styles.min.css"))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-    cascade: true
-  }))
   .pipe(uncss({
     html: ["build/index.html"],
     ignore: ignoreArray
   })).pipe(minifyCSS({
     keepBreaks: true
-  })).pipe(gulp.dest("build/css/"))
+  }))
+  .pipe(gulp.dest("build/css/"))
   .pipe(csslint({
     "important": false,
     "duplicate-background-images": false,
@@ -98,6 +95,16 @@ gulp.task("buildcss", ['less'],function () {
   }))
   .pipe(csslint.reporter());
 });
+
+
+gulp.task('pre', function () {
+  return gulp.src('css-build/styles.css')
+  .pipe(autoprefixer({
+    cascade: true
+  }))
+  .pipe(gulp.dest('dist'));
+});
+
 
 /*
 *  ===================================================================
