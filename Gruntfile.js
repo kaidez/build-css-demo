@@ -55,16 +55,6 @@ module.exports = function(grunt) {
       } // end "bowercopy:jq" task
     }, // end "bowercopy" task
 
-    // end "less" task
-    less: {
-      core_build: {
-        files: {
-          "css-build/styles.css": "css-build/styles.less",
-          "build/css/gallery.css": "css-build/gallery.less"
-        }
-      }
-    }, // end "less" task
-
     // start "coffee" task
     coffee: {
       compile: {
@@ -95,7 +85,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-bowercopy");
   grunt.loadNpmTasks("grunt-contrib-coffee");
-  grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-shell");
 
 };
