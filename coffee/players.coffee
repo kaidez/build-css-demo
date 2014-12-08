@@ -53,11 +53,16 @@ setPlayer = do ->
       "name":"Alex"
       "position": "Center Fullback"
       "number": "33"
-    }
+    },
     "essien": {
-      "name":"Michale Essien"
+      "name":"Michael Essien"
       "position": "Midfielder"
       "number": "15"
+    },
+    "torres": {
+      "name":"Fernado Torres"
+      "position": "Center Forward"
+      "number": "9"
     }
   }
 
