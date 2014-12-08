@@ -81,6 +81,10 @@ gulp.task("jade", function () {
 gulp.task("buildcss", ['less'],function () {
   gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
   .pipe(concatCss("styles.min.css"))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: true
+  }))
   .pipe(uncss({
     html: ["build/index.html"],
     ignore: ignoreArray
