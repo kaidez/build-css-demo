@@ -85,6 +85,8 @@ setPlayer = (function() {
     playerName = document.createElement("h3");
     playerPosition = document.createElement("p");
     playerNumber = document.createElement("p");
+    playerPosition.setAttribute("class", "player-info");
+    playerNumber.setAttribute("class", "player-info");
     playerName.innerText = playerData[key].name;
     playerName.setAttribute("class", "player-name");
     playerPosition.innerText = playerData[key].position;
