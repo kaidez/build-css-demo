@@ -47,9 +47,8 @@ body,
     clip: rect(0 0 0 0);
   }
   .page {
-    width: 340px;
-    height: 340px;
-    margin: 0 auto;
+    width: 300px;
+    height: 300px;
     border: 1px solid #000;
     background-color: #f8f8f8;
   }
@@ -65,6 +64,10 @@ body,
   }
   .page {
     margin: 0 10px;
+  }
+  .center-columns {
+    margin: auto;
+    max-width: 960px;
   }
 }
 @media screen and (max-width: 767px) {
