@@ -51,7 +51,7 @@ setPlayer = (function() {
     "bale": {
       "name": "Gareth Bale",
       "position": "Winger",
-      "number": "4"
+      "number": "11"
     },
     "ronaldo": {
       "name": "Cristiano Ronaldo",
