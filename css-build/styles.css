@@ -45,7 +45,11 @@ body,
     clip: rect(0 0 0 0);
   }
   .page {
-    background-color: #E3E0E0;
+    width: 360px;
+    height: 360px;
+    margin: 0 10px;
+    border: 1px solid #000;
+    background-color: #e1dcdc;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
