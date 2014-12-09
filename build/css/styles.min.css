@@ -50,14 +50,13 @@ to{background-position:0 0}}
 .well{margin:10px 42px}
 .gl-container,body,html{height:100%}
 .g-cycle-link,.gl-headerClass,.gl-team-header{text-align:center}
-.gl-page{height:400px;padding:5px;font-family:'Francois One',sans-serif}
 .headerClass{font-size:24px}
+.page{height:400px;padding:5px;font-family:'Francois One',sans-serif}
 @media (min-width:768px){.headerClass{font-size:36px}
-.center{clip:rect(0,0,0,0);clip:rect(0 0 0 0)}}
-@media (min-width:992px){.headerClass{font-size:36px}}
+.center{clip:rect(0,0,0,0);clip:rect(0 0 0 0)}
+.page{background-color:#E3E0E0}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
-@media (min-width:1200px){.headerClass{font-size:36px}
-.container{box-shadow:0 9px 0 0 white,0 -9px 0 0 white,12px 0 15px -4px rgba(212,210,210,.8),-12px 0 15px -4px rgba(212,210,210,.8)}}
+@media (min-width:1200px){.container{box-shadow:0 9px 0 0 white,0 -9px 0 0 white,12px 0 15px -4px rgba(212,210,210,.8),-12px 0 15px -4px rgba(212,210,210,.8)}}
 @media screen and (max-width:767px){.center{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
 @media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
 @media (max-width:767px){.center{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}

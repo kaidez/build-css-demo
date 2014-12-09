@@ -28,13 +28,13 @@ body,
 .gl-team-header {
   text-align: center;
 }
-.gl-page {
+.headerClass {
+  font-size: 24px;
+}
+.page {
   height: 400px;
   padding: 5px;
   font-family: 'Francois One', sans-serif;
-}
-.headerClass {
-  font-size: 24px;
 }
 @media (min-width: 768px) {
   .headerClass {
@@ -44,10 +44,8 @@ body,
     clip: rect(0, 0, 0, 0);
     clip: rect(0 0 0 0);
   }
-}
-@media (min-width: 992px) {
-  .headerClass {
-    font-size: 36px;
+  .page {
+    background-color: #E3E0E0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -56,9 +54,6 @@ body,
   }
 }
 @media (min-width: 1200px) {
-  .headerClass {
-    font-size: 36px;
-  }
   .container {
     box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(212, 210, 210, 0.8), -12px 0 15px -4px rgba(212, 210, 210, 0.8);
   }
