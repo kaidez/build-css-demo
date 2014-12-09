@@ -50,8 +50,9 @@ to{background-position:0 0}}
 .well{margin:10px 42px}
 .gl-container,body,html{height:100%}
 .g-cycle-link,.gl-headerClass,.gl-team-header{text-align:center}
+.gl-page{padding:5px;font-family:'Francois One',sans-serif}
 .headerClass{font-size:24px}
-.page{height:400px;padding:5px;font-family:'Francois One',sans-serif}
+.page{height:400px}
 @media (min-width:768px){.headerClass{font-size:36px}
 .center{clip:rect(0,0,0,0);clip:rect(0 0 0 0)}
 .page{width:360px;height:360px;margin:0 10px;border:1px solid #000;background-color:#e1dcdc}}

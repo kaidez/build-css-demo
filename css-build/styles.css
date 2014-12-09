@@ -37,8 +37,6 @@ body,
 }
 .page {
   height: 400px;
-  padding: 5px;
-  font-family: 'Francois One', sans-serif;
 }
 @media (min-width: 768px) {
   .headerClass {
