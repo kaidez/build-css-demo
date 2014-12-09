@@ -47,11 +47,11 @@ body,
     clip: rect(0 0 0 0);
   }
   .page {
-    width: 360px;
-    height: 360px;
+    width: 340px;
+    height: 340px;
     margin: 0 auto;
     border: 1px solid #000;
-    background-color: #e1dcdc;
+    background-color: #f8f8f8;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
