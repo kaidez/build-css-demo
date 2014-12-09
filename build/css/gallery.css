@@ -85,3 +85,12 @@
   background: url('../img/torres_tn.png') no-repeat 0 0;
   background-size: 196px 196px;
 }
+@media (min-width: 768px) {
+  .player-container {
+    padding-top: 186px;
+  }
+  .player-info,
+  .player-name {
+    margin: 2px 0;
+  }
+}

@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 
-// Push player info further down the page
+// Style the player info
 .player-container {
   padding-top: 165px;
   min-height: 320px;
@@ -47,4 +47,19 @@
       background-size: 196px 196px;
     }
   }
+}
+
+
+@media (min-width: 768px) {
+
+  // Slightly push player content down the page on wider views
+  .player-container {
+    padding-top: 186px;
+  }
+
+  // style the player's content on wider views
+  .player-info, .player-name {
+    margin: 2px 0;
+  }
+
 }
