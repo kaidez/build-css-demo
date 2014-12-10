@@ -7,6 +7,26 @@ $(".cycle-slideshow").cycle({
 });
 
 
+/*
+scrollNav code starts
+ */
+var scroll;
+
+scroll = (function() {
+  $(".row").scrollNav({
+    showTopLink: false,
+    showHeadline: false,
+    sectionElem: "div",
+    speed: 600,
+    insertTarget: this.headerElements,
+    insertLocation: "appendTo"
+  });
+})();
+
+
+/*
+scrollNav code ends
+ */
 
 
 /*
