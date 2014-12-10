@@ -16,7 +16,8 @@
 // Style the player info
 .player-container {
   padding-top: 165px;
-  min-height: 320px;
+  width: 300px;
+  height: 300px;
 
   font-size: 19px;
   text-align: center;
@@ -41,10 +42,8 @@
   .for(@players); .-each(@player) {
     @name: e(@player);
     &-@{name} {
-      .player-width-mobile;
-
-      background: url('../img/@{name}_tn.png') no-repeat 0 0;
-      background-size: 196px 196px;
+      background: url('../img/@{name}.jpg') no-repeat 0 0;
+      background-size: 300px 300px;
     }
   }
 }
