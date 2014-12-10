@@ -10,12 +10,14 @@ article,footer,header,main,nav,section{display:block}
 a{background-color:transparent}
 a:active,a:hover{outline:0}
 h1{margin:.67em 0}
+img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
 a[href^="#"]:after{content:""}
+img{page-break-inside:avoid;max-width:100%!important}
 h2{orphans:3;widows:3;page-break-after:avoid}}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -24,6 +26,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line
 a{color:#337ab7;text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
 a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
+img{vertical-align:middle}
 h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
 h1{font-size:36px}
 h2{font-size:30px}
@@ -59,12 +62,12 @@ ol,ul{padding-left:0}
 .headerClass{font-size:24px}
 .page{height:400px}
 @media (min-width:768px){.headerClass{font-size:36px}
-.center{clip:auto;bottom:28px;position:relative;z-index:101}
+.cycle-pager{clip:auto;bottom:28px;position:relative;z-index:101}
 .page{border:1px solid #000;background-color:#f8f8f8}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}
 .page{margin-bottom:20px}}
-@media screen and (max-width:767px){.center{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
+@media screen and (max-width:767px){.cycle-pager{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
 @media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
-@media (max-width:767px){.center{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
+@media (max-width:767px){.cycle-pager{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
 @media (min-width:768px) and (max-width:991px){.headerClass{font-size:36px}}
