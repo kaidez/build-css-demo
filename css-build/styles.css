@@ -150,6 +150,9 @@ ol {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .page {
+    height: 600px;
+  }
   .headerClass {
     font-size: 36px;
   }

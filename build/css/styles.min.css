@@ -40,10 +40,11 @@ to{background-position:0 0}}
 @keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}}
 .well{min-height:20px;padding:19px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
-.container:after,.container:before{display:table;content:" "}
-.container:after{clear:both}
+.container:after,.container:before,.row:after,.row:before{display:table;content:" "}
+.container:after,.row:after{clear:both}
 @-ms-viewport{width:device-width}
 .container{padding:0}
+.row{margin:0 auto}
 .well{margin:10px 42px}
 .gl-container,body,html{height:100%}
 ol,ul{padding-left:0}
@@ -59,7 +60,8 @@ ol,ul{padding-left:0}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
 .page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}}
-@media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
+@media (min-width:992px) and (max-width:1199px){.page{height:600px}
+.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}
 .page{margin-bottom:20px}}
 @media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
