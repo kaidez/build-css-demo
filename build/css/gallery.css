@@ -83,4 +83,8 @@
   .player-name {
     margin: 2px 0;
   }
+  .cycle-slideshow {
+    left: 51px;
+    top: 10px;
+  }
 }
