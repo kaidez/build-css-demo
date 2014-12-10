@@ -20,7 +20,8 @@
     "enquire": "latest",
     "jquery": "1.11.1",
     "jquery-cycle2": "latest",
-    "scrollNav": "latest"
+    "scrollNav": "latest",
+    "matchMedia": "latest"
   },
   "resolutions": {
     "jquery": "~1.11.1"
