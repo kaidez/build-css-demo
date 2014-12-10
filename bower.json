@@ -22,5 +22,8 @@
   },
   "resolutions": {
     "jquery": "~1.11.1"
+  },
+  "devDependencies": {
+    "scrollNav": "~2.4.0"
   }
 }
