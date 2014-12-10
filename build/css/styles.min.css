@@ -51,6 +51,9 @@ to{background-position:0 0}}
 .gl-container,body,html{height:100%}
 .g-cycle-link,.gl-headerClass,.gl-team-header{text-align:center}
 .gl-page{padding:5px;font-family:'Francois One',sans-serif}
+.scroll-nav{text-align:center}
+.scroll-nav__list{list-style-type:none;padding-left:0}
+.scroll-nav__item{display:inline-block;margin:0 20px}
 .headerClass{font-size:24px}
 .page{height:400px}
 @media (min-width:768px){.headerClass{font-size:36px}
