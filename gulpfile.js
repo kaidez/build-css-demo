@@ -173,15 +173,6 @@ gulp.task("bowerscroll", function () {
   gulp.run("grunt-bowercopy:scroll");
 });
 
-// Copy over scrollNav only
-gulp.task("enquire", function () {
-  gulp.run("grunt-bowercopy:enquire");
-});
-
-// Copy over scrollNav only
-gulp.task("mm", function () {
-  gulp.run("grunt-bowercopy:mm");
-});
 /*
  *  ===================================================================
  *  | START WATCH TASK |

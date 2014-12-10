@@ -65,30 +65,6 @@ module.exports = function(grunt) {
           "jquery.scrollNav.min.js": "scrollNav/dist/jquery.scrollNav.min.js"
         }
       }, // end "scroll:jq" task
-
-      // Copy enquire.js over
-      enquire: {
-
-        // copy to the "css-build" directory
-        options: {
-          destPrefix: "build/js/libs/"
-        },
-        files: {
-          "enquire.min.js": "enquire/dist/enquire.min.js"
-        }
-      }, // end "enquire" task
-
-      // Copy matchMedia polyfill over
-      mm: {
-
-        // copy to the "css-build" directory
-        options: {
-          destPrefix: "build/js/libs/"
-        },
-        files: {
-          "matchMedia.js": "matchMedia/matchMedia.js"
-        }
-      } // end "mm:jq" task
     }, // end "bowercopy" task
 
     // start "coffee" task
