@@ -24,6 +24,7 @@
     "jquery": "~1.11.1"
   },
   "devDependencies": {
-    "scrollNav": "~2.4.0"
+    "scrollNav": "~2.4.0",
+    "enquire": "~2.1.2"
   }
 }
