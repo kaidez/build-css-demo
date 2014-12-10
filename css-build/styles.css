@@ -60,6 +60,7 @@ ol {
     clip: auto;
     bottom: 28px;
     position: relative;
+    z-index: 101;
   }
   .page {
     border: 1px solid #000;
