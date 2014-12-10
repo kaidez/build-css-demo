@@ -103,6 +103,7 @@ module.exports = function(grunt) {
           "build/js/main.js": [
                                 "coffee/common.coffee",
                                 "coffee/scrollNav.coffee",
+                                "coffee/enquire-detect.coffee",
                                 "coffee/players.coffee"
                               ]
         }
