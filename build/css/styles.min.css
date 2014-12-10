@@ -27,6 +27,7 @@ a{color:#337ab7;text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
 a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
 img{vertical-align:middle}
+.img-thumbnail{display:inline-block;max-width:100%;height:auto;padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
 h1{font-size:36px}
 h2{font-size:30px}
@@ -56,7 +57,7 @@ to{background-position:0 0}}
 ol,ul{padding-left:0}
 .g-cycle-link,.gl-headerClass,.gl-team-header{text-align:center}
 .gl-page{padding:5px;font-family:'Francois One',sans-serif}
-.gl-cycle-nav-image{display:block;margin-bottom:10px}
+.gl-cycle-nav-image{display:block;margin-bottom:10px;border:2px solid #00f}
 .scroll-nav{text-align:center}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
