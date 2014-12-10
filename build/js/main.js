@@ -35,7 +35,7 @@ Function for building out player pages
 var setPlayer;
 
 setPlayer = (function() {
-  var frag, key, playerData, playerName, playerNumber, playerPosition, targetEl, targetID;
+  var allInfo, frag, key, playerData, playerName, playerNumber, playerPosition, targetEl, targetID;
   frag = document.createDocumentFragment();
   playerData = {
     "courtois": {
@@ -103,6 +103,7 @@ setPlayer = (function() {
     targetID = "#" + key;
     targetEl = $(targetID);
     playerName = document.createElement("h3");
+    allInfo = document.createElement("div");
     playerPosition = document.createElement("p");
     playerNumber = document.createElement("p");
     playerPosition.setAttribute("class", "player-info");
@@ -111,9 +112,11 @@ setPlayer = (function() {
     playerName.setAttribute("class", "player-name");
     playerPosition.innerText = playerData[key].position;
     playerNumber.innerText = "#" + playerData[key].number;
-    frag.appendChild(playerName);
-    frag.appendChild(playerPosition);
-    frag.appendChild(playerNumber);
+    allInfo.setAttribute("class", "all-player-info");
+    allInfo.appendChild(playerName);
+    allInfo.appendChild(playerPosition);
+    allInfo.appendChild(playerNumber);
+    frag.appendChild(allInfo);
     $(frag).appendTo(targetEl);
   }
 })();

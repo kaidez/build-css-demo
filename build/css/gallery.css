@@ -15,7 +15,6 @@
   padding-top: 165px;
   width: 300px;
   height: 300px;
-  color: #ffffff;
   font-size: 19px;
   text-align: center;
 }
@@ -27,55 +26,60 @@
  * Dynamically build player image thumbnail css classes
  * Learn more at: http://bit.ly/12tpr20
  */
-.player-container-bgimage-courtois {
-  background: url('../img/courtois.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-drogba {
-  background: url('../img/drogba.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-fabregas {
-  background: url('../img/fabregas.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-terry {
-  background: url('../img/terry.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-casillas {
-  background: url('../img/casillas.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-ramos {
-  background: url('../img/ramos.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-bale {
-  background: url('../img/bale.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-ronaldo {
-  background: url('../img/ronaldo.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-abbiati {
-  background: url('../img/abbiati.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-alex {
-  background: url('../img/alex.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-essien {
-  background: url('../img/essien.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
-.player-container-bgimage-torres {
-  background: url('../img/torres.jpg') no-repeat 0 0;
-  background-size: 300px 300px;
-}
 @media (min-width: 768px) {
+  .player-container-bgimage-courtois {
+    background: url('../img/courtois.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-drogba {
+    background: url('../img/drogba.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-fabregas {
+    background: url('../img/fabregas.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-terry {
+    background: url('../img/terry.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-casillas {
+    background: url('../img/casillas.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-ramos {
+    background: url('../img/ramos.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-bale {
+    background: url('../img/bale.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-ronaldo {
+    background: url('../img/ronaldo.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-abbiati {
+    background: url('../img/abbiati.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-alex {
+    background: url('../img/alex.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-essien {
+    background: url('../img/essien.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .player-container-bgimage-torres {
+    background: url('../img/torres.jpg') no-repeat 0 0;
+    background-size: 300px 300px;
+  }
+  .all-player-info {
+    min-height: 114px;
+    padding: 5px;
+    background: #fff;
+  }
   .player-container {
     padding-top: 186px;
   }

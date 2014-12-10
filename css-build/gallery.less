@@ -19,7 +19,6 @@
   width: 300px;
   height: 300px;
 
-  color: rgba(255, 255, 255, 1);
   font-size: 19px;
   text-align: center;
 }
@@ -39,18 +38,25 @@
           @casillas, @ramos, @bale, @ronaldo,
           @abbiati, @alex, @essien, @torres;
 
-.player-container-bgimage {
-  .for(@players); .-each(@player) {
-    @name: e(@player);
-    &-@{name} {
-      background: url('../img/@{name}.jpg') no-repeat 0 0;
-      background-size: 300px 300px;
+@media (min-width: 768px) {
+
+  .player-container-bgimage {
+    .for(@players); .-each(@player) {
+      @name: e(@player);
+      &-@{name} {
+        background: url('../img/@{name}.jpg') no-repeat 0 0;
+        background-size: 300px 300px;
+      }
     }
   }
-}
+  
+  // Style the element that contains ALL the player info
+  .all-player-info {
+    min-height: 114px;
+    padding: 5px;
 
-
-@media (min-width: 768px) {
+    background: #fff;
+  }
 
   // Slightly push player content down the page on wider views
   .player-container {
