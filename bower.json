@@ -17,14 +17,12 @@
   ],
   "dependencies": {
     "bootstrap": "latest",
+    "enquire": "latest",
     "jquery": "1.11.1",
-    "jquery-cycle2": "latest"
+    "jquery-cycle2": "latest",
+    "scrollNav": "latest"
   },
   "resolutions": {
     "jquery": "~1.11.1"
-  },
-  "devDependencies": {
-    "scrollNav": "~2.4.0",
-    "enquire": "~2.1.2"
   }
 }
