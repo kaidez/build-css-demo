@@ -36,6 +36,10 @@ ol {
   padding: 5px;
   font-family: 'Francois One', sans-serif;
 }
+.gl-cycle-nav-image {
+  display: block;
+  margin-bottom: 10px;
+}
 .scroll-nav {
   text-align: center;
 }
@@ -58,8 +62,10 @@ ol {
   }
   .cycle-nav {
     clip: auto;
-    bottom: 28px;
+    bottom: 354px;
+    margin-left: 50px;
     position: relative;
+    max-width: 75px;
     z-index: 101;
   }
   .page {

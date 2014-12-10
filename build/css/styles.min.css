@@ -56,13 +56,14 @@ to{background-position:0 0}}
 ol,ul{padding-left:0}
 .g-cycle-link,.gl-headerClass,.gl-team-header{text-align:center}
 .gl-page{padding:5px;font-family:'Francois One',sans-serif}
+.gl-cycle-nav-image{display:block;margin-bottom:10px}
 .scroll-nav{text-align:center}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .headerClass{font-size:24px}
 .page{height:400px}
 @media (min-width:768px){.headerClass{font-size:36px}
-.cycle-nav{clip:auto;bottom:28px;position:relative;z-index:101}
+.cycle-nav{clip:auto;bottom:354px;margin-left:50px;position:relative;max-width:75px;z-index:101}
 .page{border:1px solid #000;background-color:#f8f8f8}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}
