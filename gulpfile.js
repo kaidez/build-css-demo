@@ -162,6 +162,11 @@ gulp.task("bowerjq", function () {
   gulp.run("grunt-bowercopy:jq");
 });
 
+// Copy over scrollNav only
+gulp.task("bowerscroll", function () {
+  gulp.run("grunt-bowercopy:scroll");
+});
+
 /*
  *  ===================================================================
  *  | START WATCH TASK |
