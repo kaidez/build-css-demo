@@ -42,6 +42,8 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
      */
      ignoreArray = [
        "nav",
+       "ol",
+       "ul",
        ".cycle-slide",
        ".player-info",
        ".player-name",

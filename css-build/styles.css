@@ -21,6 +21,10 @@ body,
 .gl-container {
   height: 100%;
 }
+ul,
+ol {
+  padding-left: 0;
+}
 .g-cycle-link {
   text-align: center;
 }
@@ -37,7 +41,6 @@ body,
 }
 .scroll-nav__list {
   list-style-type: none;
-  padding-left: 0;
 }
 .scroll-nav__item {
   display: inline-block;
