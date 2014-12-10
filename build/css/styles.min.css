@@ -54,7 +54,7 @@ to{background-position:0 0}}
 .headerClass{font-size:24px}
 .page{height:400px}
 @media (min-width:768px){.headerClass{font-size:36px}
-.center{clip:rect(0,0,0,0);clip:rect(0 0 0 0)}
+.center{clip:auto;bottom:28px;position:relative}
 .page{border:1px solid #000;background-color:#f8f8f8}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}
