@@ -41,6 +41,7 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
      * 3. Classes third
      */
      ignoreArray = [
+       "nav",
        ".cycle-slide",
        ".player-info",
        ".player-name"
