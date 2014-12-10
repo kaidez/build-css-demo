@@ -47,8 +47,6 @@ body,
     clip: rect(0 0 0 0);
   }
   .page {
-    width: 300px;
-    height: 300px;
     border: 1px solid #000;
     background-color: #f8f8f8;
   }
@@ -57,17 +55,25 @@ body,
   .headerClass {
     font-size: 36px;
   }
+  .center-columns {
+    margin: auto;
+    max-width: 900px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
-    box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(212, 210, 210, 0.8), -12px 0 15px -4px rgba(212, 210, 210, 0.8);
-  }
-  .page {
-    margin: 0 10px;
+    padding: 0 20px;
+    /*     box-shadow: 0 9px 0px 0px white,
+0 -9px 0px 0px white,
+12px 0 15px -4px rgba(212, 210, 210, 0.8),
+-12px 0 15px -4px rgba(212, 210, 210, 0.8); */
   }
   .center-columns {
     margin: auto;
     max-width: 960px;
+  }
+  .page {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
