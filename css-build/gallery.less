@@ -38,18 +38,32 @@
           @casillas, @ramos, @bale, @ronaldo,
           @abbiati, @alex, @essien, @torres;
 
+  .player-container-bgimage {
+    .for(@players); .-each(@player) {
+      @name: e(@player);
+      &-@{name} {
+        max-width: 180px;
+
+        background: url('../img/@{name}-mobile.jpg') no-repeat 0 0;
+        background-size: 180px 180px;
+      }
+    }
+  }
+
 @media (min-width: 768px) {
 
   .player-container-bgimage {
     .for(@players); .-each(@player) {
       @name: e(@player);
       &-@{name} {
+        max-width: 300px;
+
         background: url('../img/@{name}.jpg') no-repeat 0 0;
         background-size: 300px 300px;
       }
     }
   }
-  
+
   // Style the element that contains ALL the player info
   .all-player-info {
     min-height: 114px;

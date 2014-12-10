@@ -74,9 +74,6 @@ ol {
     border: 1px solid #000;
     background-color: #f8f8f8;
   }
-  .team-header {
-    text-align: start;
-  }
   .tooltip {
     position: absolute;
     z-index: 1020;
