@@ -28,8 +28,7 @@ ol {
 .g-cycle-link {
   text-align: center;
 }
-.gl-headerClass,
-.gl-team-header {
+.gl-headerClass {
   text-align: center;
 }
 .gl-page {
@@ -57,6 +56,9 @@ ol {
 .page {
   height: 400px;
 }
+.team-header {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .headerClass {
     font-size: 36px;
@@ -72,6 +74,9 @@ ol {
   .page {
     border: 1px solid #000;
     background-color: #f8f8f8;
+  }
+  .team-header {
+    text-align: start;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
