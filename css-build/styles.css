@@ -56,7 +56,7 @@ ol {
   .headerClass {
     font-size: 36px;
   }
-  .cycle-pager {
+  .cycle-navigation {
     clip: auto;
     bottom: 28px;
     position: relative;
@@ -93,7 +93,7 @@ ol {
   }
 }
 @media screen and (max-width: 767px) {
-  .cycle-pager {
+  .cycle-navigation {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     /* IE6, IE7 */
@@ -106,7 +106,7 @@ ol {
   }
 }
 @media (max-width: 767px) {
-  .cycle-pager {
+  .cycle-navigation {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     /* IE6, IE7 */
