@@ -191,10 +191,6 @@ ol {
 @media (min-width: 1200px) {
   .container {
     padding: 0 20px;
-    /*     box-shadow: 0 9px 0px 0px white,
-0 -9px 0px 0px white,
-12px 0 15px -4px rgba(212, 210, 210, 0.8),
--12px 0 15px -4px rgba(212, 210, 210, 0.8); */
   }
   .center-columns {
     margin: auto;
