@@ -44,6 +44,7 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
        "nav",
        "ol",
        "ul",
+       ".all-player-info",
        ".btn",
        ".btn-info",
        ".cycle-slide",

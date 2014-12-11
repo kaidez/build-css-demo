@@ -7,6 +7,9 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+.mobile-margin-reset {
+  margin: 2px 0;
+}
 .container {
   padding: 0;
 }
@@ -92,6 +95,14 @@ ol {
 }
 .team-header {
   text-align: center;
+}
+.all-player-info {
+  height: 127px;
+  background: #bee1e0;
+}
+.player-info,
+.player-name {
+  margin: 2px 0;
 }
 @media (min-width: 768px) {
   .headerClass {
