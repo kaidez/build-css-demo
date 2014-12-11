@@ -25,6 +25,32 @@ ul,
 ol {
   padding-left: 0;
 }
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
 .g-cycle-link {
   text-align: center;
 }
@@ -32,7 +58,9 @@ ol {
   text-align: center;
 }
 .gl-page {
+  height: 400px;
   padding: 5px;
+  margin: 0 auto 20px;
   font-family: 'Francois One', sans-serif;
 }
 .gl-cycle-nav-image {
@@ -52,9 +80,6 @@ ol {
 .headerClass {
   font-size: 24px;
 }
-.page {
-  height: 400px;
-}
 .team-header {
   text-align: center;
 }
@@ -71,8 +96,9 @@ ol {
   }
   .page {
     padding-left: 30px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     background-color: #f8f8f8;
+    float: none;
   }
   .tooltip {
     position: absolute;
@@ -150,9 +176,6 @@ ol {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .page {
-    height: 600px;
-  }
   .headerClass {
     font-size: 36px;
   }
@@ -172,9 +195,6 @@ ol {
   .center-columns {
     margin: auto;
     max-width: 960px;
-  }
-  .page {
-    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
