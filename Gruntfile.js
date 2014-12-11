@@ -79,7 +79,6 @@ module.exports = function(grunt) {
           "build/js/main.js": [
                                 "coffee/common.coffee",
                                 "coffee/scrollNav.coffee",
-                                "coffee/enquire-detect.coffee",
                                 "coffee/players.coffee"
                               ]
         }
@@ -92,7 +91,7 @@ module.exports = function(grunt) {
       },
       lessGalleryBuild: {
         command: "lessc css-build/gallery.less > build/css/gallery.css"
-      },
+      }
     }
   });
 
