@@ -9,7 +9,7 @@ var gulp = require("gulp"), // "require" gulp
     concat = require("gulp-concat"), // Concatenating stuff(?)
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
-    autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes (?)
+    autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes
 
     // Live Reload stuff
     livereload = require("gulp-livereload"),
@@ -91,7 +91,12 @@ gulp.task("buildcss", ['less'],function () {
   .pipe(uncss({
     html: ["build/index.html"],
     ignore: ignoreArray
-  })).pipe(minifyCSS({
+  }))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(minifyCSS({
     keepBreaks: true
   }))
   .pipe(gulp.dest("build/css/"))
@@ -102,15 +107,6 @@ gulp.task("buildcss", ['less'],function () {
     "text-indent": false
   }))
   .pipe(csslint.reporter());
-});
-
-
-gulp.task('pre', function () {
-  return gulp.src('css-build/styles.css')
-  .pipe(autoprefixer({
-    cascade: true
-  }))
-  .pipe(gulp.dest('dist'));
 });
 
 
