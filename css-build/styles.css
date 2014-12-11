@@ -97,7 +97,8 @@ ol {
   text-align: center;
 }
 .all-player-info {
-  height: 127px;
+  height: 129px;
+  padding-top: 22px;
   background: #bee1e0;
 }
 .player-info,
@@ -126,6 +127,10 @@ ol {
   }
   .team-header {
     text-align: start;
+  }
+  .all-player-info {
+    height: auto;
+    background: #fff;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

@@ -64,13 +64,14 @@ ol,ul{padding-left:0}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .headerClass{font-size:24px}
 .team-header{text-align:center}
-.all-player-info{height:127px;background:#bee1e0}
+.all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
 .page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}
 .hack-header-padding{right:189px;position:relative}
-.team-header{text-align:start}}
+.team-header{text-align:start}
+.all-player-info{height:auto;background:#fff}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}}
 @media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
