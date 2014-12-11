@@ -7,9 +7,6 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-.team-header {
-  text-align: center;
-}
 .container {
   padding: 0;
 }
@@ -93,6 +90,9 @@ ol {
 .headerClass {
   font-size: 24px;
 }
+.team-header {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .headerClass {
     font-size: 36px;
@@ -112,6 +112,9 @@ ol {
   .hack-header-padding {
     right: 189px;
     position: relative;
+  }
+  .team-header {
+    text-align: start;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

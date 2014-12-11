@@ -49,7 +49,6 @@ to{background-position:0 0}}
 .container:after,.container:before,.row:after,.row:before{display:table;content:" "}
 .container:after,.row:after{clear:both}
 @-ms-viewport{width:device-width}
-.team-header{text-align:center}
 .container{padding:0}
 .row{margin:0 auto}
 .well{margin:10px 42px}
@@ -66,10 +65,12 @@ ol,ul{padding-left:0}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .headerClass{font-size:24px}
+.team-header{text-align:center}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
 .page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}
-.hack-header-padding{right:189px;position:relative}}
+.hack-header-padding{right:189px;position:relative}
+.team-header{text-align:start}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}}
 @media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}

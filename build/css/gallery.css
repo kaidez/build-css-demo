@@ -7,9 +7,6 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-.team-header {
-  text-align: center;
-}
 .cycle-slideshow {
   max-width: 180px;
   margin: 0 auto;
