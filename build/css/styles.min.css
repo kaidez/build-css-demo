@@ -65,7 +65,6 @@ ol,ul{padding-left:0}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .headerClass{font-size:24px}
-.team-header{text-align:center}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
 .page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}}
