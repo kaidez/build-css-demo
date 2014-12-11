@@ -45,6 +45,7 @@ to{background-position:0 0}}
 .container{padding:0}
 .row{margin:0 auto}
 .well{margin:10px 42px}
+@media (min-width:992px){.col-md-8{float:none}}
 .gl-container,body,html{height:100%}
 ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
@@ -59,7 +60,7 @@ ol,ul{padding-left:0}
 .team-header{text-align:center}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
-.page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8;float:none}}
+.page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}}
 @media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}}
 @media (min-width:1200px){.container{padding:0 20px}}
 @media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}

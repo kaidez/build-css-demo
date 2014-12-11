@@ -16,6 +16,11 @@
 .well {
   margin: 10px 42px;
 }
+@media (min-width: 992px) {
+  .col-md-8 {
+    float: none;
+  }
+}
 html,
 body,
 .gl-container {
@@ -98,7 +103,6 @@ ol {
     padding-left: 30px;
     border: 1px solid #000000;
     background-color: #f8f8f8;
-    float: none;
   }
   .tooltip {
     position: absolute;
