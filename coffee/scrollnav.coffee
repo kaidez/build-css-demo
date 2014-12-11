@@ -9,6 +9,9 @@ scroll = do ->
     speed: 600
     insertTarget: this.headerElements
     insertLocation: "appendTo"
+    onRender: () ->
+      $("li.scroll-nav__item a").addClass "btn btn-info"
+      return
   });
   return
 ###

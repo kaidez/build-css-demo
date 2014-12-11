@@ -44,11 +44,14 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
        "nav",
        "ol",
        "ul",
+       ".btn",
+       ".btn-info",
        ".cycle-slide",
        ".player-info",
        ".player-name",
        ".scroll-nav",
        ".scroll-nav__item",
+       ".scroll-nav__link",
        ".scroll-nav__list"
      ];
 

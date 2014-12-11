@@ -19,7 +19,10 @@ scroll = (function() {
     sectionElem: "div",
     speed: 600,
     insertTarget: this.headerElements,
-    insertLocation: "appendTo"
+    insertLocation: "appendTo",
+    onRender: function() {
+      $("li.scroll-nav__item a").addClass("btn btn-info");
+    }
   });
 })();
 

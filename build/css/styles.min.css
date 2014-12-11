@@ -32,6 +32,13 @@ ol,ul{margin-top:0;margin-bottom:10px}
 @media (min-width:992px){.col-md-8{float:left;width:66.66666667%}}
 .form-control::-moz-placeholder{color:#999;opacity:1}
 .form-control:-ms-input-placeholder{color:#999}
+.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px}
+.btn:active:focus,.btn:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
+.btn:focus,.btn:hover{color:#333;text-decoration:none}
+.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+.btn-info{color:#fff;background-color:#5bc0de;border-color:#46b8da}
+.btn-info:active,.btn-info:focus,.btn-info:hover{color:#fff;background-color:#31b0d5;border-color:#269abc}
+.btn-info:active{background-image:none}
 @-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}}
 @-o-keyframes progress-bar-stripes{from{background-position:40px 0}
@@ -56,6 +63,7 @@ ol,ul{padding-left:0}
 .scroll-nav{text-align:center}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
+.scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .headerClass{font-size:24px}
 .team-header{text-align:center}
 @media (min-width:768px){.headerClass{font-size:36px}
