@@ -75,7 +75,7 @@ main{padding-top:127px;margin:0 10px}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
-.team-copy{margin-left:10px;position:relative;left:16px;width:500px}
+.team-copy{margin-left:10px;position:absolute;top:369px;left:10px;width:300px}
 .scroll-nav{text-align:center;margin-top:8px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
@@ -89,7 +89,7 @@ main{padding-top:127px;margin:0 10px}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
-.team-copy{position:absolute;width:264px;bottom:0;left:22px}}
+.team-copy{width:264px;bottom:0;top:auto;left:22px}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}

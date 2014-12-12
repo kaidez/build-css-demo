@@ -159,9 +159,10 @@ main {
 }
 .team-copy {
   margin-left: 10px;
-  position: relative;
-  left: 16px;
-  width: 500px;
+  position: absolute;
+  top: 369px;
+  left: 10px;
+  width: 300px;
 }
 .scroll-nav {
   text-align: center;
@@ -221,9 +222,9 @@ main {
     box-shadow: none;
   }
   .team-copy {
-    position: absolute;
     width: 264px;
     bottom: 0;
+    top: auto;
     left: 22px;
   }
 }
