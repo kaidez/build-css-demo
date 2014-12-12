@@ -71,6 +71,7 @@ ol,ul{padding-left:0}
 main{padding-top:127px;margin:0 10px}
 .header-class{font-size:24px}
 .team-header{text-align:center}
+.page{overflow-y:hidden}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
@@ -83,7 +84,7 @@ main{padding-top:127px;margin:0 10px}
 .container{border-right:1px solid gray;border-left:1px solid gray}
 .header-class{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
-.page{height:500px}
+.page{height:500px;overflow-y:visible}
 .hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
