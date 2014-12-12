@@ -125,6 +125,7 @@ ol {
 }
 main {
   padding-top: 127px;
+  margin: 0 10px;
 }
 .header-class {
   font-size: 24px;
@@ -166,6 +167,7 @@ main {
 @media (min-width: 768px) {
   main {
     padding-top: 0;
+    margin: 0;
   }
   .header-class {
     font-size: 36px;
