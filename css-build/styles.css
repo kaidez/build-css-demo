@@ -34,14 +34,14 @@
   /* Medium screen, non-retina */
   .chelsea {
     background: url("../img/chelsea.png") no-repeat 100% 0;
-    background-size: 200px 200px;
+    background-size: 300px 300px;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
   /* Medium screen, retina, stuff to override above media query */
   .chelsea {
     background: url("../img/chelsea@2x.png") no-repeat 100% 0;
-    background-size: 200px 200px;
+    background-size: 300px 300px;
   }
 }
 @media only screen and (min-width: 1300px) {
