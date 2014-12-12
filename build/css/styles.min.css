@@ -51,6 +51,8 @@ to{background-position:0 0}}
 .row{margin:0 auto}
 .well{margin:10px 42px}
 @media (min-width:992px){.col-md-8{float:none}}
+@media only screen and (min-width:768px){.chelsea{background:url(../img/chelsea.png) 100% 0/200px 200px no-repeat}}
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),only screen and (min--moz-device-pixel-ratio:2) and (min-width:768px),only screen and (-o-min-device-pixel-ratio:2/1) and (min-width:768px),only screen and (min-device-pixel-ratio:2) and (min-width:768px),only screen and (min-resolution:192dpi) and (min-width:768px),only screen and (min-resolution:2dppx) and (min-width:768px){.chelsea{background:url(../img/chelsea@2x.png) 100% 0/200px 200px no-repeat}}
 .gl-container,body,html{height:100%}
 ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
