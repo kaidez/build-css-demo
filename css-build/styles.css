@@ -108,6 +108,7 @@ ol {
 }
 .gl-header-class {
   float: left;
+  margin-top: 0;
 }
 .gl-page {
   height: 400px;
@@ -120,21 +121,6 @@ ol {
 .gl-cycle-nav-image {
   float: left;
   margin: 5px;
-}
-.scroll-nav {
-  text-align: center;
-}
-.scroll-nav__list {
-  list-style-type: none;
-}
-.scroll-nav__item {
-  display: inline-block;
-  margin: 0 20px;
-}
-.scroll-nav__link {
-  border-radius: 5px;
-  padding: 5px;
-  text-decoration: none;
 }
 .header-class {
   font-size: 24px;
@@ -150,6 +136,22 @@ ol {
 .player-info,
 .player-name {
   margin: 2px 0;
+}
+.scroll-nav {
+  text-align: center;
+  margin-top: 8px;
+}
+.scroll-nav__list {
+  list-style-type: none;
+}
+.scroll-nav__item {
+  display: inline-block;
+  margin: 0 20px;
+}
+.scroll-nav__link {
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .header-class {
