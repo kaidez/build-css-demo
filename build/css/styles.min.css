@@ -56,7 +56,7 @@ ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
 .cf:after{clear:both}
 .gl-headerClass{text-align:center}
-.gl-page{height:400px;padding:5px;margin:0 auto 20px;font-family:'Francois One',sans-serif}
+.gl-page{height:400px;padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px}
 .scroll-nav{text-align:center}
 .scroll-nav__list{list-style-type:none}
@@ -68,7 +68,6 @@ ol,ul{padding-left:0}
 .player-info,.player-name{margin:2px 0}
 @media (min-width:768px){.headerClass{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
-.page{padding-left:30px;border:1px solid #000;background-color:#f8f8f8}
 .hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}}

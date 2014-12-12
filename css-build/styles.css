@@ -67,9 +67,11 @@ ol {
 }
 .gl-page {
   height: 400px;
-  padding: 5px;
+  padding-left: 30px;
   margin: 0 auto 20px;
   font-family: 'Francois One', sans-serif;
+  border: 1px solid #000000;
+  background-color: #f8f8f8;
 }
 .gl-cycle-nav-image {
   float: left;
@@ -115,11 +117,6 @@ ol {
     position: relative;
     max-width: 195px;
     z-index: 101;
-  }
-  .page {
-    padding-left: 30px;
-    border: 1px solid #000000;
-    background-color: #f8f8f8;
   }
   .hack-header-padding {
     right: 189px;
