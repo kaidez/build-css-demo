@@ -1,5 +1,11 @@
-html, body, .gl-container {
+html, body {
   height: 100%;
+}
+
+// Global settings to Bootstrap's ".container" class
+.gl-container {
+  height: 100%;
+  min-height: 1510px;
 }
 
 // Remove that 40px padding that's always on to <ul> and <ol> tags
@@ -45,7 +51,6 @@ ul, ol {
 }
 
 .gl-page {
-  height: @pageBaseHeight;
   padding-left: 30px;
   margin: 0 auto 20px;
 
@@ -58,4 +63,11 @@ ul, ol {
 .gl-cycle-nav-image {
   float: left;
   margin: 5px;
+}
+
+// Style Wikipedia Credit
+.gl-wikipedia-credit {
+  padding-top:10px;
+
+  text-align: right;
 }

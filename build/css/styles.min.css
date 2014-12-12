@@ -13,7 +13,8 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}
 img{page-break-inside:avoid;max-width:100%!important}
-h2{orphans:3;widows:3;page-break-after:avoid}}
+h2,p{orphans:3;widows:3}
+h2{page-break-after:avoid}}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 *,:after,:before{box-sizing:border-box}
 html{font-size:10px;-webkit-tap-highlight-color:transparent}
@@ -23,6 +24,7 @@ img{vertical-align:middle}
 h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
 h1{font-size:36px}
 h2{font-size:30px}
+p{margin:0 0 10px}
 ol,ul{margin-top:0;margin-bottom:10px}
 .container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
@@ -57,30 +59,36 @@ to{background-position:0 0}}
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),only screen and (min--moz-device-pixel-ratio:2) and (min-width:768px),only screen and (-o-min-device-pixel-ratio:2/1) and (min-width:768px),only screen and (min-device-pixel-ratio:2) and (min-width:768px),only screen and (min-resolution:192dpi) and (min-width:768px),only screen and (min-resolution:2dppx) and (min-width:768px){.team-chelsea{background:url(../img/chelsea@2x.png) 450px 0/300px 300px no-repeat}
 .team-real-madrid{background:url(../img/real-madrid@2x.png) 450px 0/300px 300px no-repeat}
 .team-milan{background:url(../img/milan@2x.png) 450px 0/300px 300px no-repeat}}
-.gl-container,body,html{height:100%}
+body,html{height:100%}
+.gl-container{height:100%;min-height:1510px}
 ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
 .cf:after{clear:both}
 .gl-header-class{float:left;margin-top:0}
-.gl-page{height:400px;padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
+.gl-page{padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px}
+.gl-wikipedia-credit{padding-top:10px;text-align:right}
 main{padding-top:127px;margin:0 10px}
 .header-class{font-size:24px}
 .team-header{text-align:center}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
+.team-copy{margin-left:10px;position:relative;left:16px;width:500px}
 .scroll-nav{text-align:center;margin-top:8px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 @media (min-width:768px){main{padding-top:0;margin:0}
+.container{border-right:1px solid gray;border-left:1px solid gray}
 .header-class{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
+.page{height:500px}
 .hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
-.well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}}
+.well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
+.team-copy{position:absolute;width:264px;bottom:0;left:22px}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}

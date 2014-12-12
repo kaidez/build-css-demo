@@ -70,9 +70,12 @@
   /* Large screen, retina, stuff to override above media query */
 }
 html,
-body,
+body {
+  height: 100%;
+}
 .gl-container {
   height: 100%;
+  min-height: 1510px;
 }
 ul,
 ol {
@@ -112,7 +115,6 @@ ol {
   margin-top: 0;
 }
 .gl-page {
-  height: 400px;
   padding-left: 30px;
   margin: 0 auto 20px;
   font-family: 'Francois One', sans-serif;
@@ -122,6 +124,10 @@ ol {
 .gl-cycle-nav-image {
   float: left;
   margin: 5px;
+}
+.gl-wikipedia-credit {
+  padding-top: 10px;
+  text-align: right;
 }
 main {
   padding-top: 127px;
@@ -148,6 +154,12 @@ main {
   width: 100%;
   box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.64);
 }
+.team-copy {
+  margin-left: 10px;
+  position: relative;
+  left: 16px;
+  width: 500px;
+}
 .scroll-nav {
   text-align: center;
   margin-top: 8px;
@@ -169,6 +181,10 @@ main {
     padding-top: 0;
     margin: 0;
   }
+  .container {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+  }
   .header-class {
     font-size: 36px;
   }
@@ -178,6 +194,9 @@ main {
     position: relative;
     max-width: 195px;
     z-index: 101;
+  }
+  .page {
+    height: 500px;
   }
   .hack-header-padding {
     right: 189px;
@@ -196,6 +215,12 @@ main {
     width: auto;
     max-width: 754px;
     box-shadow: none;
+  }
+  .team-copy {
+    position: absolute;
+    width: 264px;
+    bottom: 0;
+    left: 22px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
