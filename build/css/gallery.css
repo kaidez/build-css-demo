@@ -10,6 +10,9 @@
 .mobile-margin-reset {
   margin: 2px 0;
 }
+.team-bg-size {
+  background-size: 300px 300px;
+}
 .cycle-slideshow {
   max-width: 180px;
   margin: 0 auto;

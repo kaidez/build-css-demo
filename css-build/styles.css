@@ -10,6 +10,9 @@
 .mobile-margin-reset {
   margin: 2px 0;
 }
+.team-bg-size {
+  background-size: 300px 300px;
+}
 .container {
   padding: 0;
 }
@@ -32,15 +35,30 @@
 }
 @media only screen and (min-width: 768px) {
   /* Medium screen, non-retina */
-  .chelsea {
-    background: url("../img/chelsea.png") no-repeat 100% 0;
+  .team-chelsea {
+    background: url('../img/chelsea.png') no-repeat 450px 0;
+    background-size: 300px 300px;
+  }
+  .team-real-madrid {
+    background: url('../img/real-madrid.png') no-repeat 450px 0;
+    background-size: 300px 300px;
+  }
+  .team-milan {
+    background: url('../img/milan.png') no-repeat 450px 0;
     background-size: 300px 300px;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  /* Medium screen, retina, stuff to override above media query */
-  .chelsea {
-    background: url("../img/chelsea@2x.png") no-repeat 100% 0;
+  .team-chelsea {
+    background: url('../img/chelsea@2x.png') no-repeat 450px 0;
+    background-size: 300px 300px;
+  }
+  .team-real-madrid {
+    background: url('../img/real-madrid@2x.png') no-repeat 450px 0;
+    background-size: 300px 300px;
+  }
+  .team-milan {
+    background: url('../img/milan@2x.png') no-repeat 450px 0;
     background-size: 300px 300px;
   }
 }

@@ -1,3 +1,5 @@
+@teams: @chelsea, @real-madrid, @milan;
+
 @media only screen and (min-width: 320px) {
 
   /* Small screen, non-retina */
@@ -19,11 +21,17 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 @media only screen and (min-width: 768px) {
 
   /* Medium screen, non-retina */
-    .chelsea {
-      background: url("../img/chelsea.png") no-repeat 100% 0;
-      background-size: 300px 300px;
-    }
 
+  // Dynamiclly build selectors styles for team background images
+  .team {
+    .for(@teams); .-each(@team) {
+      @name: e(@team);
+      &-@{name} {
+        background: url('../img/@{name}.png') no-repeat 450px 0;
+        .team-bg-size;
+      }
+    }
+  }
 }
 
 @media
@@ -34,12 +42,18 @@ only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
 only screen and (                min-resolution: 192dpi) and (min-width: 768px),
 only screen and (                min-resolution: 2dppx)  and (min-width: 768px) {
 
-  /* Medium screen, retina, stuff to override above media query */
-  .chelsea {
-    background: url("../img/chelsea@2x.png") no-repeat 100% 0;
-    background-size: 300px 300px;
-  }
+  // Medium screen, retina, stuff to override above media query
 
+  // Dynamiclly build selectors styles for team background images
+  .team {
+    .for(@teams); .-each(@team) {
+      @name: e(@team);
+      &-@{name} {
+        background: url('../img/@{name}@2x.png') no-repeat 450px 0;
+        .team-bg-size;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1300px) {
