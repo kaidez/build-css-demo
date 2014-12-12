@@ -21,6 +21,7 @@
 }
 .well {
   border-radius: 0;
+  margin: 0 auto 20px;
 }
 @media (min-width: 992px) {
   .col-md-8 {
@@ -191,7 +192,6 @@ main {
     z-index: auto;
     width: auto;
     max-width: 754px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
