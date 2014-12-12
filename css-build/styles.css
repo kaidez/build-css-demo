@@ -20,7 +20,7 @@
   margin: 0 auto;
 }
 .well {
-  margin: 10px 42px;
+  margin: 10px;
 }
 @media (min-width: 992px) {
   .col-md-8 {
@@ -121,6 +121,12 @@ ol {
 .gl-cycle-nav-image {
   float: left;
   margin: 5px;
+}
+.gl-well {
+  position: fixed;
+  z-index: 2;
+  width: 707px;
+  left: 25%;
 }
 .header-class {
   font-size: 24px;
