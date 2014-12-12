@@ -106,8 +106,8 @@ ol {
 .g-cycle-link {
   text-align: center;
 }
-.gl-headerClass {
-  text-align: center;
+.gl-header-class {
+  float: left;
 }
 .gl-page {
   height: 400px;
@@ -136,7 +136,7 @@ ol {
   padding: 5px;
   text-decoration: none;
 }
-.headerClass {
+.header-class {
   font-size: 24px;
 }
 .team-header {
@@ -152,7 +152,7 @@ ol {
   margin: 2px 0;
 }
 @media (min-width: 768px) {
-  .headerClass {
+  .header-class {
     font-size: 36px;
   }
   .cycle-nav {
@@ -175,7 +175,7 @@ ol {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .headerClass {
+  .header-class {
     font-size: 36px;
   }
   .page {
@@ -204,7 +204,7 @@ ol {
   }
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
-  .headerClass {
+  .header-class {
     font-size: 24px;
   }
 }
@@ -217,7 +217,7 @@ ol {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .headerClass {
+  .header-class {
     font-size: 36px;
   }
 }
