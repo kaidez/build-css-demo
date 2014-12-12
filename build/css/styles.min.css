@@ -65,7 +65,7 @@ ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
 .cf:after{clear:both}
 .gl-header-class{float:left;margin-top:0}
-.gl-page{padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
+.gl-page{padding-left:30px;margin:0 10px 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px}
 .gl-wikipedia-credit{padding-top:10px;text-align:right}
 main{padding-top:127px;margin:0 10px}
