@@ -24,11 +24,10 @@ h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-t
 h1{font-size:36px}
 h2{font-size:30px}
 ol,ul{margin-top:0;margin-bottom:10px}
-.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
 @media (min-width:992px){.container{width:970px}}
 @media (min-width:1200px){.container{width:1170px}}
-.row{margin-right:-15px;margin-left:-15px}
 .col-md-8{position:relative;min-height:1px;padding-right:15px;padding-left:15px}
 @media (min-width:992px){.col-md-8{float:left;width:66.66666667%}}
 .form-control::-moz-placeholder{color:#999;opacity:1}
@@ -44,7 +43,44 @@ ol,ul{margin-top:0;margin-bottom:10px}
 to{background-position:0 0}}
 @keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}}
-.well{min-height:20px;padding:19px;margin-bottom:20px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
+.well{min-height:20px;padding:19px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
 .container:after,.container:before,.row:after,.row:before{display:table;content:" "}
 .container:after,.row:after{clear:both}
 @-ms-viewport{width:device-width}
+.container{padding:0}
+.row{margin:0 auto}
+.well{margin:10px 42px}
+@media (min-width:992px){.col-md-8{float:none}}
+@media only screen and (min-width:768px){.team-chelsea{background:url(../img/chelsea.png) 450px 0/300px 300px no-repeat}
+.team-real-madrid{background:url(../img/real-madrid.png) 450px 0/300px 300px no-repeat}
+.team-milan{background:url(../img/milan.png) 450px 0/300px 300px no-repeat}}
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),only screen and (min--moz-device-pixel-ratio:2) and (min-width:768px),only screen and (-o-min-device-pixel-ratio:2/1) and (min-width:768px),only screen and (min-device-pixel-ratio:2) and (min-width:768px),only screen and (min-resolution:192dpi) and (min-width:768px),only screen and (min-resolution:2dppx) and (min-width:768px){.team-chelsea{background:url(../img/chelsea@2x.png) 450px 0/300px 300px no-repeat}
+.team-real-madrid{background:url(../img/real-madrid@2x.png) 450px 0/300px 300px no-repeat}
+.team-milan{background:url(../img/milan@2x.png) 450px 0/300px 300px no-repeat}}
+.gl-container,body,html{height:100%}
+ol,ul{padding-left:0}
+.cf:after,.cf:before{content:" ";display:table}
+.cf:after{clear:both}
+.gl-headerClass{text-align:center}
+.gl-page{height:400px;padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
+.gl-cycle-nav-image{float:left;margin:5px}
+.scroll-nav{text-align:center}
+.scroll-nav__list{list-style-type:none}
+.scroll-nav__item{display:inline-block;margin:0 20px}
+.scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
+.headerClass{font-size:24px}
+.team-header{text-align:center}
+.all-player-info{height:129px;padding-top:22px;background:#bee1e0}
+.player-info,.player-name{margin:2px 0}
+@media (min-width:768px){.headerClass{font-size:36px}
+.cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
+.hack-header-padding{right:189px;position:relative}
+.team-header{text-align:start}
+.all-player-info{height:auto;background:#fff}}
+@media (min-width:992px) and (max-width:1199px){.headerClass{font-size:36px}
+.page{min-width:706px}}
+@media (min-width:1200px){.container{padding:0 20px}}
+@media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
+@media (max-device-width:480px) and (orientation:landscape){.headerClass{font-size:24px}}
+@media (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
+@media (min-width:768px) and (max-width:991px){.headerClass{font-size:36px}}

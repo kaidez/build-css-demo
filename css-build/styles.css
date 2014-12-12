@@ -178,6 +178,9 @@ ol {
   .headerClass {
     font-size: 36px;
   }
+  .page {
+    min-width: 706px;
+  }
   .center-columns {
     margin: auto;
     max-width: 900px;
