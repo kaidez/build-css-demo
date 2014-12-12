@@ -46,7 +46,21 @@ main {
 .team-copy {
   margin-left: 10px;
   position: absolute;
-  top: 369px;
+  top: 250px;
   left: 10px;
   width: 300px;
+}
+
+// "show-team-copy" animation: pops up individual team copy
+@keyframes show-team-copy {
+  from{transform: translateY(1px);}
+  to{transform: translateY(-190px);}
+}
+
+// Apply "show-team-copy" animation to the ".team-copy-popup" class
+.team-copy-popup {
+  animation-name: show-team-copy;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
