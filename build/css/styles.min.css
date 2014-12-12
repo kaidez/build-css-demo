@@ -43,7 +43,7 @@ ol,ul{margin-top:0;margin-bottom:10px}
 to{background-position:0 0}}
 @keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}}
-.well{min-height:20px;padding:19px;background-color:#f5f5f5;border:1px solid #e3e3e3;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
+.well{min-height:20px;padding:19px;background-color:#f5f5f5;border:1px solid #e3e3e3}
 .container:after,.container:before,.row:after,.row:before{display:table;content:" "}
 .container:after,.row:after{clear:both}
 @-ms-viewport{width:device-width}
@@ -69,7 +69,7 @@ main{padding-top:127px}
 .team-header{text-align:center}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
-.well{position:fixed;z-index:102;width:100%}
+.well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
 .scroll-nav{text-align:center;margin-top:8px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
@@ -80,7 +80,7 @@ main{padding-top:127px}
 .hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
-.well{position:static;z-index:auto;width:auto;max-width:754px}}
+.well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
