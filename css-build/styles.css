@@ -103,6 +103,9 @@ ol {
 .cf {
   *zoom: 1;
 }
+.gl-main {
+  padding-top: 127px;
+}
 .g-cycle-link {
   text-align: center;
 }
