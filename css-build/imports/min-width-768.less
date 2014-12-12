@@ -43,11 +43,17 @@
   }
 
   // Set ".well" properties to their default values in wide views
-  // This overrides the ".well" properties set in "mobile_first.less"
+  // The following properties override the ones in "mobile_first.less":
+  //   - position
+  //   - z-index
+  //   - width
+
   .well {
     position: static;
     z-index: auto;
     width: auto;
+    max-width: 754px;
+    margin: 0 auto;
   }
 
 }
