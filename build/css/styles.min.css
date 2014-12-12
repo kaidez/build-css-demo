@@ -43,13 +43,12 @@ ol,ul{margin-top:0;margin-bottom:10px}
 to{background-position:0 0}}
 @keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}}
-.well{min-height:20px;padding:19px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
+.well{min-height:20px;padding:19px;margin-bottom:20px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
 .container:after,.container:before,.row:after,.row:before{display:table;content:" "}
 .container:after,.row:after{clear:both}
 @-ms-viewport{width:device-width}
 .container{padding:0}
 .row{margin:0 auto}
-.well{margin:10px}
 @media (min-width:992px){.col-md-8{float:none}}
 @media only screen and (min-width:768px){.team-chelsea{background:url(../img/chelsea.png) 450px 0/300px 300px no-repeat}
 .team-real-madrid{background:url(../img/real-madrid.png) 450px 0/300px 300px no-repeat}
@@ -61,24 +60,26 @@ to{background-position:0 0}}
 ol,ul{padding-left:0}
 .cf:after,.cf:before{content:" ";display:table}
 .cf:after{clear:both}
-.gl-main{padding-top:127px}
 .gl-header-class{float:left;margin-top:0}
 .gl-page{height:400px;padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px}
-.gl-well{position:fixed;z-index:102;width:707px;left:25%}
+main{padding-top:127px}
 .header-class{font-size:24px}
 .team-header{text-align:center}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
+.well{position:fixed;z-index:102;width:100%}
 .scroll-nav{text-align:center;margin-top:8px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
-@media (min-width:768px){.header-class{font-size:36px}
+@media (min-width:768px){main{padding-top:0}
+.header-class{font-size:36px}
 .cycle-nav{clip:auto;bottom:295px;position:relative;max-width:195px;z-index:101}
 .hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
-.all-player-info{height:auto;background:#fff}}
+.all-player-info{height:auto;background:#fff}
+.well{position:static;z-index:auto;width:auto}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:706px}}
 @media (min-width:1200px){.container{padding:0 20px}}

@@ -1,3 +1,7 @@
+main {
+  padding-top: 127px;
+}
+
 .header-class {
   font-size:24px;
 }
@@ -18,4 +22,13 @@
 
 .player-info, .player-name{
   .mobile-margin-reset;
+}
+
+// Globally style Bootstrap's ".well" class
+// Bootstrap doesn't apply specific values to this properties
+// No need to place it in "bootstrap-override."
+.well {
+  position: fixed;
+  z-index: 102;
+  width: 100%;
 }

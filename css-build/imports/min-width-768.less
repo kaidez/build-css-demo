@@ -1,5 +1,11 @@
 @media (min-width: 768px) {
 
+  // Set <main> padding-top to "0" properties to their default values
+  // This overrides <main> padding-top setting in "mobile_first.less"
+  main {
+    padding-top: 0;
+  }
+
   .header-class {
     font-size:36px;
   }
@@ -34,6 +40,14 @@
   .all-player-info {
     height: auto;
     background: #fff;
+  }
+
+  // Set ".well" properties to their default values in wide views
+  // This overrides the ".well" properties set in "mobile_first.less"
+  .well {
+    position: static;
+    z-index: auto;
+    width: auto;
   }
 
 }
