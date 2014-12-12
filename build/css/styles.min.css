@@ -65,7 +65,7 @@ ol,ul{padding-left:0}
 .gl-header-class{float:left;margin-top:0}
 .gl-page{height:400px;padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px}
-.gl-well{position:fixed;z-index:2;width:707px;left:25%}
+.gl-well{position:fixed;z-index:102;width:707px;left:25%}
 .header-class{font-size:24px}
 .team-header{text-align:center}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
