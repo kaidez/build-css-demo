@@ -157,6 +157,9 @@ main {
   width: 100%;
   box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.64);
 }
+.popup-link {
+  display: inline;
+}
 .team-copy-class {
   margin-left: 10px;
   position: absolute;
@@ -237,6 +240,12 @@ main {
     width: auto;
     max-width: 754px;
     box-shadow: none;
+  }
+  .popup-link {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
   }
   .team-copy-class {
     width: 264px;
