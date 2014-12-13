@@ -14,8 +14,8 @@
   background-size: 300px 300px;
 }
 .cycle-slideshow {
-  max-width: 180px;
-  float: left;
+  max-width: 277px;
+  margin: 0 auto;
 }
 .player-container {
   padding-top: 165px;
