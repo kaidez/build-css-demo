@@ -7,16 +7,11 @@
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,footer,header,main,nav,section{display:block}
-a{background-color:transparent}
-a:active,a:hover{outline:0}
 h1{margin:.67em 0}
 img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}
-a,a:visited{text-decoration:underline}
-a[href]:after{content:" (" attr(href) ")"}
-a[href^="#"]:after{content:""}
 img{page-break-inside:avoid;max-width:100%!important}
 h2,p{orphans:3;widows:3}
 h2{page-break-after:avoid}}
@@ -24,9 +19,6 @@ h2{page-break-after:avoid}}
 *,:after,:before{box-sizing:border-box}
 html{font-size:10px;-webkit-tap-highlight-color:transparent}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
-a{color:#337ab7;text-decoration:none}
-a:focus,a:hover{color:#23527c;text-decoration:underline}
-a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
 img{vertical-align:middle}
 .img-thumbnail{display:inline-block;max-width:100%;height:auto;padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;transition:all .2s ease-in-out}
 h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
