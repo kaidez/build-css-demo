@@ -141,6 +141,7 @@ main {
 }
 .page {
   overflow-y: hidden;
+  height: 400px;
 }
 .all-player-info {
   height: 129px;
@@ -183,6 +184,10 @@ main {
   animation-duration: .1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+.scroll-nav__section {
+  width: 277px;
+  margin: 0 auto;
 }
 .scroll-nav {
   text-align: center;

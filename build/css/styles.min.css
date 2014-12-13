@@ -71,7 +71,7 @@ ol,ul{padding-left:0}
 main{padding-top:127px;margin:0 10px}
 .header-class{font-size:24px}
 .team-header{text-align:center}
-.page{overflow-y:hidden}
+.page{overflow-y:hidden;height:400px}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
