@@ -253,6 +253,7 @@ main {
   }
   .team-copy-class {
     bottom: 0;
+    float: left;
     top: auto;
     left: 22px;
     z-index: auto;
