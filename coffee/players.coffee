@@ -67,22 +67,22 @@ setPlayer = do ->
   }
 
   for key of playerData
-    targetID = "#" + key
-    targetEl = $(targetID)
+    targetID = key
+    targetEl = document.getElementById(targetID)
     playerName = document.createElement "h3"
     allInfo = document.createElement "div"
     playerPosition = document.createElement "p"
     playerNumber = document.createElement "p"
     playerPosition.setAttribute "class", "player-info"
     playerNumber.setAttribute "class", "player-info"
-    playerName.innerText = playerData[key].name
+    playerName.innerHTML = playerData[key].name
     playerName.setAttribute "class", "player-name"
-    playerPosition.innerText = playerData[key].position
-    playerNumber.innerText = "#" + playerData[key].number
+    playerPosition.innerHTML = playerData[key].position
+    playerNumber.innerHTML = "#" + playerData[key].number
     allInfo.setAttribute "class", "all-player-info"
     allInfo.appendChild playerName
     allInfo.appendChild playerPosition
     allInfo.appendChild playerNumber
     frag.appendChild allInfo
-    $(frag).appendTo targetEl
+    targetEl.appendChild frag
   return
