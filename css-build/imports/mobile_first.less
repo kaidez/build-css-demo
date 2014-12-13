@@ -49,19 +49,18 @@ main {
 
 // Style copy for each team on the mobile view
 .team-copy-class {
-  position: absolute;
-  top: 361px;
-  left: 243px;
+  position: relative;
   width: 270px;
   z-index: 100;
+  margin: 0 auto;
 }
 
 // "show-team-copy" animation: pops up individual team copy
 @keyframes show-team-copy {
 
-  0% { top: 361px; }
-  90% { top: 35px; }
-  100% { top: 75px; }
+  0% { top: 0px; }
+  90% { top: -235px; }
+  100% { top: -275px; }
 
 }
 

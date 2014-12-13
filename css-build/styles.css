@@ -162,21 +162,20 @@ main {
   display: block;
 }
 .team-copy-class {
-  position: absolute;
-  top: 361px;
-  left: 243px;
+  position: relative;
   width: 270px;
   z-index: 100;
+  margin: 0 auto;
 }
 @keyframes show-team-copy {
   0% {
-    top: 361px;
+    top: 0px;
   }
   90% {
-    top: 35px;
+    top: -235px;
   }
   100% {
-    top: 75px;
+    top: -275px;
   }
 }
 .team-copy-popup {
