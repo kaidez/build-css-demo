@@ -157,7 +157,7 @@ main {
   width: 100%;
   box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.64);
 }
-.team-copy {
+.team-copy-class {
   margin-left: 10px;
   position: absolute;
   top: 250px;
@@ -235,7 +235,7 @@ main {
     max-width: 754px;
     box-shadow: none;
   }
-  .team-copy {
+  .team-copy-class {
     width: 264px;
     bottom: 0;
     top: auto;

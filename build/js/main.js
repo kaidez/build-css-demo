@@ -8,6 +8,14 @@ $(".cycle-slideshow").cycle({
 
 
 /*
+code that displays the individual team copy on popup
+ */
+$("#teamCopyLink").click(function() {
+  $("#teamCopy").addClass("team-copy-popup");
+});
+
+
+/*
 scrollNav code starts
  */
 var scroll;
