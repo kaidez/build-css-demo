@@ -10,7 +10,7 @@ $(".cycle-slideshow").cycle({
 /*
 code that displays the individual team copy on popup
  */
-$("#teamCopyLink").click(function() {
+$("#teamCopyLinkChelsea").click(function() {
   $("#teamCopy").addClass("team-copy-popup");
 });
 
