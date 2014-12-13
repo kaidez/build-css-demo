@@ -31,154 +31,82 @@
   text-transform: uppercase;
 }
 /*
- * Dynamically build player image thumbnail css classes
+ * Dynamically build player image css classes
  * Learn more at: http://bit.ly/12tpr20
  */
 .player-container-bgimage-courtois {
-  max-width: 180px;
-  background: url('../img/courtois-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/courtois.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-drogba {
-  max-width: 180px;
-  background: url('../img/drogba-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/drogba.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-fabregas {
-  max-width: 180px;
-  background: url('../img/fabregas-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/fabregas.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-terry {
-  max-width: 180px;
-  background: url('../img/terry-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/terry.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-casillas {
-  max-width: 180px;
-  background: url('../img/casillas-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/casillas.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-ramos {
-  max-width: 180px;
-  background: url('../img/ramos-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/ramos.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-bale {
-  max-width: 180px;
-  background: url('../img/bale-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/bale.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-ronaldo {
-  max-width: 180px;
-  background: url('../img/ronaldo-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/ronaldo.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-abbiati {
-  max-width: 180px;
-  background: url('../img/abbiati-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/abbiati.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-alex {
-  max-width: 180px;
-  background: url('../img/alex-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/alex.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-essien {
-  max-width: 180px;
-  background: url('../img/essien-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/essien.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 .player-container-bgimage-torres {
-  max-width: 180px;
-  background: url('../img/torres-mobile.jpg') no-repeat 0 0;
-  background-size: 180px 180px;
-  border: 3px solid #bee1e0;
+  max-width: 280px;
+  background: url('../img/torres.jpg') no-repeat 0 0;
+  background-size: 280px 280px;
+  border: 3px solid #ffffff;
 }
 @media (min-width: 768px) {
-  .player-container-bgimage-courtois {
-    max-width: 300px;
-    background: url('../img/courtois.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-drogba {
-    max-width: 300px;
-    background: url('../img/drogba.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-fabregas {
-    max-width: 300px;
-    background: url('../img/fabregas.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-terry {
-    max-width: 300px;
-    background: url('../img/terry.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-casillas {
-    max-width: 300px;
-    background: url('../img/casillas.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-ramos {
-    max-width: 300px;
-    background: url('../img/ramos.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-bale {
-    max-width: 300px;
-    background: url('../img/bale.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-ronaldo {
-    max-width: 300px;
-    background: url('../img/ronaldo.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-abbiati {
-    max-width: 300px;
-    background: url('../img/abbiati.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-alex {
-    max-width: 300px;
-    background: url('../img/alex.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-essien {
-    max-width: 300px;
-    background: url('../img/essien.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
-  .player-container-bgimage-torres {
-    max-width: 300px;
-    background: url('../img/torres.jpg') no-repeat 0 0;
-    background-size: 300px 300px;
-    border: 3px solid #ffffff;
-  }
   .all-player-info {
     min-height: 110px;
     padding: 5px;
