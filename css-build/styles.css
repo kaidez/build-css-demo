@@ -161,11 +161,11 @@ main {
   display: block;
 }
 .team-copy-class {
-  margin-left: 10px;
   position: absolute;
   top: 361px;
-  left: 10px;
-  width: 300px;
+  left: 243px;
+  width: 270px;
+  z-index: 100;
 }
 @keyframes show-team-copy {
   0% {
@@ -248,10 +248,10 @@ main {
     clip: rect(1px, 1px, 1px, 1px);
   }
   .team-copy-class {
-    width: 264px;
     bottom: 0;
     top: auto;
     left: 22px;
+    z-index: auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
