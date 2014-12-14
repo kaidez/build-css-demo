@@ -279,9 +279,6 @@ main {
   max-width: 277px;
   margin: 0 auto;
 }
-.cycle-player-content-wrapper {
-  margin: 30px 20px 0;
-}
 .player-container {
   padding-top: 165px;
   width: 300px;
@@ -384,6 +381,10 @@ main {
   border: 3px solid #ffffff;
 }
 @media (min-width: 768px) {
+  .cycle-player-content-wrapper {
+    height: 300px;
+    margin: 30px 45px 10px;
+  }
   .all-player-info {
     min-height: 110px;
     padding: 5px;
