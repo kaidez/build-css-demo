@@ -175,6 +175,10 @@ gulp.task("bowerscroll", function () {
   gulp.run("grunt-bowercopy:scroll");
 });
 
+// Copy over enquire.js only
+gulp.task("boweren", function () {
+  gulp.run("grunt-bowercopy:enquire");
+});
 /*
  *  ===================================================================
  *  | START WATCH TASK |

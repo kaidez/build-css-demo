@@ -8,6 +8,12 @@ $(".cycle-slideshow").cycle({
 
 
 /*
+enquire.js
+ */
+
+
+
+/*
 code that displays the individual team copy on popup
  */
 $("#teamCopyLinkChelsea").click(function() {
