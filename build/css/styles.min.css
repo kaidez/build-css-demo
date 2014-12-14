@@ -109,6 +109,7 @@ main{padding-top:127px;margin:0 10px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .scroll-nav__section{width:auto}
 .cycle-slideshow{max-width:277px;margin:0 auto}
+.cycle-player-content-wrapper{margin:30px 20px 0}
 .player-container{padding-top:165px;width:300px;height:300px;font-size:19px;text-align:center;box-shadow:3px 3px 5px 0 rgba(50,50,50,.35);background-color:rgba(50,50,50,.35)}
 .player-name{font-size:19px;text-transform:uppercase}
 .player-container-bgimage-courtois{max-width:280px;position:absolute!important;background:url(../img/courtois.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
