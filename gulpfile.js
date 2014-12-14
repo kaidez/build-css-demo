@@ -179,6 +179,11 @@ gulp.task("bowerscroll", function () {
 gulp.task("boweren", function () {
   gulp.run("grunt-bowercopy:enquire");
 });
+
+// Copy over matchMedia.js only
+gulp.task("bowermm", function () {
+  gulp.run("grunt-bowercopy:matchmedia");
+});
 /*
  *  ===================================================================
  *  | START WATCH TASK |

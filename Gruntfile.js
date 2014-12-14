@@ -76,7 +76,19 @@ module.exports = function(grunt) {
         files: {
           "enquire.min.js": "enquire/dist/enquire.min.js"
         }
-      } // end "bowercopy:enquire" task
+      }, // end "bowercopy:enquire" task
+
+      // Copy matchMedia.js over
+      matchmedia: {
+
+        // copy to the "css-build" directory
+        options: {
+          destPrefix: "build/js/libs/"
+        },
+        files: {
+          "matchMedia.js": "matchmedia/matchMedia.js"
+        }
+      } // end "bowercopy:matchmedia" task
     }, // end "bowercopy" task
 
     // start "coffee" task
