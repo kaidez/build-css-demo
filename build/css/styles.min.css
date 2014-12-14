@@ -84,10 +84,7 @@ main{padding-top:127px;margin:0 10px}
 90%{top:-235px}
 100%{top:-275px}}
 .team-copy-popup{-webkit-animation-name:show-team-copy;animation-name:show-team-copy;-webkit-animation-duration:.1s;animation-duration:.1s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
-.scroll-nav{text-align:center;margin-top:8px}
-.scroll-nav__list{list-style-type:none}
-.scroll-nav__item{display:inline-block;margin:0 20px}
-.scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
+.scroll-nav__section{width:277px;margin:0 auto}
 @media (min-width:768px){main{padding-top:0;margin:0}
 .container{border-right:1px solid gray;border-left:1px solid gray}
 .header-class{font-size:36px}
@@ -106,22 +103,26 @@ main{padding-top:127px;margin:0 10px}
 @media (max-device-width:480px) and (orientation:landscape){.header-class{font-size:24px}}
 @media (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
 @media (min-width:768px) and (max-width:991px){.header-class{font-size:36px}}
+.scroll-nav{text-align:center;margin-top:8px}
+.scroll-nav__list{list-style-type:none}
+.scroll-nav__item{display:inline-block;margin:0 20px}
+.scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
 .cycle-slideshow{max-width:277px;margin:0 auto}
 .player-container{padding-top:165px;width:300px;height:300px;font-size:19px;text-align:center;box-shadow:3px 3px 5px 0 rgba(50,50,50,.35);background-color:rgba(50,50,50,.35)}
 .player-name{font-size:19px;text-transform:uppercase}
-.player-container-bgimage-courtois{max-width:280px;background:url(../img/courtois.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-drogba{max-width:280px;background:url(../img/drogba.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-fabregas{max-width:280px;background:url(../img/fabregas.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-terry{max-width:280px;background:url(../img/terry.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-casillas{max-width:280px;background:url(../img/casillas.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-ramos{max-width:280px;background:url(../img/ramos.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-bale{max-width:280px;background:url(../img/bale.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-ronaldo{max-width:280px;background:url(../img/ronaldo.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-abbiati{max-width:280px;background:url(../img/abbiati.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-alex{max-width:280px;background:url(../img/alex.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-essien{max-width:280px;background:url(../img/essien.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-.player-container-bgimage-torres{max-width:280px;background:url(../img/torres.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-courtois{max-width:280px;position:absolute!important;background:url(../img/courtois.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-drogba{max-width:280px;position:absolute!important;background:url(../img/drogba.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-fabregas{max-width:280px;position:absolute!important;background:url(../img/fabregas.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-terry{max-width:280px;position:absolute!important;background:url(../img/terry.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-casillas{max-width:280px;position:absolute!important;background:url(../img/casillas.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-ramos{max-width:280px;position:absolute!important;background:url(../img/ramos.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-bale{max-width:280px;position:absolute!important;background:url(../img/bale.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-ronaldo{max-width:280px;position:absolute!important;background:url(../img/ronaldo.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-abbiati{max-width:280px;position:absolute!important;background:url(../img/abbiati.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-alex{max-width:280px;position:absolute!important;background:url(../img/alex.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-essien{max-width:280px;position:absolute!important;background:url(../img/essien.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
+.player-container-bgimage-torres{max-width:280px;position:absolute!important;background:url(../img/torres.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
 @media (min-width:768px){.all-player-info{min-height:110px;padding:5px;background:#fff}
 .player-container{padding-top:186px;background-color:#fff}
 .player-info,.player-name{margin:2px 0}
-.cycle-slideshow{left:51px;float:left;margin:0 auto}}
+.cycle-slideshow{left:51px;float:left;margin:0 auto;position:static!important}}
