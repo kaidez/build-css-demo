@@ -27,7 +27,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     .for(@teams); .-each(@team) {
       @name: e(@team);
       &-@{name} {
-        background: url('../img/@{name}.png') no-repeat 450px 0;
+        background: url('../img/@{name}.png') no-repeat 0 0;
         .team-bg-size;
       }
     }
@@ -49,7 +49,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
     .for(@teams); .-each(@team) {
       @name: e(@team);
       &-@{name} {
-        background: url('../img/@{name}@2x.png') no-repeat 450px 0;
+        background: url('../img/@{name}@2x.png') no-repeat 0 0;
         .team-bg-size;
       }
     }
