@@ -298,84 +298,72 @@ main {
  */
 .player-container-bgimage-courtois {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/courtois.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-drogba {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/drogba.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-fabregas {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/fabregas.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-terry {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/terry.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-casillas {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/casillas.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-ramos {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/ramos.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-bale {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/bale.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-ronaldo {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/ronaldo.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-abbiati {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/abbiati.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-alex {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/alex.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-essien {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/essien.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
 .player-container-bgimage-torres {
   max-width: 280px;
-  position: absolute !important;
   background: url('../img/torres.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
