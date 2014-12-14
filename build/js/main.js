@@ -26,7 +26,7 @@ use directly inside enquires "match()" and "setup()" methods
 var ifTeamCopyPopup, removeTeamCopyPopup;
 
 removeTeamCopyPopup = function() {
-  return $("#teamCopy").removeClass("team-copy-popup");
+  $("#teamCopy").removeClass("team-copy-popup");
 };
 
 
@@ -36,11 +36,11 @@ function that checks if "#teamCopy" has the "team-copy-popup" class
 
 ifTeamCopyPopup = function() {
   if ($("#teamCopy").hasClass("team-copy-popup")) {
-    return removeTeamCopyPopup();
+    removeTeamCopyPopup();
   }
 };
 
-enquire.register("min-width:768px", {
+enquire.register("screen and (min-width:768px)", {
   match: function() {
     return ifTeamCopyPopup();
   },

@@ -16,14 +16,16 @@ use directly inside enquires "match()" and "setup()" methods
 ###
 removeTeamCopyPopup = ->
   $("#teamCopy").removeClass "team-copy-popup"
+  return
 
 ###
 function that checks if "#teamCopy" has the "team-copy-popup" class
 ###
 ifTeamCopyPopup = ->
   removeTeamCopyPopup() if $("#teamCopy").hasClass "team-copy-popup"
+  return
 
-enquire.register "min-width:768px",
+enquire.register "screen and (min-width:768px)",
 
   # When on min-width:768px, remove "team-copy-popup" class if it exists
   match : () ->
