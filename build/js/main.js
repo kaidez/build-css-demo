@@ -10,7 +10,13 @@ $(".cycle-slideshow").cycle({
 /*
 enquire.js
  */
-
+enquire.register("screen and (min-width:768px)", {
+  match: function() {},
+  unmatch: function() {},
+  setup: function() {},
+  deferSetup: true,
+  destroy: function() {}
+});
 
 
 /*
