@@ -84,7 +84,7 @@ main{padding-top:127px;margin:0 10px}
 90%{top:-235px}
 100%{top:-275px}}
 .team-copy-popup{-webkit-animation-name:show-team-copy;animation-name:show-team-copy;-webkit-animation-duration:.1s;animation-duration:.1s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
-.scroll-nav__section{width:277px;margin:0 auto}
+.scroll-nav__section{margin:0 auto}
 @media (min-width:768px){main{padding-top:0;margin:0}
 .container{border-right:1px solid gray;border-left:1px solid gray}
 .header-class{font-size:36px}
@@ -95,7 +95,7 @@ main{padding-top:127px;margin:0 10px}
 .all-player-info{height:auto;background:#fff}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
 .popup-link{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
-.team-copy-class{bottom:0;float:left;top:auto;left:22px;z-index:auto}}
+.team-copy-class{bottom:0;float:right;top:auto;z-index:auto}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
@@ -107,6 +107,7 @@ main{padding-top:127px;margin:0 10px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
+.scroll-nav__section{width:auto}
 .cycle-slideshow{max-width:277px;margin:0 auto}
 .player-container{padding-top:165px;width:300px;height:300px;font-size:19px;text-align:center;box-shadow:3px 3px 5px 0 rgba(50,50,50,.35);background-color:rgba(50,50,50,.35)}
 .player-name{font-size:19px;text-transform:uppercase}
@@ -125,4 +126,4 @@ main{padding-top:127px;margin:0 10px}
 @media (min-width:768px){.all-player-info{min-height:110px;padding:5px;background:#fff}
 .player-container{padding-top:186px;background-color:#fff}
 .player-info,.player-name{margin:2px 0}
-.cycle-slideshow{left:51px;float:left;margin:0 auto;position:static!important}}
+.cycle-slideshow{float:left;margin:0 auto}}

@@ -237,9 +237,8 @@ main {
   }
   .team-copy-class {
     bottom: 0;
-    float: left;
+    float: right;
     top: auto;
-    left: 22px;
     z-index: auto;
   }
 }
@@ -305,6 +304,9 @@ main {
   border-radius: 5px;
   padding: 5px;
   text-decoration: none;
+}
+.scroll-nav__section {
+  width: auto;
 }
 .cycle-slideshow {
   max-width: 277px;
@@ -426,9 +428,7 @@ main {
     margin: 2px 0;
   }
   .cycle-slideshow {
-    left: 51px;
     float: left;
     margin: 0 auto;
-    position: static !important;
   }
 }
