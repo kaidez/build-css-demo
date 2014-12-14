@@ -2,43 +2,16 @@ html, body {
   height: 100%;
 }
 
-// Global settings to Bootstrap's ".container" class
-.gl-container {
-  height: 100%;
-  min-height: 1730px;
-}
-
 // Remove that 40px padding that's always on to <ul> and <ol> tags
 // Kind of a CSS reset
 ul, ol {
   padding-left: 0;
 }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
+// Global settings to Bootstrap's ".container" class
+.gl-container {
+  height: 100%;
+  min-height: 1730px;
 }
 
 .gl-cycle-link {
