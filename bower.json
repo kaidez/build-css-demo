@@ -20,7 +20,7 @@
     "jquery": "1.11.1",
     "jquery-cycle2": "latest",
     "scrollNav": "latest",
-    "enquire": "~2.1.2"
+    "enquire": "latest"
   },
   "resolutions": {
     "jquery": "~1.11.1"
