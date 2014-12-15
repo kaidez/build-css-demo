@@ -16,6 +16,7 @@ use directly inside enquires "match()" and "setup()" methods
 ###
 removeTeamCopyPopup = ->
   $("#teamCopy").removeClass "team-copy-popup"
+                .removeAttr "style"
   return
 
 ###

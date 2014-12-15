@@ -26,7 +26,7 @@ use directly inside enquires "match()" and "setup()" methods
 var ifTeamCopyPopup, removeTeamCopyPopup;
 
 removeTeamCopyPopup = function() {
-  $("#teamCopy").removeClass("team-copy-popup");
+  $("#teamCopy").removeClass("team-copy-popup").removeAttr("style");
 };
 
 
@@ -58,7 +58,7 @@ enquire.register("screen and (min-width:768px)", {
 code that displays the individual team copy on popup
  */
 $("#teamCopyLinkChelsea").click(function() {
-  $("#teamCopy").addClass("team-copy-popup");
+  $("#teamCopy").addClass("team-copy-popup").css("display", "block");
 });
 
 
