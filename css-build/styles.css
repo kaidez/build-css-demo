@@ -143,6 +143,7 @@ main {
   height: 275px;
   z-index: 100;
   margin: 0 auto;
+  display: none;
   color: #ffffff;
   background-color: #017f7f;
 }
