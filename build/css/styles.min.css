@@ -64,7 +64,7 @@ ol,ul{padding-left:0}
 .gl-container{height:100%;min-height:1730px}
 .gl-header-class{float:left;margin-top:0}
 .gl-page{padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
-.gl-cycle-nav-image{float:left;margin:5px}
+.gl-cycle-nav-image{float:left;margin:5px;cursor:pointer}
 .gl-wikipedia-credit{padding-top:10px;text-align:right}
 main{padding-top:127px;margin:0 10px}
 .header-class{font-size:24px}
@@ -74,14 +74,14 @@ main{padding-top:127px;margin:0 10px}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
 .popup-link{display:block}
-.team-copy-class{position:relative;left:1px;padding:12px;width:281px;height:275px;z-index:100;margin:0 auto;display:none;color:#fff;background-color:#017f7f}
+.team-copy-class{position:relative;left:1px;padding:12px;width:281px;height:275px;z-index:100;margin:0 auto;display:none;color:#fff;background-color:rgba(1,127,127,.9)}
 @-webkit-keyframes show-team-copy{0%{top:0}
-90%{top:-235px}
+80%{top:-300px}
 100%{top:-275px}}
 @keyframes show-team-copy{0%{top:0}
-90%{top:-235px}
+80%{top:-300px}
 100%{top:-275px}}
-.team-copy-popup{-webkit-animation-name:show-team-copy;animation-name:show-team-copy;-webkit-animation-duration:.1s;animation-duration:.1s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+.team-copy-popup{-webkit-animation-name:show-team-copy;animation-name:show-team-copy;-webkit-animation-duration:.05s;animation-duration:.05s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .scroll-nav__section{margin:0 auto}
 @media (min-width:768px){main{padding-top:0;margin:0}
 .container{border-right:1px solid gray;border-left:1px solid gray}
