@@ -137,9 +137,14 @@ main {
 }
 .team-copy-class {
   position: relative;
-  width: 270px;
+  left: 1px;
+  padding: 12px;
+  width: 281px;
+  height: 275px;
   z-index: 100;
   margin: 0 auto;
+  color: #ffffff;
+  background-color: #017f7f;
 }
 @keyframes show-team-copy {
   0% {
@@ -207,6 +212,9 @@ main {
     float: right;
     top: auto;
     z-index: auto;
+    display: block;
+    color: #000000;
+    background-color: transparent;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

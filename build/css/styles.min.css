@@ -74,7 +74,7 @@ main{padding-top:127px;margin:0 10px}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
 .popup-link{display:block}
-.team-copy-class{position:relative;width:270px;z-index:100;margin:0 auto}
+.team-copy-class{position:relative;left:1px;padding:12px;width:281px;height:275px;z-index:100;margin:0 auto;color:#fff;background-color:#017f7f}
 @-webkit-keyframes show-team-copy{0%{top:0}
 90%{top:-235px}
 100%{top:-275px}}
@@ -92,7 +92,7 @@ main{padding-top:127px;margin:0 10px}
 .all-player-info{height:auto;background:#fff}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
 .popup-link{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
-.team-copy-class{bottom:0;float:right;top:auto;z-index:auto}}
+.team-copy-class{bottom:0;float:right;top:auto;z-index:auto;display:block;color:#000;background-color:transparent}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
