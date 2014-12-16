@@ -6,10 +6,6 @@ $(".cycle-slideshow").cycle({
   log: false
 });
 
- $.getJSON("../js/players.json",  function( data ) {
-    console.log( data.teams );
- }  );;
-
 
 /*
  * enquire.js: detect for the existence of the ".team-copy-popup" class
