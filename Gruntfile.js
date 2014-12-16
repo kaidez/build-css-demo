@@ -105,7 +105,8 @@ module.exports = function(grunt) {
                                 "coffee/enquire.coffee",
                                 "coffee/popup-animation.coffee",
                                 "coffee/scrollNav.coffee",
-                                "coffee/players.coffee"
+                                "coffee/players.coffee",
+                                "coffee/swipeDetect.coffee"
                               ]
         }
       }
