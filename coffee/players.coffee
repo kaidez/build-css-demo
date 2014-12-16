@@ -14,7 +14,7 @@ setPlayer = do ->
       "name":"Cesc Fabregas"
       "position": "Attacking Midfielder"
       "number": "4"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
+      "copy" :"Thibaut Nicolas Marc Courtois is a Belgian professional footballer who plays for English club Chelsea and the Belgium national team as a goalkeeper. Despite his young age, Courtois is widely regarded as one of the best goalkeepers in the world, and he won the 2012–13 and 2013–14 Ricardo Zamora Trophies while on loan at Atlético Madrid."
     },
     "drogba": {
       "name":"Didier Drogba"
