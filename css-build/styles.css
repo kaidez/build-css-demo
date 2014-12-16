@@ -136,7 +136,7 @@ main {
 .popup-link {
   display: block;
 }
-.team-copy-class {
+.player-copy-class {
   position: relative;
   left: 1px;
   padding: 12px;
@@ -209,7 +209,7 @@ main {
     /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
-  .team-copy-class {
+  .player-copy-class {
     bottom: 0;
     float: right;
     top: auto;
