@@ -6,7 +6,7 @@ var pageres = new Pageres()
 
 pageres.run(function (err) {
   if (err) {
-      throw err;
+    throw err;
   }
 
   console.log("done");
