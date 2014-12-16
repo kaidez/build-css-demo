@@ -199,12 +199,12 @@ gulp.task("watch", function () {
    * is currently running in the browser, refresh it in the browser via
    * livereload.
    */
-  var server = livereload();
+  // var server = livereload();
   gulp.watch(jadeFiles, ["jade"]);
   gulp.watch(lessFiles, ["buildcss"]);
   gulp.watch(coffeeFiles, ["coffee"]);
-  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"],
-  function (e) {
-    server.changed(e.path);
-  });
+  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
+  // function (e) {
+  //   server.changed(e.path);
+  // });
 });
