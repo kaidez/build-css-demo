@@ -8,73 +8,61 @@ setPlayer = do ->
       "name":"Thibault Courtois"
       "position": "Goalkeeper"
       "number": "1"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "fabregas": {
       "name":"Cesc Fabregas"
       "position": "Attacking Midfielder"
       "number": "4"
-      "copy" :"Thibaut Nicolas Marc Courtois is a Belgian professional footballer who plays for English club Chelsea and the Belgium national team as a goalkeeper. Despite his young age, Courtois is widely regarded as one of the best goalkeepers in the world, and he won the 2012–13 and 2013–14 Ricardo Zamora Trophies while on loan at Atlético Madrid."
     },
     "drogba": {
       "name":"Didier Drogba"
       "position": "Center Forward"
       "number": "11"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "terry": {
       "name":"John Terry"
       "position": "Center Fullback"
       "number": "26"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "casillas": {
       "name":"Iker Casillas"
       "position": "Goalkeeper"
       "number": "1"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "ramos": {
       "name":"Sergio Ramos"
       "position": "Center Fullback"
       "number": "4"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "bale": {
       "name":"Gareth Bale"
       "position": "Winger"
       "number": "11"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "ronaldo": {
       "name":"Cristiano Ronaldo"
       "position": "Center Forward"
       "number": "7"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "abbiati": {
       "name":"Christian Abbiati"
       "position": "Goalkeeper"
       "number": "1"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "alex": {
       "name":"Alex"
       "position": "Center Fullback"
       "number": "33"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "essien": {
       "name":"Michael Essien"
       "position": "Midfielder"
       "number": "15"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     },
     "torres": {
       "name":"Fernado Torres"
       "position": "Center Forward"
       "number": "9"
-      "copy" :"Francesc \"Cesc\" Fàbregas Soler is a Spanish footballer who plays for Chelsea in the Premier League, and the Spanish national team. Fàbregas plays mainly as a central midfielder or attacking midfielder but has also played as a winger or a second striker on some occasions."
     }
   }
 
