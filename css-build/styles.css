@@ -34,6 +34,13 @@
     float: none;
   }
 }
+/*
+ * STYLES REALTED TO PLUGIN: "scrollNav.js"
+ * ====================================================================
+ * The scrollNav plugin dynamically creates style on initialization
+ * Style them her and make sure that all styles start with
+ * ".scroll-nav-"
+ */
 @media only screen and (min-width: 320px) {
   /* Small screen, non-retina */
 }
@@ -107,73 +114,73 @@ ol {
  * Dynamically build player image css classes
  * Learn more at: http://bit.ly/12tpr20
  */
-.player-container-bgimage-courtois {
+.gl-player-container-bgimage-courtois {
   max-width: 280px;
   background: url('../img/courtois.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-drogba {
+.gl-player-container-bgimage-drogba {
   max-width: 280px;
   background: url('../img/drogba.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-fabregas {
+.gl-player-container-bgimage-fabregas {
   max-width: 280px;
   background: url('../img/fabregas.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-terry {
+.gl-player-container-bgimage-terry {
   max-width: 280px;
   background: url('../img/terry.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-casillas {
+.gl-player-container-bgimage-casillas {
   max-width: 280px;
   background: url('../img/casillas.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-ramos {
+.gl-player-container-bgimage-ramos {
   max-width: 280px;
   background: url('../img/ramos.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-bale {
+.gl-player-container-bgimage-bale {
   max-width: 280px;
   background: url('../img/bale.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-ronaldo {
+.gl-player-container-bgimage-ronaldo {
   max-width: 280px;
   background: url('../img/ronaldo.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-abbiati {
+.gl-player-container-bgimage-abbiati {
   max-width: 280px;
   background: url('../img/abbiati.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-alex {
+.gl-player-container-bgimage-alex {
   max-width: 280px;
   background: url('../img/alex.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-essien {
+.gl-player-container-bgimage-essien {
   max-width: 280px;
   background: url('../img/essien.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
 }
-.player-container-bgimage-torres {
+.gl-player-container-bgimage-torres {
   max-width: 280px;
   background: url('../img/torres.jpg') no-repeat 0 0;
   background-size: 280px 280px;
