@@ -355,6 +355,13 @@ main {
     font-size: 36px;
   }
 }
+/*
+ * STYLES REALTED TO PLUGN: "scrollNav.js"
+ * ====================================================================
+ * The scrollNav plugin dynamically creates style on initialization
+ * Style them her and make sure that all styles start with
+ * ".scroll-nav-"
+ */
 .scroll-nav {
   text-align: center;
   margin-top: 8px;
@@ -374,6 +381,12 @@ main {
 .scroll-nav__section {
   margin: 0 auto;
 }
+/*
+ * STYLES REALTED TO PLUGN: "jQuery Cycle2"
+ * ====================================================================
+ * The jQuery Cycle2 plugin dynamically creates style on initialization
+ * Style them her and make sure that all styles start with ".cycle-"
+ */
 .cycle-slideshow {
   max-width: 277px;
   margin: 0 auto;
