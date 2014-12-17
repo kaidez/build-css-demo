@@ -101,7 +101,7 @@ main {
   padding-top: 127px;
   margin: 0 10px;
 }
-.header-class {
+.h1-class {
   font-size: 24px;
 }
 .team-header {
@@ -171,7 +171,7 @@ main {
     border-right: 1px solid gray;
     border-left: 1px solid gray;
   }
-  .header-class {
+  .h1-class {
     font-size: 36px;
   }
   .page {
@@ -213,7 +213,7 @@ main {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .header-class {
+  .h1-class {
     font-size: 36px;
   }
   .page {
@@ -242,7 +242,7 @@ main {
   }
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
-  .header-class {
+  .h1-class {
     font-size: 24px;
   }
 }
@@ -255,7 +255,7 @@ main {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .header-class {
+  .h1-class {
     font-size: 36px;
   }
 }
