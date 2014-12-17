@@ -96,10 +96,11 @@ main{padding-top:127px;margin:0 10px}
 .h1-class{font-size:36px}
 .page{height:500px;overflow-y:visible}
 .team-header{text-align:start}
-.all-player-info{height:auto;background:#fff}
+.all-player-info{height:auto}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
 .player-container{padding-top:186px;background-color:#fff}
-.player-info,.player-name{margin:2px 0}}
+.player-info,.player-name{margin:2px 0}
+.all-player-info{min-height:110px;padding:5px;background:#fff}}
 @media (min-width:992px) and (max-width:1199px){.h1-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
@@ -114,6 +115,5 @@ main{padding-top:127px;margin:0 10px}
 .scroll-nav__section{margin:0 auto}
 .cycle-slideshow{max-width:277px;margin:0 auto}
 .cycle-player-content-wrapper{height:300px;margin:0 auto;width:280px}
-@media (min-width:768px){.all-player-info{min-height:110px;padding:5px;background:#fff}
-.cycle-slideshow{float:left;margin:0 auto}
+@media (min-width:768px){.cycle-slideshow{float:left;margin:0 auto}
 .cycle-nav{clip:auto;z-index:101;width:382px;margin:0 auto}}

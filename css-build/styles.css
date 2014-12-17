@@ -310,6 +310,11 @@ main {
   .player-name {
     margin: 2px 0;
   }
+  .all-player-info {
+    min-height: 110px;
+    padding: 5px;
+    background: #fff;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .h1-class {
@@ -379,11 +384,6 @@ main {
   width: 280px;
 }
 @media (min-width: 768px) {
-  .all-player-info {
-    min-height: 110px;
-    padding: 5px;
-    background: #fff;
-  }
   .cycle-slideshow {
     float: left;
     margin: 0 auto;
