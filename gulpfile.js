@@ -137,11 +137,6 @@ gulp.task("less", function () {
   gulp.run("grunt-shell");
 });
 
-// Run the "grunt jsonlint" task
-gulp.task("jsonlint", function () {
-  gulp.run("grunt-jsonlint");
-});
-
 // Run the "grunt coffee" task
 gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
