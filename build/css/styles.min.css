@@ -111,8 +111,8 @@ main{padding-top:127px;margin:0 10px}
 .cycle-slideshow{max-width:277px;margin:0 auto}
 .player-container{padding-top:165px;width:300px;height:300px;font-size:19px;text-align:center;box-shadow:3px 3px 5px 0 rgba(50,50,50,.35);background-color:rgba(50,50,50,.35)}
 .player-name{font-size:19px;text-transform:uppercase}
-@media (min-width:768px){.cycle-player-content-wrapper{height:300px;margin:0 auto;width:280px}
-.all-player-info{min-height:110px;padding:5px;background:#fff}
+.cycle-player-content-wrapper{height:300px;margin:0 auto;width:280px}
+@media (min-width:768px){.all-player-info{min-height:110px;padding:5px;background:#fff}
 .player-container{padding-top:186px;background-color:#fff}
 .player-info,.player-name{margin:2px 0}
 .cycle-slideshow{float:left;margin:0 auto}

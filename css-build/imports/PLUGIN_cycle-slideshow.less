@@ -29,14 +29,14 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+// Wrap player images & center this element
+.cycle-player-content-wrapper {
+  height: 300px;
+  margin: 0 auto;
+  width: 280px;
+}
 
-  // Wrap player images & center this element
-  .cycle-player-content-wrapper {
-    height: 300px;
-    margin: 0 auto;
-    width: 280px;
-  }
+@media (min-width: 768px) {
 
   // Style the element that contains ALL the player info
   .all-player-info {
@@ -49,6 +49,7 @@
   // Slightly push player content down the page on wider views
   .player-container {
     padding-top: 186px;
+    
     background-color: rgba(255, 255, 255, 1);
   }
 
@@ -57,6 +58,7 @@
     margin: 2px 0;
   }
 
+   // Style the containing element used by Cycle2
   .cycle-slideshow {
     float: left;
     margin: 0 auto;

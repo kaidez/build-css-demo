@@ -359,12 +359,12 @@ main {
   font-size: 19px;
   text-transform: uppercase;
 }
+.cycle-player-content-wrapper {
+  height: 300px;
+  margin: 0 auto;
+  width: 280px;
+}
 @media (min-width: 768px) {
-  .cycle-player-content-wrapper {
-    height: 300px;
-    margin: 0 auto;
-    width: 280px;
-  }
   .all-player-info {
     min-height: 110px;
     padding: 5px;
