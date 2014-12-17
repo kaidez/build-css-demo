@@ -13,8 +13,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}
 img{page-break-inside:avoid;max-width:100%!important}
-h2,p{orphans:3;widows:3}
-h2{page-break-after:avoid}}
+h2{orphans:3;widows:3;page-break-after:avoid}}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 *,:after,:before{box-sizing:border-box}
 html{font-size:10px;-webkit-tap-highlight-color:transparent}
@@ -24,7 +23,6 @@ img{vertical-align:middle}
 h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:20px;margin-bottom:10px}
 h1{font-size:36px}
 h2{font-size:30px}
-p{margin:0 0 10px}
 ol,ul{margin-top:0;margin-bottom:10px}
 .container{margin-right:auto;margin-left:auto}
 @media (min-width:768px){.container{width:750px}}
@@ -65,7 +63,6 @@ ol,ul{padding-left:0}
 .gl-header-class{float:left;margin-top:0}
 .gl-page{padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px;cursor:pointer}
-.gl-wikipedia-credit{padding-top:10px;text-align:right}
 main{padding-top:127px;margin:0 10px}
 .header-class{font-size:24px}
 .team-header{text-align:center}
@@ -74,7 +71,6 @@ main{padding-top:127px;margin:0 10px}
 .player-info,.player-name{margin:2px 0}
 .well{position:fixed;z-index:102;width:100%;box-shadow:0 8px 5px 0 rgba(50,50,50,.64)}
 .popup-link{display:block}
-.player-copy-class{position:relative;left:1px;padding:12px;width:281px;height:275px;z-index:100;margin:0 auto;display:none;color:#fff;background-color:rgba(1,127,127,.9)}
 @-webkit-keyframes show-team-copy{0%{top:0}
 80%{top:-300px}
 100%{top:-275px}}
@@ -87,12 +83,10 @@ main{padding-top:127px;margin:0 10px}
 .container{border-right:1px solid gray;border-left:1px solid gray}
 .header-class{font-size:36px}
 .page{height:500px;overflow-y:visible}
-.hack-header-padding{right:189px;position:relative}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}
-.popup-link{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
-.player-copy-class{bottom:0;float:right;top:auto;z-index:auto;display:block;color:#000;background-color:transparent}}
+.popup-link{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
 @media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
 .page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
@@ -120,9 +114,9 @@ main{padding-top:127px;margin:0 10px}
 .player-container-bgimage-alex{max-width:280px;background:url(../img/alex.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
 .player-container-bgimage-essien{max-width:280px;background:url(../img/essien.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
 .player-container-bgimage-torres{max-width:280px;background:url(../img/torres.jpg) 0 0/280px 280px no-repeat;border:3px solid #fff}
-@media (min-width:768px){.cycle-player-content-wrapper{height:300px;margin:30px 45px 10px}
+@media (min-width:768px){.cycle-player-content-wrapper{height:300px;margin:0 auto;width:280px}
 .all-player-info{min-height:110px;padding:5px;background:#fff}
 .player-container{padding-top:186px;background-color:#fff}
 .player-info,.player-name{margin:2px 0}
 .cycle-slideshow{float:left;margin:0 auto}
-.cycle-nav{clip:auto;z-index:101}}
+.cycle-nav{clip:auto;z-index:101;width:382px;margin:0 auto}}
