@@ -103,33 +103,6 @@ ol {
   margin: 5px;
   cursor: pointer;
 }
-main {
-  padding-top: 127px;
-  margin: 0 10px;
-}
-.h1-class {
-  font-size: 24px;
-}
-.team-header {
-  text-align: center;
-}
-.page {
-  overflow-y: hidden;
-  height: 400px;
-}
-.player-container {
-  padding-top: 165px;
-  width: 300px;
-  height: 300px;
-  font-size: 19px;
-  text-align: center;
-  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.35);
-  background-color: rgba(50, 50, 50, 0.35);
-}
-.player-name {
-  font-size: 19px;
-  text-transform: uppercase;
-}
 /*
  * Dynamically build player image css classes
  * Learn more at: http://bit.ly/12tpr20
@@ -205,6 +178,33 @@ main {
   background: url('../img/torres.jpg') no-repeat 0 0;
   background-size: 280px 280px;
   border: 3px solid #ffffff;
+}
+main {
+  padding-top: 127px;
+  margin: 0 10px;
+}
+.h1-class {
+  font-size: 24px;
+}
+.team-header {
+  text-align: center;
+}
+.page {
+  overflow-y: hidden;
+  height: 400px;
+}
+.player-container {
+  padding-top: 165px;
+  width: 300px;
+  height: 300px;
+  font-size: 19px;
+  text-align: center;
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.35);
+  background-color: rgba(50, 50, 50, 0.35);
+}
+.player-name {
+  font-size: 19px;
+  text-transform: uppercase;
 }
 .all-player-info {
   height: 129px;
