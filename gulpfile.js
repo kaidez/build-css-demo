@@ -121,7 +121,7 @@ gulp.task("buildcss", ['less'],function () {
 *  ===================================================================
 */
 gulp.task('images', function () {
-  return gulp.src('imagemin/*')
+  return gulp.src('image-min/*')
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}]
