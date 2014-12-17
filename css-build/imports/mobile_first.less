@@ -21,6 +21,27 @@ main {
   height: 400px;
 }
 
+/*
+ * Dynamically build player image css classes
+ * Learn more at: http://bit.ly/12tpr20
+ */
+@players: @courtois, @drogba, @fabregas, @terry,
+          @casillas, @ramos, @bale, @ronaldo,
+          @abbiati, @alex, @essien, @torres;
+
+.player-container-bgimage {
+  .for(@players); .-each(@player) {
+    @name: e(@player);
+    &-@{name} {
+      max-width: 280px;
+
+      background: url('../img/@{name}.jpg') no-repeat 0 0;
+      background-size: 280px 280px;
+      border: 3px solid rgba(255, 255, 255, 1);
+    }
+  }
+}
+
 // Add a blue-ish bg color to the box that holds all the player info
 .all-player-info {
   height: 129px;
