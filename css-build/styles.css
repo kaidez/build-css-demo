@@ -158,10 +158,6 @@ main {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-.scroll-nav__section {
-  width: 277px;
-  margin: 0 auto;
-}
 @media (min-width: 768px) {
   main {
     padding-top: 0;
@@ -219,18 +215,10 @@ main {
   .page {
     min-width: 754px;
   }
-  .center-columns {
-    margin: auto;
-    max-width: 900px;
-  }
 }
 @media (min-width: 1200px) {
   .container {
     padding: 0 20px;
-  }
-  .center-columns {
-    margin: auto;
-    max-width: 960px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -276,7 +264,8 @@ main {
   text-decoration: none;
 }
 .scroll-nav__section {
-  width: auto;
+  width: 277px;
+  margin: 0 auto;
 }
 .cycle-slideshow {
   max-width: 277px;

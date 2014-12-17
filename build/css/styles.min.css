@@ -64,7 +64,6 @@ ol,ul{padding-left:0}
 .gl-page{padding-left:30px;margin:0 auto 20px;font-family:'Francois One',sans-serif;border:1px solid #000;background-color:#f8f8f8}
 .gl-cycle-nav-image{float:left;margin:5px;cursor:pointer}
 main{padding-top:127px;margin:0 10px}
-.header-class{font-size:24px}
 .team-header{text-align:center}
 .page{overflow-y:hidden;height:400px}
 .all-player-info{height:129px;padding-top:22px;background:#bee1e0}
@@ -77,26 +76,21 @@ main{padding-top:127px;margin:0 10px}
 80%{top:-300px}
 100%{top:-275px}}
 .team-copy-popup{-webkit-animation-name:show-team-copy;animation-name:show-team-copy;-webkit-animation-duration:.05s;animation-duration:.05s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
-.scroll-nav__section{margin:0 auto}
 @media (min-width:768px){main{padding-top:0;margin:0}
 .container{border-right:1px solid gray;border-left:1px solid gray}
-.header-class{font-size:36px}
 .page{height:500px;overflow-y:visible}
 .team-header{text-align:start}
 .all-player-info{height:auto;background:#fff}
 .well{position:static;z-index:auto;width:auto;max-width:754px;box-shadow:none}}
-@media (min-width:992px) and (max-width:1199px){.header-class{font-size:36px}
-.page{min-width:754px}}
+@media (min-width:992px) and (max-width:1199px){.page{min-width:754px}}
 @media (min-width:1200px){.container{padding:0 20px}}
 @media screen and (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
-@media (max-device-width:480px) and (orientation:landscape){.header-class{font-size:24px}}
 @media (max-width:767px){.cycle-nav{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}}
-@media (min-width:768px) and (max-width:991px){.header-class{font-size:36px}}
 .scroll-nav{text-align:center;margin-top:8px}
 .scroll-nav__list{list-style-type:none}
 .scroll-nav__item{display:inline-block;margin:0 20px}
 .scroll-nav__link{border-radius:5px;padding:5px;text-decoration:none}
-.scroll-nav__section{width:auto}
+.scroll-nav__section{width:277px;margin:0 auto}
 .cycle-slideshow{max-width:277px;margin:0 auto}
 .player-container{padding-top:165px;width:300px;height:300px;font-size:19px;text-align:center;box-shadow:3px 3px 5px 0 rgba(50,50,50,.35);background-color:rgba(50,50,50,.35)}
 .player-name{font-size:19px;text-transform:uppercase}
