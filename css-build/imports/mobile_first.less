@@ -29,6 +29,8 @@ main {
   background: rgba(190, 225, 224, 1);
 }
 
+// Text elements in the player's info box has too much vertical padding
+// Reset it with the "mobile-margin-reset" mixin
 .player-info, .player-name{
   .mobile-margin-reset;
 }
@@ -81,6 +83,7 @@ main {
   animation-fill-mode: forwards;
 }
 
+// Set a fixed width, center each individual team sectin
 .scroll-nav__section {
   width: 277px;
   margin: 0 auto;
