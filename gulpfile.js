@@ -10,11 +10,7 @@ var gulp = require("gulp"), // "require" gulp
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
     autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes
-
-    // Live Reload stuff
-    livereload = require("gulp-livereload"),
-    lr = require("tiny-lr"),
-    server = lr();
+    connect = require("gulp-connect"); // Livereload server at port 8080
 
 // End single var pattern
 
@@ -69,7 +65,8 @@ gulp.task("jade", function () {
   .pipe(jade({
     pretty: true
   }))
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"))
+  .pipe(connect.reload());
 });
 
 /*
@@ -109,7 +106,8 @@ gulp.task("buildcss", ['less'],function () {
     "ids": false,
     "text-indent": false
   }))
-  .pipe(csslint.reporter());
+  .pipe(csslint.reporter())
+  .pipe(connect.reload())
 });
 
 
@@ -184,6 +182,16 @@ gulp.task("boweren", function () {
 gulp.task("bowermm", function () {
   gulp.run("grunt-bowercopy:matchmedia");
 });
+
+// Copy over matchMedia.js only
+gulp.task("connect", function () {
+  connect.server({
+    root: "build/",
+    livereload: true
+  });
+});
+
+
 /*
  *  ===================================================================
  *  | START WATCH TASK |
@@ -192,6 +200,8 @@ gulp.task("bowermm", function () {
  *  computer memory...at least, it does in Grunt.
  *  ===================================================================
  */
+
+gulp.task('spy', ['connect', 'watch']);
 gulp.task("watch", function () {
 
   /*
@@ -199,12 +209,8 @@ gulp.task("watch", function () {
    * is currently running in the browser, refresh it in the browser via
    * livereload.
    */
-  // var server = livereload();
   gulp.watch(jadeFiles, ["jade"]);
   gulp.watch(lessFiles, ["buildcss"]);
   gulp.watch(coffeeFiles, ["coffee"]);
   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
-  // function (e) {
-  //   server.changed(e.path);
-  // });
 });
