@@ -56,7 +56,7 @@ In order to keep the `devDependencies` up to date, it's best to *globally* insta
 
 From there, use the command line to periodically navigate to the spot in your project where `package.json` is located and run:
 
-  $ npm-check-updates
+    $ npm-check-updates
 
 This will check to see if the `devDependencies` listed in `package.json` have been updated on [https://www.npmjs.com/](https://www.npmjs.com/). If they have, you will be walked through the process of updating them.
 
