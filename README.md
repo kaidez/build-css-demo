@@ -14,7 +14,7 @@ The production-code is in `build`. Run it by either opening `index.html` in a we
 ## PLAY WITH THE BUILT OUT CODE
 There's one built-out web page: `build/index.html` and it's built out with [Jade](http://jade-lang.com/).
 
-All styles are in `build/css/styles.min.css`. The styles contain both custom code and a custom build-out of Twitter Bootstrap's core CSS.
+All styles are in `build/css/styles.min.css`. The styles contain both custom code and a custom build-out of [Twitter Bootstrap's](http://getbootstrap.com/) core CSS.
 
 To understand what the styles do, it's best to go to `css-build` and review both `styles.less` and everything in the `import` folder...things are commented quite well in there.
 
