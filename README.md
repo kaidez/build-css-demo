@@ -27,11 +27,20 @@ To play with all the preprocessor code, you would need to download the following
 * [Node/npm](http://nodejs.org/download/)
 * [Git](http://git-scm.com/downloads)
 * [Bower](http://bower.io)
-* [Grunt CLI]
+* [Grunt CLI global install](http://gruntjs.com/getting-started)
+* [Gulp global install](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 Node/npm will download all the all the development-level dependencies listed as `devDependencies` inside `package.json`.
 
 While source code control is not required to do anything with either the built-out files or various preprocessers, Git is required to interact with Bower. This is because Bower will download the packages listed as dependencies in `bower.json` and these dependencies are almost always downloaded from on GitHub via Git.
+
+npm will install both Grunt and Gulp locally to the project folder, but their respective globally-installed versions need to installed as well. After Node/npm is installed, the global install stuff can be installed as follows:
+
+### Grunt
+    $ npm npm install -g grunt-cli
+
+### Gulp
+    npm install --global gulp
 
 ## TODO
 
