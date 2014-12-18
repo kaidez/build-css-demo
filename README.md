@@ -68,7 +68,4 @@ This will check to see if the `dependencies` listed in `bower.json` have been up
 
     $ bower update
 
-This is a lazy way of updating Bower packages...read more about the Bower API at [http://bower.io/docs/api/](http://bower.io/docs/api/).
-## TODO
-
-* Create "components.less" to hold any reusable components I create.
+This is a lazy way of updating Bower packages...read about updating with options at [http://bower.io/docs/api/#update](http://bower.io/docs/api/#update).
