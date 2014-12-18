@@ -11,6 +11,9 @@ But everything's under an MIT license so feel free to use it as you see fit. [Tw
 ## HOW THE CODE WORKS
 The production-code is in `build`. Run it by either opening `index.html` in a web browser or running the the code from the server of your choice.
 
+All styles are in `build/css/styles.min.css`. The styles contain both custom code and a custom build-out of Twitter Bootstrap's core CSS.
+
+To understand what the styles do, it's best to go to `css-build` and review both `styles.less` and everything in the `import` folder.
 
 ## TODO
 
