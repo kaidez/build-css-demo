@@ -42,24 +42,33 @@ npm will install both Grunt and Gulp locally to the project folder, but their re
 ### Gulp
     $ npm install --global gulp
 
-## Install `devDependencies` and `dependencies`
-After all these things have been installed, you can install the `devDependencies` listed in `package,json`:
+## Install devDependencies and dependencies
+After all these things have been installed, you can install the `devDependencies` listed in `package.json`:
 
     $ npm install
 
 And then install the `dependencies`
-    # bower install
+    $ bower install
 
 In order to keep the `devDependencies` up to date, it's best to *globally* install ["npm-check-updates"](https://www.npmjs.com/package/npm-check-updates):
 
     $ npm install -g npm-check-updates
 
-From there, use the command line to periodically navigate to the spot in your project where `package.json` is and run:
+From there, use the command line to periodically navigate to the spot in your project where `package.json` is located and run:
 
-  $ npm-check-updates\s
+  $ npm-check-updates
 
+This will check to see if the `devDependencies` listed in `package.json` have been updated on [https://www.npmjs.com/](https://www.npmjs.com/). If they have, you will be walked through the process of updating them.
 
+Bower can check for updates on its own and without third party software:
 
+    $ bower list
+
+This will check to see if the `dependencies` listed in `bower.json` have been updated on [http://bower.io/](https://bower.io/). If they have, you can update them:
+
+    $ bower update
+
+This is a lazy way of updating Bower packages...read more about the Bower API at [http://bower.io/docs/api/](http://bower.io/docs/api/).
 ## TODO
 
 * Create "components.less" to hold any reusable components I create.
