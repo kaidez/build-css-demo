@@ -8,53 +8,6 @@ $(".cycle-slideshow").cycle({
 
 
 /*
- * enquire.js: detect for the existence of the ".team-copy-popup" class
- * =====================================================================
- * When a player info link is clicked, the ".team-copy-popup" class
- * is placed on the "#teamCopy" element so this element gets displayed
- * in a certain way on mobile views. This class should ONLY appear on
- * mobile views, should NOT appear on wider views and removed from wider
- * views if it's already there, which is a possible use case. Use jQuery
- * inside enquire.js to detect if the class is exists & if it does,
- * remove it.
- */
-
-/*
-function that removes "#teamCopy" has the "team-copy-popup" class
-use directly inside enquires "match()" and "setup()" methods
- */
-var ifTeamCopyPopup, removeTeamCopyPopup;
-
-removeTeamCopyPopup = function() {
-  $("#teamCopy").removeClass("team-copy-popup").removeAttr("style");
-};
-
-
-/*
-function that checks if "#teamCopy" has the "team-copy-popup" class
- */
-
-ifTeamCopyPopup = function() {
-  if ($("#teamCopy").hasClass("team-copy-popup")) {
-    removeTeamCopyPopup();
-  }
-};
-
-enquire.register("screen and (min-width:768px)", {
-  match: function() {
-    return ifTeamCopyPopup();
-  },
-  unmatch: function() {
-    return removeTeamCopyPopup();
-  },
-  setup: function() {
-    return removeTeamCopyPopup();
-  },
-  deferSetup: true
-});
-
-
-/*
 code that displays the individual team copy on popup
  */
 $("#teamCopyLinkChelsea").click(function() {
