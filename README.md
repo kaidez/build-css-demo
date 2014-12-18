@@ -37,10 +37,28 @@ While source code control is not required to do anything with either the built-o
 npm will install both Grunt and Gulp locally to the project folder, but their respective globally-installed versions need to installed as well. After Node/npm is installed, the global install stuff can be installed as follows:
 
 ### Grunt
-    $ npm npm install -g grunt-cli
+    $ npm install -g grunt-cli
 
 ### Gulp
-    npm install --global gulp
+    $ npm install --global gulp
+
+## Install `devDependencies` and `dependencies`
+After all these things have been installed, you can install the `devDependencies` listed in `package,json`:
+
+    $ npm install
+
+And then install the `dependencies`
+    # bower install
+
+In order to keep the `devDependencies` up to date, it's best to *globally* install ["npm-check-updates"](https://www.npmjs.com/package/npm-check-updates):
+
+    $ npm install -g npm-check-updates
+
+From there, use the command line to periodically navigate to the spot in your project where `package.json` is and run:
+
+  $ npm-check-updates\s
+
+
 
 ## TODO
 
