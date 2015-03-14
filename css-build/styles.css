@@ -372,6 +372,7 @@ main {
 .scroll-nav {
   text-align: center;
   margin-top: 8px;
+  clear: both;
 }
 .scroll-nav__list {
   list-style-type: none;
@@ -387,6 +388,11 @@ main {
 }
 .scroll-nav__section {
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .scroll-nav {
+    clear: none;
+  }
 }
 /*
  * STYLES REALTED TO PLUGIN: "jQuery Cycle2"
