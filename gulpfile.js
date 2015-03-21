@@ -1,4 +1,4 @@
-// Single var pattern of gulp (require) stuff in full effect!!!
+  // Single var pattern of gulp (require) stuff in full effect!!!
 
 var gulp = require("gulp"), // "require" gulp
     jade = require("gulp-jade"), // Jade task
@@ -10,8 +10,8 @@ var gulp = require("gulp"), // "require" gulp
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
     autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes
-    connect = require("gulp-connect"); // Livereload server at port 8080
-
+    connect = require("gulp-connect"), // Livereload on port 8080
+    critical = require('critical');
 // End single var pattern
 
 // Needed to run grunt tasks through gulp
@@ -37,21 +37,21 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
      * 3. Classes third
      */
      ignoreArray = [
-       "nav",
-       "ol",
-       "ul",
-       ".all-player-info",
-       ".btn",
-       ".btn-info",
-       ".cycle-slide",
-       ".player-info",
-       ".player-name",
-       ".scroll-nav",
-       ".scroll-nav__item",
-       ".scroll-nav__link",
-       ".scroll-nav__list",
-       ".scroll-nav__section",
-       ".team-copy-popup"
+     "nav",
+     "ol",
+     "ul",
+     ".all-player-info",
+     ".btn",
+     ".btn-info",
+     ".cycle-slide",
+     ".player-info",
+     ".player-name",
+     ".scroll-nav",
+     ".scroll-nav__item",
+     ".scroll-nav__link",
+     ".scroll-nav__list",
+     ".scroll-nav__section",
+     ".team-copy-popup"
      ];
 
 /*
@@ -64,10 +64,10 @@ gulp.task("jade", function () {
   return gulp.src("jade/index.jade")
   .pipe(jade({
     pretty: true
-  }))
+    }))
   .pipe(gulp.dest("build"))
   .pipe(connect.reload());
-});
+  });
 
 /*
  *  ===================================================================
@@ -91,24 +91,42 @@ gulp.task("buildcss", ['less'],function () {
   .pipe(uncss({
     html: ["build/index.html"],
     ignore: ignoreArray
-  }))
+    }))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
-  }))
+    }))
   .pipe(minifyCSS({
     keepBreaks: true
-  }))
+    }))
   .pipe(gulp.dest("build/css/"))
   .pipe(csslint({
     "important": false,
     "duplicate-background-images": false,
     "ids": false,
     "text-indent": false
-  }))
+    }))
   .pipe(csslint.reporter())
   .pipe(connect.reload())
+  });
+
+
+
+gulp.task('critical', ['buildcss'], function () {
+  critical.generateInline({
+    base: 'build/',
+    src: 'index.html',
+    styleTarget: 'css/styles.min.css',
+    htmlTarget: 'index.html',
+    width: 320,
+    height: 480,
+    minify: true,
+    extract: true
+  });
 });
+
+
+
 
 
 /*
@@ -123,9 +141,9 @@ gulp.task('images', function () {
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}]
-  }))
+    }))
   .pipe(gulp.dest('build/img'));
-});
+  });
 
 /*
  *  ===================================================================
@@ -135,56 +153,56 @@ gulp.task('images', function () {
 // Run the "grunt less" task
 gulp.task("less", function () {
   gulp.run("grunt-shell");
-});
+  });
 
 // Run the "grunt coffee" task
 gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
-});
+  });
 
 // BOWERCOPY TASKS
 // Copy over ALL the Bower Components!!!
 gulp.task("bowercopy", function () {
   gulp.run("grunt-bowercopy");
-});
+  });
 
 // Copy over Bootstrap core .css only
 gulp.task("bowerbscss", function () {
   gulp.run("grunt-bowercopy:bscss");
-});
+  });
 
 // Copy over jQuery Cycle2 plugin only
 gulp.task("bowercycle", function () {
   gulp.run("grunt-bowercopy:cycle2");
-});
+  });
 
 // Copy over jQuery v.1.11.1 only
 gulp.task("bowerjq", function () {
   gulp.run("grunt-bowercopy:jq");
-});
+  });
 
 // Copy over scrollNav only
 gulp.task("bowerscroll", function () {
   gulp.run("grunt-bowercopy:scroll");
-});
+  });
 
 // Copy over enquire.js only
 gulp.task("boweren", function () {
   gulp.run("grunt-bowercopy:enquire");
-});
+  });
 
 // Copy over matchMedia.js only
 gulp.task("bowermm", function () {
   gulp.run("grunt-bowercopy:matchmedia");
-});
+  });
 
 // Start a server that points to the "build/" and runs on port 8080
 gulp.task("connect", function () {
   connect.server({
     root: "build/",
     livereload: true
+    });
   });
-});
 
 
 /*
@@ -196,16 +214,16 @@ gulp.task("connect", function () {
  *  ===================================================================
  */
 
-gulp.task('spy', ['connect', 'watch']);
-gulp.task("watch", function () {
+ gulp.task('spy', ['connect', 'watch']);
+ gulp.task("watch", function () {
 
   /*
    * If either preprocesser files or "build/" files change and the site
    * is currently running in the browser, refresh it in the browser via
    * livereload.
    */
-  gulp.watch(jadeFiles, ["jade"]);
-  gulp.watch(lessFiles, ["buildcss"]);
-  gulp.watch(coffeeFiles, ["coffee"]);
-  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
-});
+   gulp.watch(jadeFiles, ["jade"]);
+   gulp.watch(lessFiles, ["buildcss"]);
+   gulp.watch(coffeeFiles, ["coffee"]);
+   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
+   });
