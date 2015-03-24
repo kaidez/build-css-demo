@@ -10,8 +10,7 @@ var gulp = require("gulp"), // "require" gulp
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
     autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes
-    connect = require("gulp-connect"), // Livereload on port 8080
-    critical = require('critical');
+    connect = require("gulp-connect"); // Livereload on port 8080
 // End single var pattern
 
 // Needed to run grunt tasks through gulp
@@ -109,21 +108,6 @@ gulp.task("buildcss", ['less'],function () {
   .pipe(csslint.reporter())
   .pipe(connect.reload())
   });
-
-
-
-gulp.task('critical', ['buildcss'], function () {
-  critical.generateInline({
-    base: 'build/',
-    src: 'index.html',
-    styleTarget: 'css/styles.min.css',
-    htmlTarget: 'index.html',
-    width: 320,
-    height: 480,
-    minify: true,
-    extract: true
-  });
-});
 
 
 
