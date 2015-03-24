@@ -115,11 +115,27 @@ module.exports = function(grunt) {
       lessCoreBuild: {
         command: "lessc css-build/styles.less > css-build/styles.css"
       }
+    },
+
+    critical: {
+      test: {
+        options: {
+          base: './',
+          css:[
+            'build/css/styles.min.css'
+          ],
+          width: 320,
+          height: 100,
+          extract: true
+        },
+        src: 'build/index.html',
+        dest: 'build/index.html'      }
     }
   });
 
   grunt.loadNpmTasks("grunt-bowercopy");
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks("grunt-shell");
+  grunt.loadNpmTasks('grunt-critical');
 
 };
