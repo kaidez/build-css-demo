@@ -32,7 +32,8 @@
     "gulp-uncss": "^1.0.0",
     "gulp-util": "^3.0.4",
     "gulp-watch": "^4.2.0",
-    "jade": "^1.9.2"
+    "jade": "^1.9.2",
+    "q": "^1.2.0"
   },
   "dependencies": {
     "pageres": "^1.2.1"
