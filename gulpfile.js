@@ -1,16 +1,18 @@
   // Single var pattern of gulp (require) stuff in full effect!!!
 
 var gulp = require("gulp"), // "require" gulp
+    Q = require('q'), // Manage promasis
+    exec = require( 'child_process' ).exec, // Run commands...may go
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css selectors
     minifyCSS = require("gulp-minify-css"), // Minify CSS
-    concatCss = require("gulp-concat-css"), // Concatenate CSS only
     csslint = require("gulp-csslint"), // Lint CSS
-    concat = require("gulp-concat"), // Concatenating stuff(?)
+    concatCss = require('gulp-concat-css'), // Concatenating stuff(?)
     watch = require("gulp-watch"), // Watch files changes
     imagemin = require('gulp-imagemin'), // Minifying images
     autoprefixer = require('gulp-autoprefixer'), // Vendor prefixes
     connect = require("gulp-connect"); // Livereload on port 8080
+
 // End single var pattern
 
 // Needed to run grunt tasks through gulp
@@ -84,9 +86,14 @@ gulp.task("jade", function () {
  * https://github.com/gulpjs/gulp/blob/master/docs/API.md
  *  ===================================================================
  */
-gulp.task("buildcss", ['less'],function () {
-  gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
-  .pipe(concatCss("styles.min.css"))
+gulp.task("buildcss", ['concat'],function () {
+
+ // Set this up so "buildcss" returns a promise
+ var deferred = Q.defer();
+
+
+  setTimeout(function() {
+  gulp.src('build/css/styles.min.css')
   .pipe(uncss({
     html: ["build/index.html"],
     ignore: ignoreArray
@@ -95,9 +102,7 @@ gulp.task("buildcss", ['less'],function () {
     browsers: ['last 2 versions'],
     cascade: false
     }))
-  .pipe(minifyCSS({
-    keepBreaks: true
-    }))
+  .pipe(minifyCSS())
   .pipe(gulp.dest("build/css/"))
   .pipe(csslint({
     "important": false,
@@ -107,6 +112,29 @@ gulp.task("buildcss", ['less'],function () {
     }))
   .pipe(csslint.reporter())
   .pipe(connect.reload())
+ }, 4000);
+  return deferred.promise;
+  });
+
+
+gulp.task("less", function () {
+  var deferred = Q.defer();
+
+  setTimeout(function() {
+    exec("lessc css-build/styles.less > css-build/styles.css");
+    return deferred.promise;
+    }, 1000);
+  });
+
+
+gulp.task('concat', ['less'], function() {
+  var deferred = Q.defer();
+  setTimeout(function() {
+    return gulp.src(['css-build/bootstrap.css', 'css-build/styles.css'])
+    .pipe(concatCss('styles.min.css'))
+    .pipe(gulp.dest('build/css/'));
+    return deferred.promise;
+    }, 1000);
   });
 
 
@@ -135,14 +163,18 @@ gulp.task('images', function () {
  *  ===================================================================
  */
 // Run the "grunt less" task
-gulp.task("less", function () {
-  gulp.run("grunt-shell");
-  });
+
+
+
+
+
+
 
 // Run the "grunt coffee" task
 gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
   });
+
 
 // BOWERCOPY TASKS
 // Copy over ALL the Bower Components!!!
