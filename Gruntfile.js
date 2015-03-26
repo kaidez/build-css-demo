@@ -111,11 +111,6 @@ module.exports = function(grunt) {
       }
     }, // end "coffee" task
 
-    shell: {
-      lessCoreBuild: {
-        command: "lessc css-build/styles.less > css-build/styles.css"
-      }
-    },
 
     critical: {
       test: {
@@ -135,7 +130,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-bowercopy");
   grunt.loadNpmTasks("grunt-contrib-coffee");
-  grunt.loadNpmTasks("grunt-shell");
   grunt.loadNpmTasks('grunt-critical');
 
 };
