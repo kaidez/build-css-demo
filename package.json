@@ -18,10 +18,8 @@
     "grunt-bowercopy": "^1.2.0",
     "grunt-contrib-coffee": "^0.13.0",
     "grunt-critical": "^0.1.2",
-    "grunt-shell": "^1.1.2",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
-    "gulp-concat": "^2.5.2",
     "gulp-concat-css": "^2.1.2",
     "gulp-connect": "^2.2.0",
     "gulp-csslint": "^0.1.5",
@@ -36,6 +34,6 @@
     "q": "^1.2.0"
   },
   "dependencies": {
-    "pageres": "^1.2.1"
+    "pageres": "^1.2.2"
   }
 }
