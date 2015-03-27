@@ -1,8 +1,8 @@
   // Single var pattern of gulp (require) stuff in full effect!!!
 
 var gulp = require("gulp"), // "require" gulp
-    Q = require('q'), // Manage promasis
-    exec = require( 'child_process' ).exec, // Run commands...may go
+    Q = require('q'), // Manage promises
+    exec = require('child_process').exec, // Run commands...may go away
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css selectors
     minifyCSS = require("gulp-minify-css"), // Minify CSS
@@ -91,7 +91,6 @@ gulp.task("buildcss", ['concat'],function () {
  // Set this up so "buildcss" returns a promise
  var deferred = Q.defer();
 
-
   setTimeout(function() {
   gulp.src('build/css/styles.min.css')
   .pipe(uncss({
@@ -138,16 +137,14 @@ gulp.task('concat', ['less'], function() {
   });
 
 
-
-
-
 /*
-*  ===================================================================
-*  | IMAGE MINIFICATION TASK |
-*
-*  Take all images in "imagemin/" & minify them out to "build/img/"
-*  ===================================================================
-*/
+ *  ===================================================================
+ *  | IMAGE MINIFICATION TASK |
+ *
+ *  Take all images in "imagemin/" & minify them out to "build/img/"
+ *  ===================================================================
+ */
+
 gulp.task('images', function () {
   return gulp.src('image-min/*')
   .pipe(imagemin({
@@ -162,12 +159,6 @@ gulp.task('images', function () {
  *  | "gulp-grunt" TASKS...RUN GRUNT TASKS VIA GULP!!!! |
  *  ===================================================================
  */
-// Run the "grunt less" task
-
-
-
-
-
 
 
 // Run the "grunt coffee" task
