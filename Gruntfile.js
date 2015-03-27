@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 
-  // Project config
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
@@ -8,8 +7,8 @@ module.exports = function(grunt) {
     bowercopy: {
 
       /*
-       * don"t send messages to saying that Bower components aren"t
-       * configured...ignore them instead. Also, don"t run any bower
+       * Don't send messages to saying that Bower components aren"t
+       * configured...ignore them instead. Also, Don't run any bower
        * tasks when grunt runs this task.
        */
       options: {
@@ -111,21 +110,20 @@ module.exports = function(grunt) {
       }
     }, // end "coffee" task
 
-
+    // start "critical" task
     critical: {
-      test: {
+      build: {
         options: {
           base: './',
-          css:[
-            'build/css/styles.min.css'
-          ],
+          css:'build/css/styles.min.css',
           width: 320,
           height: 100,
           extract: true
         },
         src: 'build/index.html',
-        dest: 'build/index.html'      }
-    }
+        dest: 'build/index.html'
+      }
+    } // end "critical" task
   });
 
   grunt.loadNpmTasks("grunt-bowercopy");
