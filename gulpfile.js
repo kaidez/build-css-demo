@@ -87,7 +87,9 @@ gulp.task("jade", function () {
  * 4. "gulp outputCss" removes unused CSS, minifies, lints, &   
       auto-prefixes it
  * 5. "gulp jade" which rebuilds/resets build/index.html
-*  6. "gulp critical" to extract critical path CSS to build/index.html
+ * 6. "gulp critical" to extract critical path CSS to build/index.html
+ *
+ * Some tasks return q promises so all files are ready for a given task
  *
  * (*) gulp "hints" are cool...read more about them at:
  * https://github.com/gulpjs/gulp/blob/master/docs/API.md
@@ -163,7 +165,10 @@ gulp.task("outputCss", ['concat'],function () {
   });
 
 
-// Run the "grunt critical" task
+// "gulp critical" task
+// =====================
+// Extract critical path css to "build/index.html" with a grunt task
+// Returns a promise with q
 gulp.task("critical", function () {
   var deferred = Q.defer();
   setTimeout(function() {
