@@ -16,13 +16,21 @@ BEFORE YOU START THE SCREENCAST!!!!!!
 
 DELIVERING THE GOODS:
 
-* Talked about optimizing page-load overall with a heavy focus on optimizing TCP connections
+* reading data to understand slow page-loads & what we can do to speed them up.
 
-* Gave a great overview of Webpage Test's Speed Index
+* tracking latency with tools like Webpage Test 
 
-* best ways to reduce latency
+* Expanded on Webpage Test's Speed Index 
 
-* Where I first heard about critical CSS
+* talked about familiar stuff like async javascript loading & gzipping images.
+
+
+* Where I first heard about "critical CSS"
+
+
+
+
+
 
 * The catch with inline critical CSS is that it doesn't cache since it's in the HTML page.
 
