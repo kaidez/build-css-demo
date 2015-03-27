@@ -15,8 +15,10 @@ var gulp = require("gulp"), // Bring in gulp
 
 // End single var pattern
 
+
 // Needed to run grunt tasks through gulp
 require("gulp-grunt")(gulp);
+
 
 /*
  *  ===================================================================
@@ -26,6 +28,7 @@ require("gulp-grunt")(gulp);
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
     coffeeFiles = ["coffee/*.coffee"]; // Coffeescript
+
 
     /*
      * IGNORE ARRAY
@@ -55,12 +58,13 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
       ".team-copy-popup"
     ];
 
+
 /*
  *  ===================================================================
  *  | JADE TASK |
  *  ===================================================================
  */
-// Output Jade Files to build "index.html" & send it to "build/"
+// Output Jade Files to build "build/index.html"
 gulp.task("jade", function () {
   return gulp.src("jade/index.jade")
   .pipe(jade({
@@ -107,6 +111,7 @@ gulp.task("less", function () {
     }, 1000);
   });
 
+
 // "gulp concat" task
 // ==================
 // Concatenate "css-build/styles.css" and "css-build/bootstrap.css"
@@ -121,6 +126,7 @@ gulp.task('concat', ['less'], function() {
     return deferred.promise;
     }, 1000);
   });
+
 
 // "gulp outputCss" task
 // =====================
@@ -157,7 +163,20 @@ gulp.task("outputCss", ['concat'],function () {
   });
 
 
+// Run the "grunt critical" task
+gulp.task("critical", function () {
+  var deferred = Q.defer();
+  setTimeout(function() {
+    gulp.run("grunt-critical");
+      return deferred.promise;
+    }, 6000);
+  });
 
+/*
+ *  ===================================================================
+ *  | END CSS BUILD TASK |
+ *  ===================================================================
+ */
 
 
 /*
@@ -177,21 +196,12 @@ gulp.task('images', function () {
   .pipe(gulp.dest('build/img'));
   });
 
+
 /*
  *  ===================================================================
  *  | "gulp-grunt" TASKS...RUN GRUNT TASKS VIA GULP!!!! |
  *  ===================================================================
  */
-
-
-// Run the "grunt critical" task
-gulp.task("critical", function () {
-  var deferred = Q.defer();
-  setTimeout(function() {
-    gulp.run("grunt-critical");
-      return deferred.promise;
-    }, 6000);
-  });
 
 // Run the "grunt coffee" task
 gulp.task("coffee", function () {
