@@ -10,6 +10,7 @@ BEFORE YOU START THE SCREENCAST!!!!!!
 
 5. delete "css-build/styles.css" & "build/css/styles.min.css" 
 
+6. make sure "css-build" and "build/css" folders are expanded
 
 
 
