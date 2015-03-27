@@ -7,9 +7,9 @@ module.exports = function(grunt) {
     bowercopy: {
 
       /*
-       * Don't send messages to saying that Bower components aren"t
+       * Don't send messages to saying that Bower components aren't
        * configured...ignore them instead. Also, Don't run any bower
-       * tasks when grunt runs this task.
+       * tasks when this task runs.
        */
       options: {
         ignore: ["gulp", "jquery"],
@@ -97,8 +97,7 @@ module.exports = function(grunt) {
           bare: true
         },
         files: {
-          // compile & concat .coffee files to a single file called
-          // "build/js/main.js"
+          // compile coffee files in "coffee/" to "build/js/main.js"
           "build/js/main.js": [
                                 "coffee/common.coffee",
                                 "coffee/enquire.coffee",
