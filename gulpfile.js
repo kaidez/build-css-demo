@@ -97,7 +97,7 @@ gulp.task("jade", function () {
  */
 
 // The core task for building out the site's CSS
- gulp.task('buildcss', ['outputCss', 'jade', 'critical']);
+gulp.task('buildcss', ['outputCss', 'jade', 'critical']);
 
 
 // "gulp less" task
