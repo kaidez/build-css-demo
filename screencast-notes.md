@@ -21,8 +21,10 @@ DELIVERING THE GOODS:
 
 * best ways to reduce latency
 
-* Where I first heard about criical CSS
+* Where I first heard about critical CSS
 
 * The catch with inline critical CSS is that it doesn't cache since it's in the HTML page.
 
 * show col-md-4, then show that it's gone after outputting w/ outputCss
+
+* talk about how the current CSS build trends/tools are definitely geared towards single-page apps (SPAS). It's not easy with CMSs like WordPress...I think this will change.
