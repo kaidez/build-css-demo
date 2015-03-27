@@ -1,7 +1,15 @@
 BEFORE YOU START THE SCREENCAST!!!!!! 
 
-make sure tute-branch was deleted
-run gulp jade
+1. turn down the volume
+
+2. make sure tutorial-branch was deleted
+
+3. run gulp jade
+
+4. delete "css-build/styles.css" & "build/css/styles..min.css" 
+
+
+
 
 DELIVERING THE GOODS:
 
@@ -16,5 +24,3 @@ DELIVERING THE GOODS:
 * The catch with inline critical CSS is that it doesn't cache since it's in the HTML page.
 
 * show col-md-4, then show that it's gone after outputting w/ outputCss
-
-"When you want to be fast, you have to give up the things slowing you down." Addy Osmani
