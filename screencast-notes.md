@@ -8,7 +8,7 @@ BEFORE YOU START THE SCREENCAST!!!!!!
 
 4. run "gulp jade" to reset "build/index.html"
 
-5. delete "css-build/styles.css" & "build/css/styles..min.css" 
+5. delete "css-build/styles.css" & "build/css/styles.min.css" 
 
 
 
