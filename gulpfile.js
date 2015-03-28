@@ -1,7 +1,7 @@
   // Single var pattern of gulp (require) stuff in full effect!!!
 
 var gulp = require("gulp"), // Bring in gulp
-    exec = require('child_process').exec, // Run commands...may go away
+    exec = require('child_process').exec, // Run CLI commands via node
     Q = require('q'), // Manage promises
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css selectors
@@ -110,8 +110,8 @@ gulp.task("less", function () {
   setTimeout(function() {
     exec("lessc css-build/styles.less > css-build/styles.css");
     return deferred.promise;
-    }, 1000);
-  });
+  }, 1000);
+});
 
 
 // "gulp concat" task
@@ -126,8 +126,8 @@ gulp.task('concat', ['less'], function() {
     .pipe(concatCss('styles.min.css'))
     .pipe(gulp.dest('build/css/'));
     return deferred.promise;
-    }, 1000);
-  });
+  }, 1000);
+});
 
 
 // "gulp outputCss" task
@@ -141,28 +141,28 @@ gulp.task("outputCss", ['concat'],function () {
  var deferred = Q.defer();
 
   setTimeout(function() {
-  gulp.src('build/css/styles.min.css')
-  .pipe(uncss({
-    html: ["build/index.html"],
-    ignore: ignoreArray
+    gulp.src('build/css/styles.min.css')
+    .pipe(uncss({
+      html: ["build/index.html"],
+      ignore: ignoreArray
     }))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-    cascade: false
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
     }))
-  .pipe(minifyCSS())
-  .pipe(gulp.dest("build/css/"))
-  .pipe(csslint({
-    "important": false,
-    "duplicate-background-images": false,
-    "ids": false,
-    "text-indent": false
+    .pipe(minifyCSS())
+    .pipe(gulp.dest("build/css/"))
+    .pipe(csslint({
+      "important": false,
+      "duplicate-background-images": false,
+      "ids": false,
+      "text-indent": false
     }))
-  .pipe(csslint.reporter())
-  .pipe(connect.reload())
- }, 4000);
+    .pipe(csslint.reporter())
+    .pipe(connect.reload())
+   }, 4000);
   return deferred.promise;
-  });
+});
 
 
 // "gulp critical" task
@@ -174,8 +174,8 @@ gulp.task("critical", function () {
   setTimeout(function() {
     gulp.run("grunt-critical");
       return deferred.promise;
-    }, 6000);
-  });
+  }, 6000);
+});
 
 /*
  *  ===================================================================
@@ -199,7 +199,7 @@ gulp.task('images', function () {
     svgoPlugins: [{removeViewBox: false}]
     }))
   .pipe(gulp.dest('build/img'));
-  });
+});
 
 
 /*
@@ -211,28 +211,28 @@ gulp.task('images', function () {
 // Run the "grunt coffee" task
 gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
-  });
+});
 
 // BOWERCOPY TASKS
 // Copy over ALL the Bower Components!!!
 gulp.task("bowercopy", function () {
   gulp.run("grunt-bowercopy");
-  });
+});
 
 // Copy over Bootstrap core .css only
 gulp.task("bowerbscss", function () {
   gulp.run("grunt-bowercopy:bscss");
-  });
+});
 
 // Copy over jQuery Cycle2 plugin only
 gulp.task("bowercycle", function () {
   gulp.run("grunt-bowercopy:cycle2");
-  });
+});
 
 // Copy over jQuery v.1.11.1 only
 gulp.task("bowerjq", function () {
   gulp.run("grunt-bowercopy:jq");
-  });
+});
 
 // Copy over scrollNav only
 gulp.task("bowerscroll", function () {
@@ -242,20 +242,20 @@ gulp.task("bowerscroll", function () {
 // Copy over enquire.js only
 gulp.task("boweren", function () {
   gulp.run("grunt-bowercopy:enquire");
-  });
+});
 
 // Copy over matchMedia.js only
 gulp.task("bowermm", function () {
   gulp.run("grunt-bowercopy:matchmedia");
-  });
+});
 
-// Start a server that points to the "build/" and runs on port 8080
+// Start a server from "build/" and run it on port 8080
 gulp.task("connect", function () {
   connect.server({
     root: "build/",
     livereload: true
-    });
   });
+});
 
 /*
  *  ===================================================================
@@ -268,6 +268,10 @@ gulp.task("connect", function () {
  *  ===================================================================
  *  | START WATCH TASK |
  *
+ *  If either pre-processor or "build/" files change and the site
+ *  is currently running in the browser, refresh it via
+ *  livereload.
+ *
  *  Be careful of watching a lot of files because that may eat up
  *  computer memory...at least, it does in Grunt.
  *  ===================================================================
@@ -275,16 +279,11 @@ gulp.task("connect", function () {
 
  gulp.task("watch", function () {
 
-  /*
-   * If either pre-processor or "build/" files change and the site
-   * is currently running in the browser, refresh it in the browser via
-   * livereload.
-   */
   gulp.watch(jadeFiles, ["jade"]);
   gulp.watch(lessFiles, ["buildcss"]);
   gulp.watch(coffeeFiles, ["coffee"]);
   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
 });
 
-// Simultaneosly run "gulp connect" and "gulp spy"
+// Simultaneously run "gulp connect" and "gulp spy"
 gulp.task('spy', ['connect', 'watch']);
