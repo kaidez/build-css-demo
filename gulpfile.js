@@ -213,6 +213,8 @@ gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
 });
 
+
+
 // BOWERCOPY TASKS
 // Copy over ALL the Bower Components!!!
 gulp.task("bowercopy", function () {
@@ -238,16 +240,6 @@ gulp.task("bowerjq", function () {
 gulp.task("bowerscroll", function () {
   gulp.run("grunt-bowercopy:scroll");
   });
-
-// Copy over enquire.js only
-gulp.task("boweren", function () {
-  gulp.run("grunt-bowercopy:enquire");
-});
-
-// Copy over matchMedia.js only
-gulp.task("bowermm", function () {
-  gulp.run("grunt-bowercopy:matchmedia");
-});
 
 // Serve a website from "build/" and run it on port 8080
 gulp.task("connect", function () {
