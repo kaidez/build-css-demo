@@ -14,9 +14,9 @@ BEFORE YOU START THE SCREENCAST!!!!!!
 
 
 
-DELIVERING THE GOODS:
+DELIVERING THE GOODS
 
-* reading data to understand slow page-loads & what we can do to speed them up.
+* discussed tools and techniques we can use to speed up page loading.
 
 * tracking latency with tools like Webpage Test 
 
@@ -30,7 +30,18 @@ DELIVERING THE GOODS:
 
 
 
+ADDY OSMANI: CSS PERFORMANCE TOOLING AT CSSconf EU 2014
 
+* A great talk where he demos how to measure performance with things like Web Page Test and the Chrome's Device Mode, what the tooling looks like and so on.
+
+* He fleshes out the tooling even more, talking about things like grunt-penthouse and all the various tools and whatnot. And that's what really pushed me to understand all this stuff.
+
+
+
+
+WALK THROUGH CSS, JADE...say that coffeescript & js won't be discussed.
+
+walk through grunt file first, then gulp file.
 
 * The catch with inline critical CSS is that it doesn't cache since it's in the HTML page.
 
