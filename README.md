@@ -47,7 +47,7 @@ After all these things have been installed, you can install the `devDependencies
 
     $ npm install
 
-And then install the `dependencies`
+And then install the `dependencies`:
     $ bower install
 
 In order to keep the `devDependencies` up to date, it's best to *globally* install ["npm-check-updates"](https://www.npmjs.com/package/npm-check-updates):
