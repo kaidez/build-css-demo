@@ -47,7 +47,7 @@ After all these things have been installed, you can install the `devDependencies
 
     $ npm install
 
-And then install the `dependencies`:
+And then install the `dependencies`
 
     $ bower install
 
