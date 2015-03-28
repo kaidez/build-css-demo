@@ -249,7 +249,7 @@ gulp.task("bowermm", function () {
   gulp.run("grunt-bowercopy:matchmedia");
 });
 
-// Start a server from "build/" and run it on port 8080
+// Serve a website from "build/" and run it on port 8080
 gulp.task("connect", function () {
   connect.server({
     root: "build/",
