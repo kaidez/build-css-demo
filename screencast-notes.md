@@ -14,32 +14,53 @@ BEFORE YOU START THE SCREENCAST!!!!!!
 
 
 
-DELIVERING THE GOODS
+
+WHAT I SAY
+==========
+Keep seeing complaints that imply that bootstrap is too bulky to use.  We have tools to deal with this.
+
+This is NOT a tutorial, just a demo. Push you to read up on this 	
+
+Link to the code on GitHub is in the blog/in the youtube link. tweet me questions or leave a comment on the blog post.
+
+
+
+DELIVERING THE GOODS by Paul Irish...talk about a lot on 2014 conference circuit.
 
 * discussed tools and techniques we can use to speed up page loading.
 
-* tracking latency with tools like Webpage Test 
+* Gathered data to using tools like Webpage Test to review latency issues and check the Speed Index. 
 
-* Expanded on Webpage Test's Speed Index 
+* talked about familiar stuff like miniyfing your code and async javascript loading & gzipping images.
 
-* talked about familiar stuff like async javascript loading & gzipping images.
+* Where I first heard about "critical CSS".
 
+I bookmarked it in my brain, read a few things about that along with some other techniques. But didn't really use it yet. 
 
-* Where I first heard about "critical CSS"
+THEN!!!!!!!
 
-
-
-
-ADDY OSMANI: CSS PERFORMANCE TOOLING AT CSSconf EU 2014
+CSS PERFORMANCE TOOLING by Addy Osmani at CSSconf EU 2014
 
 * A great talk where he demos how to measure performance with things like Web Page Test and the Chrome's Device Mode, what the tooling looks like and so on.
 
-* He fleshes out the tooling even more, talking about things like grunt-penthouse and all the various tools and whatnot. And that's what really pushed me to understand all this stuff.
+* mentioned critical path CSS.
 
+* He fleshes out the tooling even more, how to use grunt & gulp, plugins like critical and penthouse and all the various tools and whatnot. And that's what really pushed me to understand all this stuff.
 
+Great timing! I suddenly had a lot of projects where I could use this stuff! So I started playing with it.
 
+REAL QUICK!!! What is Critical CSS?
+
+if your page fold is say 400 px, the critical CSS is the styling code ABOVE that point. 
 
 WALK THROUGH CSS, JADE...say that coffeescript & js won't be discussed.
+
+
+
+
+
+
+
 
 walk through grunt file first, then gulp file.
 
