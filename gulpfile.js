@@ -257,6 +257,12 @@ gulp.task("connect", function () {
     });
   });
 
+/*
+ *  ===================================================================
+ *  | STOP "gulp-grunt" TASKS |
+ *  ===================================================================
+ */
+
 
 /*
  *  ===================================================================
@@ -267,17 +273,18 @@ gulp.task("connect", function () {
  *  ===================================================================
  */
 
-
- gulp.task('spy', ['connect', 'watch']);
  gulp.task("watch", function () {
 
   /*
-   * If either preprocesser files or "build/" files change and the site
+   * If either pre-processor or "build/" files change and the site
    * is currently running in the browser, refresh it in the browser via
    * livereload.
    */
-   gulp.watch(jadeFiles, ["jade"]);
-   gulp.watch(lessFiles, ["outputCss"]);
-   gulp.watch(coffeeFiles, ["coffee"]);
-   gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
-   });
+  gulp.watch(jadeFiles, ["jade"]);
+  gulp.watch(lessFiles, ["buildcss"]);
+  gulp.watch(coffeeFiles, ["coffee"]);
+  gulp.watch(["build/index.html", "build/css/*.css", "build/js/*.js"]);
+});
+
+// Simultaneosly run "gulp connect" and "gulp spy"
+gulp.task('spy', ['connect', 'watch']);
