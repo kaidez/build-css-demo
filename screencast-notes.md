@@ -53,6 +53,9 @@ REAL QUICK!!! What is Critical CSS?
 
 if your page fold is say 400 px, the critical CSS is the styling code ABOVE that point. 
 
+
+
+
 WALK THROUGH CSS, JADE...say that coffeescript & js won't be discussed.
 
 
