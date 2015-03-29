@@ -82,8 +82,8 @@ gulp.task("jade", function () {
  *
  * 1. "gulp less" task
  * 2. "gulp concat" task that takes "gulp less" as a hint(*)
- * 3. "gulp outputCss" task that takes "gulp concat" as a hint(*)
- * 4. "gulp outputCss" removes unused CSS, minifies, lints, &   
+ * 3. "gulp outputcss" task that takes "gulp concat" as a hint(*)
+ * 4. "gulp outputcss" removes unused CSS, minifies, lints, &   
       auto-prefixes it
  * 5. "gulp jade" which rebuilds/resets build/index.html
  * 6. "gulp critical" to extract critical path CSS to build/index.html
@@ -96,7 +96,7 @@ gulp.task("jade", function () {
  */
 
 // The core task for building out the site's CSS
-gulp.task('buildcss', ['outputCss', 'jade', 'critical']);
+gulp.task('buildcss', ['outputcss', 'jade', 'critical']);
 
 
 // "gulp less" task
@@ -129,14 +129,14 @@ gulp.task('concat', ['less'], function() {
 });
 
 
-// "gulp outputCss" task
+// "gulp outputcss" task
 // =====================
 // uncss, auto-prefix, minify and lint the css
 // Takes "concat" as a gulp hint
 // Returns a promise with q
-gulp.task("outputCss", ['concat'],function () {
+gulp.task("outputcss", ['concat'],function () {
 
- // Set this up so "outputCss" returns a promise
+ // Set this up so "outputcss" returns a promise
  var deferred = Q.defer();
 
   setTimeout(function() {
@@ -167,7 +167,7 @@ gulp.task("outputCss", ['concat'],function () {
 // "gulp critical" task
 // =====================
 // Extract critical path css to "build/index.html" 
-// This a grunt task that is getting executed with gulp
+// This a grunt task that is getting executed with gulpjs
 // Returns a promise with q
 gulp.task("critical", function () {
   var deferred = Q.defer();
