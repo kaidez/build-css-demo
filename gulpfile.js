@@ -1,4 +1,4 @@
-  // Single var pattern of gulp (require) stuff in full effect!!!
+// Single var pattern of gulp (require) stuff in full effect!!!
 
 var gulp = require("gulp"), // Bring in gulp
     exec = require('child_process').exec, // Run CLI commands via node
@@ -16,7 +16,7 @@ var gulp = require("gulp"), // Bring in gulp
 // End single var pattern
 
 
-// Needed to run grunt tasks through gulp
+// Run grunt tasks in gulp
 require("gulp-grunt")(gulp);
 
 
