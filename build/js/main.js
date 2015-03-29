@@ -8,14 +8,6 @@ $(".cycle-slideshow").cycle({
 
 
 /*
-code that displays the individual team copy on popup
- */
-$("#teamCopyLinkChelsea").click(function() {
-  $("#teamCopy").addClass("team-copy-popup").css("display", "block");
-});
-
-
-/*
 scrollNav code starts
  */
 var scroll;
