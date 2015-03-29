@@ -131,7 +131,7 @@ gulp.task('concat', ['less'], function() {
 
 // "gulp outputCss" task
 // =====================
-// Concatenate "css-build/styles.css" and "css-build/bootstrap.css"
+// uncss, auto-prefix, minify and lint the css
 // Takes "concat" as a gulp hint
 // Returns a promise with q
 gulp.task("outputCss", ['concat'],function () {
