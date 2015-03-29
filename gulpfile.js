@@ -166,7 +166,8 @@ gulp.task("outputCss", ['concat'],function () {
 
 // "gulp critical" task
 // =====================
-// Extract critical path css to "build/index.html" with a grunt task
+// Extract critical path css to "build/index.html" 
+// This a grunt task that is getting executed with gulp
 // Returns a promise with q
 gulp.task("critical", function () {
   var deferred = Q.defer();
