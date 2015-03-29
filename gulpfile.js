@@ -54,8 +54,7 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
       ".scroll-nav__item",
       ".scroll-nav__link",
       ".scroll-nav__list",
-      ".scroll-nav__section",
-      ".team-copy-popup"
+      ".scroll-nav__section"
     ];
 
 
