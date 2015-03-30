@@ -2,7 +2,8 @@
 
 var gulp = require("gulp"), // Bring in gulp
     exec = require('child_process').exec, // Run CLI commands via node
-    Q = require('q'), // Manage promises
+    Q = require('q'), // Manage promises,
+    critical = require('critical'), // Extract critical path css
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css selectors
     minifyCSS = require("gulp-minify-css"), // Minify CSS
@@ -16,8 +17,10 @@ var gulp = require("gulp"), // Bring in gulp
 // End single var pattern
 
 
+
 // Run grunt tasks in gulp
 require("gulp-grunt")(gulp);
+
 
 
 /*
@@ -28,6 +31,7 @@ require("gulp-grunt")(gulp);
 var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     lessFiles = ["css-build/*.less", "css-build/**/*.less"], // LESS
     coffeeFiles = ["coffee/*.coffee"]; // Coffeescript
+
 
 
     /*
@@ -58,6 +62,7 @@ var jadeFiles = ["jade/index.jade", "jade/**/*.jade"], // Jade
     ];
 
 
+
 /*
  *  ===================================================================
  *  | JADE TASK |
@@ -68,15 +73,16 @@ gulp.task("jade", function () {
   return gulp.src("jade/index.jade")
   .pipe(jade({
     pretty: true
-    }))
+  }))
   .pipe(gulp.dest("build"))
   .pipe(connect.reload());
-  });
+});
+
 
 
 /*
  *  ===================================================================
- *  | CSS BUILD TASK |
+ *  | CSS BUILD TASKS |
  *
  * Running "gulp buildcss" performs the following sequence of tasks...
  *
@@ -105,12 +111,12 @@ gulp.task('buildcss', ['outputcss', 'jade', 'critical']);
 // Returns a promise with q
 gulp.task("less", function () {
   var deferred = Q.defer();
-
   setTimeout(function() {
     exec("lessc css-build/styles.less > css-build/styles.css");
     return deferred.promise;
   }, 1000);
 });
+
 
 
 // "gulp concat" task
@@ -129,6 +135,7 @@ gulp.task('concat', ['less'], function() {
 });
 
 
+
 // "gulp outputcss" task
 // =====================
 // uncss, auto-prefix, minify and lint the css
@@ -138,7 +145,6 @@ gulp.task("outputcss", ['concat'],function () {
 
  // Set this up so "outputcss" returns a promise
  var deferred = Q.defer();
-
   setTimeout(function() {
     gulp.src('build/css/styles.min.css')
     .pipe(uncss({
@@ -164,24 +170,29 @@ gulp.task("outputcss", ['concat'],function () {
 });
 
 
+
 // "gulp critical" task
 // =====================
 // Extract critical path css to "build/index.html" 
-// This a grunt task that is getting executed with gulpjs
+// Uses the general npm critical module
 // Returns a promise with q
-gulp.task("critical", function () {
-  var deferred = Q.defer();
-  setTimeout(function() {
-    gulp.run("grunt-critical");
-      return deferred.promise;
-  }, 6000);
-});
+gulp.task('critical', function(){
+  critical.generateInline({
+    base: 'build/',
+    width: 320,
+    height: 100,
+    src: 'index.html',
+    htmlTarget: 'index.html',
+    minify: true
+  });
+})
 
 /*
  *  ===================================================================
- *  | END CSS BUILD TASK |
+ *  | END CSS BUILD TASKS |
  *  ===================================================================
  */
+
 
 
 /*
@@ -202,6 +213,7 @@ gulp.task('images', function () {
 });
 
 
+
 /*
  *  ===================================================================
  *  | "gulp-grunt" TASKS...RUN GRUNT TASKS VIA GULP!!!! |
@@ -213,10 +225,8 @@ gulp.task("coffee", function () {
   gulp.run("grunt-coffee");
 });
 
-
-
 // BOWERCOPY TASKS
-// Copy over ALL the Bower Components!!!
+// Copy over ALL the Bower Components with "grunt-bowercopy!!!
 gulp.task("bowercopy", function () {
   gulp.run("grunt-bowercopy");
 });
@@ -254,6 +264,7 @@ gulp.task("connect", function () {
  *  | STOP "gulp-grunt" TASKS |
  *  ===================================================================
  */
+
 
 
 /*

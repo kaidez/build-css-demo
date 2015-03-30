@@ -106,25 +106,11 @@ module.exports = function(grunt) {
                               ]
         }
       }
-    }, // end "coffee" task
+    } // end "coffee" task
 
-    // start "critical" task
-    critical: {
-      build: {
-        options: {
-          base: './',
-          css:'build/css/styles.min.css',
-          width: 320,
-          height: 100
-        },
-        src: 'build/index.html',
-        dest: 'build/index.html'
-      }
-    } // end "critical" task
   });
 
   grunt.loadNpmTasks("grunt-bowercopy");
   grunt.loadNpmTasks("grunt-contrib-coffee");
-  grunt.loadNpmTasks('grunt-critical');
 
 };
