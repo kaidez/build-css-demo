@@ -175,7 +175,6 @@ gulp.task("outputcss", ['concat'],function () {
 // =====================
 // Extract critical path css to "build/index.html" 
 // Uses the general npm critical module
-// Returns a promise with q
 gulp.task('critical', function(){
   critical.generateInline({
     base: 'build/',
