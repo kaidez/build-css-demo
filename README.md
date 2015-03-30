@@ -1,15 +1,11 @@
 # CSS BUILD PROCESS TUTORIAL
 
-This is the source code for a demo post/screencast/blog post/whatever about my personal CSS build process. It's based on a code refactor I had to do for work and I used it as a test project for my process.
+This is the source code for a the screencast and blog post/whatever about my personal CSS build process. It's based on a code refactor I had to do for work and I used it as a test project for my process.
 
-I may or may not do a tutorial for all this...there's some cool stuff in here and the code isn't complicated, but it is very detailed. Maybe too detailed for a straight-forward tutorial.
-
-Maybe into separate tutorials...I dunno.
-
-But everything's under an MIT license so feel free to use it as you see fit. [Tweet me](http://twitter.com/kaidez) if you have questions.
+Everything is under an MIT license so feel free to use it as you see fit on my blog.
 
 ## HOW THE CODE WORKS
-The production-code is in `build`. Run it by either opening `index.html` in a web browser or running the the code from the server of your choice.
+The production-code is in `build`. Run it by either opening `index.html` in a web browser or running the the code from the server setup of your choice.
 
 ## PLAY WITH THE BUILT OUT CODE
 The files in `build` get built out using three pieces of pre-processor software: [Jade](http://jade-lang.com/), [LESS](http://lesscss.org/) and [Coffeescript](http://coffeescript.org/).
@@ -32,9 +28,9 @@ To play with all the preprocessor code, you would need to download the following
 
 Node/npm will download all the all the development-level dependencies listed as `devDependencies` inside `package.json`.
 
-While source code control is not required to do anything with either the built-out files or various preprocessers, Git is required to interact with Bower. This is because Bower will download the packages listed as dependencies in `bower.json` and these dependencies are almost always downloaded from on GitHub via Git.
+While source code control is not required to do anything with either the built-out files or various pre-processors, Git is required to interact with Bower. This is because Bower will download the packages listed as dependencies in `bower.json` and these dependencies are almost always downloaded from on GitHub via Git.
 
-npm will install both Grunt and Gulp locally to the project folder, but their respective globally-installed versions need to installed as well. After Node/npm is installed, the global install stuff can be installed as follows:
+npm will install both Grunt and Gulp locally to the project folder, but their respective globally-installed versions need to be installed as well. After Node/npm is installed, thinstall Grunt and Gulp as follows:
 
 ### Grunt
     $ npm install -g grunt-cli
@@ -51,7 +47,7 @@ And then install the `dependencies`
 
     $ bower install
 
-In order to keep the `devDependencies` up to date, it's best to *globally* install ["npm-check-updates"](https://www.npmjs.com/package/npm-check-updates):
+In order to keep the `devDependencies` up to date, it's best to *globally* install [npm-check-updates](https://www.npmjs.com/package/npm-check-updates):
 
     $ npm install -g npm-check-updates
 
