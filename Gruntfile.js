@@ -115,8 +115,7 @@ module.exports = function(grunt) {
           base: './',
           css:'build/css/styles.min.css',
           width: 320,
-          height: 100,
-          extract: true
+          height: 100
         },
         src: 'build/index.html',
         dest: 'build/index.html'
