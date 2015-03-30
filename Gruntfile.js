@@ -64,29 +64,9 @@ module.exports = function(grunt) {
           "jquery.scrollNav.min.js": "scrollNav/dist/jquery.scrollNav.min.js"
         }
       } // end "bowercopy:jq" task
-    }, // end "bowercopy" task
-
-    // start "coffee" task
-    coffee: {
-      compile: {
-        options: {
-          bare: true
-        },
-        files: {
-          // compile coffee files in "coffee/" to "build/js/main.js"
-          "build/js/main.js": [
-                                "coffee/common.coffee",
-                                "coffee/enquire.coffee",
-                                "coffee/scrollNav.coffee",
-                                "coffee/players.coffee"
-                              ]
-        }
-      }
-    } // end "coffee" task
-
+    } // end "bowercopy" task
   });
 
   grunt.loadNpmTasks("grunt-bowercopy");
-  grunt.loadNpmTasks("grunt-contrib-coffee");
 
 };

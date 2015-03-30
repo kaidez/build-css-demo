@@ -215,14 +215,22 @@ gulp.task('images', function () {
 
 /*
  *  ===================================================================
+ *  | COFFESCRIPT TASK |
+ *
+ *  Process files in "coffee/" to "build/js/main.js"
+ *  ===================================================================
+ */
+gulp.task("coffee", function () {
+  exec("coffee --join build/js/main.js --compile coffee/common.coffee coffee/scrollnav.coffee coffee/players.coffee")
+});
+
+
+
+/*
+ *  ===================================================================
  *  | "gulp-grunt" TASKS...RUN GRUNT TASKS VIA GULP!!!! |
  *  ===================================================================
  */
-
-// Run the "grunt coffee" task
-gulp.task("coffee", function () {
-  gulp.run("grunt-coffee");
-});
 
 // BOWERCOPY TASKS
 // Copy over ALL the Bower Components with "grunt-bowercopy!!!
