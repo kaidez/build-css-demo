@@ -3,7 +3,6 @@
 var gulp = require("gulp"), // Bring in gulp
     exec = require('child_process').exec, // Run CLI commands via node
     Q = require('q'), // Manage promises,
-    critical = require('critical'), // Extract critical path css
     jade = require("gulp-jade"), // Jade task
     uncss = require("gulp-uncss"), // Remove unused css selectors
     minifyCSS = require("gulp-minify-css"), // Minify CSS
@@ -174,17 +173,15 @@ gulp.task("outputcss", ['concat'],function () {
 // "gulp critical" task
 // =====================
 // Extract critical path css to "build/index.html" 
-// Uses the general npm critical module
-gulp.task('critical', function(){
-  critical.generateInline({
-    base: 'build/',
-    width: 320,
-    height: 100,
-    src: 'index.html',
-    htmlTarget: 'index.html',
-    minify: true
-  });
-})
+// This a grunt task that is getting executed with gulpjs
+// Returns a promise with q
+gulp.task("critical", function () {
+  var deferred = Q.defer();
+  setTimeout(function() {
+    gulp.run("grunt-critical");
+      return deferred.promise;
+  }, 6000);
+});
 
 /*
  *  ===================================================================
