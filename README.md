@@ -1,6 +1,6 @@
 # CSS BUILD PROCESS TUTORIAL
 
-This is the source code for a the screencast and blog post/whatever about my personal CSS build process. It's based on a code refactor I had to do for work and I used it as a test project for my process.
+This is the source code for a the screencast I posted at https://www.youtube.com/watch?v=UDm6e7OKi4M with a coresponding blog post at http://kaidez.com/css-build-demo/. It's based on a code refactor I had to do for work and I used it as a test project for my process.
 
 Everything is under an MIT license so feel free to use it as you see fit on my blog.
 
